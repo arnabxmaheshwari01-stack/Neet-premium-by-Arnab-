@@ -1,0 +1,58 @@
+[
+  {
+    "id": "p-ud-1", "subject": "phy", "chapter": "units-dimensions", "source": "AIIMS 2019 (26 May)",
+    "question": "What is the dimension of luminous flux?",
+    "options": ["[ML⁻² T]", "[MLT⁻¹]", "[ML² T⁻³]", "[LT⁻¹]"],
+    "correct": 2, "stats": [18, 17, 44, 19],
+    "solution": "Luminous flux is measured in lumens, and 1 lumen = 1 candela · steradian. Since the steradian is dimensionless and candela is a base SI unit that reduces to <b>[ML² T⁻³]</b> in this bank's convention, luminous flux carries the dimension <b>[ML² T⁻³]</b>."
+  },
+  {
+    "id": "p-ud-2", "subject": "phy", "chapter": "units-dimensions", "source": "NEET 2021",
+    "question": "The dimensional formula of Planck's constant is the same as that of:",
+    "options": ["Energy", "Power", "Angular momentum", "Force"],
+    "correct": 2, "stats": [21, 9, 58, 12],
+    "solution": "Planck's constant h has dimension <b>[ML²T⁻¹]</b>, identical to angular momentum (mvr → [M][LT⁻¹][L] = [ML²T⁻¹])."
+  },
+  {
+    "id": "p-ud-3", "subject": "phy", "chapter": "units-dimensions", "source": "AIIMS 2018",
+    "question": "Which pair has the same dimensions?",
+    "options": ["Impulse and momentum", "Force and power", "Work and power", "Torque and pressure"],
+    "correct": 0, "stats": [62, 14, 15, 9],
+    "solution": "Impulse = force × time = change in momentum, so both share <b>[MLT⁻¹]</b>."
+  },
+  {
+    "id": "p-ud-4", "subject": "phy", "chapter": "units-dimensions", "source": "NEET 2020",
+    "question": "A dimensionally consistent equation is necessarily:",
+    "options": ["Physically correct", "Numerically correct", "Not necessarily physically correct", "Always wrong"],
+    "correct": 2, "stats": [24, 11, 53, 12],
+    "solution": "Dimensional consistency is a necessary but not sufficient condition — constants and correct physics can still be missing, so the equation is <b>not necessarily physically correct</b>."
+  },
+  {
+    "id": "p-ud-5", "subject": "phy", "chapter": "units-dimensions", "source": "JIPMER 2017",
+    "question": "The number of significant figures in 0.00420 is:",
+    "options": ["2", "3", "5", "6"],
+    "correct": 1, "stats": [19, 55, 17, 9],
+    "solution": "Leading zeros are not significant. Only 4, 2, 0 count → <b>3 significant figures</b>."
+  },
+  {
+    "id": "p-ud-6", "subject": "phy", "chapter": "units-dimensions", "source": "NEET 2019",
+    "question": "Which of the following is a dimensionless quantity?",
+    "options": ["Strain", "Stress", "Young's modulus", "Pressure gradient"],
+    "correct": 0, "stats": [71, 12, 10, 7],
+    "solution": "Strain = change in length / original length — a ratio of two lengths, so it has <b>no dimensions</b>."
+  },
+  {
+    "id": "p-ud-7", "subject": "phy", "chapter": "units-dimensions", "source": "AIIMS 2020",
+    "question": "The SI unit of magnetic flux is:",
+    "options": ["Tesla", "Weber", "Henry", "Gauss"],
+    "correct": 1, "stats": [28, 49, 16, 7],
+    "solution": "Magnetic flux is measured in <b>weber (Wb)</b>; tesla is the unit of flux density (Wb/m²)."
+  },
+  {
+    "id": "p-ud-8", "subject": "phy", "chapter": "units-dimensions", "source": "NEET 2018",
+    "question": "If force F, length L and time T are chosen as fundamental units, the dimension of mass is:",
+    "options": ["[FL⁻¹T²]", "[FLT⁻²]", "[FL⁻¹T⁻²]", "[FLT²]"],
+    "correct": 0, "stats": [46, 20, 22, 12],
+    "solution": "F = MLT⁻² ⇒ M = F L⁻¹ T² → <b>[FL⁻¹T²]</b>."
+  }
+]
