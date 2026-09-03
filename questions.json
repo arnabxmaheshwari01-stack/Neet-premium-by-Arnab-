@@ -3821,5 +3821,5240 @@
     "correct": 1,
     "solution": "v_R = v_(R/M) + v_M = −4k̂ + 3î = 3î − 4k̂.",
     "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAE5BAMAAAC+CEONAAAAMFBMVEX////+/v79/f38/Pz7+/v6+vr4+Pj19fXv7+/R0dG0tLSDg4NTU1MvLy8ODg4AAADKPO7+AAAN7ElEQVR42u3dXWwc13UH8P+dJWUplrj3XOrDcSxxZ1YW7FStySUlO0bciPooBARt9WExRm0Dqb6cx9Z+qNu+NHkI5AC1UrQPqdQYDooGiKRYSpG0dSiRMZy0TsxdruUgDSLuzMpxLdvSzrmrD4uStXP7EEu2ZHq5BsLdZXT+T8RiiVn+eO6ZM3eWS0AikUgk9aIAEgXJb62e+rXySWUzeHJN555Z+SN4zcPKBYqguv1VmnLwZyNWqnlY2fQvTk26S290nHjh4X9/c3IWYnU07Ug+LwO6l53fYd7oduM+yzKsU1g6BJDqJePrXDw7z4ZN7FlczXl9uo/M3fMjawWrXhxXM14GZAJakHcsWPVTNj3HIlKxSW1WawWrfmlFqmviVaOdWkSKBKte2HflPmygrtCarnRBsOq2rMBVlfGNY6bF90SCVe9k6PUnZb3KaGZWJiOjQ93KqipY+OR4IlKGBgWrbrRWRKorLjBTepVg1W9a579YIc2V0YjVbbVrj1NqJ2bJybF5WMn+VOawl+EYmhHkP4CVlcr6UId/0PFGHTMPOQb+6OqjQ8gAizYL1vVHMpef9rWL9/pXvm5hrm1GOM3wAsG6IX21KI6qmwodPWF07drQrmeHZHZcKjZvP8uB0gfsp//jM3sfm9z9/h2LqDfNlISzAqtpO6WKVPDpU5dXLjq34OT40CPvvDfC05uaf/X5+0asLMMPFla6QJouHbn1FRrTVXXNkFPblNGz4+qneT2rnIuPdg71Vl0EjJVGrg4UnslF6ef6BOv6ZJLxMiLojXu2VEau7mdVu/voH10xI1jXH8mP4JLhvT8kymbObbj6cJWI9huZ4G+IPb/Txd1P7gv82pB2V08wf0nK35aRnnV9asOvZM881x8E/bTAPPC1a/Vm4JsFo4J13egwQIBL9QCKgOrW9x71SJPyZ8cA38Q70m9Etfwk53+xMoh//e637/8fmtz4yH33PrrykzTvtpNB17klKx658AmWyrrWtQCUYDVCF3bu6gvL0SIiDaV8lLszFdvu70Tymn1A7QAMJ99V1Per7z2vjAaYfD9Sfik8KdeGU/SvLyBfLhUf6p0kcqwZRJuX9Gy6oGPB+pCVIgSZcaXVHCKnnFVEwQWlX2/3q56mYxHgkuFSGak//u7mrNEl42K7xp/41z8cW63ZCtaNezWe95APMIYHKGECuErdtx/C6nYfHZqOxQAWrzOB5rj2jtHM1Yzj8jJ/6/Eue6bNN2qafzYEYKFIA9460swAmBWlfOMiGR2uz0LAXtrLjivDZTI6tgAcV8ms7a+VlWDd0LGg3ePkQv6XcY5DPgI45phdyFY9qKVnfTAlKHiU4fBQ5mc5qr1VBMAcJieOgZTRVrBuSCeBK+M5DXZ2DYC8l3av5rykKKPDFFMppf/tWc/cjot8ptcBY7+e9/SKB86dcUcF60NW2XTYDU+j3GVH39kG6EoZlVGVpNv89mErJngE8YlU36v67fCey+U5AFRtFJXKe9sScjZ8P6sBhWDVyaHaaGr+wSOYTfGaX1kOAPUpReSU0YJVJyHgoiqlX75zc3Jh264ewaqTGEDCZEbAzmF2pekNvgLlIi/j8/mJEXtowfE5glV/18Fxlb4R7luyjXHyoizDaa4PmYOA7GA2yPbKMpwmly5FGT/eUuyKz1rBqje+A0o9/USOaOBvXgJ5kGX4kdFPktZ3fVmBTParWD2rVmHze5Yip5TSqBIRcj2yDOs29ziGY5VPW8cofAKSxpOaV6g9P1v+/LDplWUCjThSOc0c2ln2m206VvybW/RHZ+My8KQTCJZgCZZgCZZgCYFgCZZgCZZgCZYQCJZgCZZgCZZgCYFgCZZgCZZgCZYQCJZgCZZgCZZgCYFgCZZgCZZgCZYQCJZgCZZgCZZgCYFgCZZgCZZgCZYQCJZgCZZgCZZgCYFgCZZgCZZgCZYQCJZgCZZgCZZgCYFgCZZgCZZgCZYQCJZgCZZgCZZgCYFgCdZvO4qw6LEv4rGMYDUQrYkW+iRYjcTq+L/OrzlQbPDpHTezlbO0tt/FXaFUVkO14lPa65UG31CDX2BM0HVOC1YDoaUqoHdTgtVQlhhNPZEsw0bSQ5T2Ft1hBauB9r7M6LjacY9UViMN/k6VjqyRobShpHzHjroFq5GrHU+7mNXCTIOnw5t6gr+sdKWSqioZHaafSGmx1i5kS0Y39t8ob+JlaHLryJVHx523eI1U1rS1pTTHHW/FhOW+VNZ0mw4qwyP9A2xVR59gTc/FxwBm6LScDadbhi6MXP7tFQF4pCqVVTfMHB1a3qMKsXVWKmu6yop5zY8HEo/xspKz4XS58i1iB7x07LC3Xirro0Jw1jF7m7yJo9hAnWQCqaxpklh0nd2glXWNLcObs7JUmgGwOxD03uUnXublhKWypkv6eG8QmKWMOJTKmmYiRc8tmpafPpVXLi+VNe2o5SwAb53Ztq2llbVwS3L2RHT+8co328un89Ef/Nl/3/3j/vy5HRMvPKi8eCyJD9lSy+as1O4dACr5MbW8Jz/aVo19+Y6k6Di85XNMrvT6E8fy4xxz2Tb47TNRWR7VlNZRt6r2TxyDtm2kZbqTqPrzlcqFquvYLTquVC8M/vSFhqtgJl7SZNz5yML/HMr8/NQkdzw0Xhc2teO28NDk3MnmVNbbn7loL/7Jyr3xpBpYW8h+/lMDi39pPlt7Ey1bhl1jo4SFXwqym0PWHrVRYbnEag6C276SBZSqPas0amMN372fkWXYf8ybf3DV2iA503u897WonZpWcjT2NlAmfVKVJibU/IPOxladLrcQS/UjXpgzlHRrIGknLOWHMETk+pfFBXi9kTu5O6NONdpVZ2IZHl8/OG5N4ENlMhGPtxGWtx6IoYLAv1JQwfKBbWsSMr7OtLCyHNe+lPPJARYAcftgOYfUnzKz4bv3PF/sYMx5KqCk4Z41E5V1Zd83gyDQYVQpMkO3UWUlB9HR/x2OqtnA7+HTB/Z5QTan0co5K+jY4hsdc1yrEnt97dS0rNLKJjECY+9bPPbi9ojZRypTbB1WapCMn4QnDhWVz531b8mlOgGQalr5KR+0Z6ifApfY/p8sfyZjGB2txDq+M/CTAp8ehYoZf1//yfMAhIibZdXz07nnPvvPT4XQ3bl8UlqxAAq1Vo4OgybwJ+Jw7h4AX5j25QNqT1NX4kZsdDEFfp4eeGb1rQxcaSGW3u5rmP5sg0/PVAPT/OZFQABdnih+yjX+TTOBpYhgGgfgLFoS0spLf6yr/BkYHSwDju3H+CVb2OYZXX1lji2/NrTu43zrzAylWsPFDQKYNNu4aR0eAGKAVJqZAf0uVEuxbKiQ02GD45VSaW7+JKYC7cLQvrt/6cMtrqxnnog04TfvH5j2WsfAcaRd89YhAWwIYRyO9g6OVB4GOls5Z93z3FatSIdh1QerdN26UV62h8eatZuq/NDLOEvG6FI4MWbXjWgFpHpbiJW83KeVb3x849jg/jmPPlfvuate3AnsT9vmbBF6W/bP+buf3R2Qjpm99Pjvd/fCwbVyGaLnO05RH9tN/xAiSdW9yxS8CGDXle9vak5pHYArFe832a78L/9p+9q9kdEOeOtHLcSKbGc6Dp3hxX6/+1E4TcsCUFzzubApVu7c7mJ6ox8kIfN298r2fGyBxvdFZgIr1F76r76mDXk+BaOluj0rCwVXHFx6sDmVNcdXII/OlF769uMTL/QWUFVKqVZu0dy7KSqBQyRXCt4E6rejAgBcKd/RpNsaHXx0wX3JWGIXz+fiGmy49S4NvWTTsy2b4OGr+c/mhseYY31wfJqhgAGg60iz5gYXl02Z4xMj1d6nihlLK0g7pVr55yhHF4yZILKhO2cCnmbQCv4PgH+8Wfetk0Kq71uDydnaUT9XjQsK3bFro23v6Sp7XqH2PCmaFS92Bt9yZBr5nakW/Mwm/f5lvgl8F4a25VhxuxZIHH/w67GWbtH87kawBEuwBEuwBEsiWIIlWIIlWIIlESzBEizBEizBkgiWYAmWYAmWYEkES7AES7AES7AkgiVYgiVYgiVYEsESLMESLMESLIlgCZZgCZZgCZZEsARLsG5mLBNkrn6ZZnRnYNDmn1jQsv+OQmqg7/Try46sglXVrVTrnPv1bT8cGLaC9eGkVi09PBH/da1LO+APXvyLy1+5A8ORtbIMp4rWnNxL2Z2ARuefBysePUnc7h8c0iqsZJQXrVkbZIMigNd8Y1Z1b1hvdmUEa4o4B2iliDYpwCNfQ8E5tPcybFXP8jLs7CdBpAFYQxVXGbYIZRlOFZUpJkVwlbQGvkxpjintUJDKmhIrHaFyL9llBAvSMT9952U09u/NbsKexR2bF9XYKQKUr5nP9uqhnb5gTXk2HDdEtYiVr7UK0lHYrXRgfC1YUx13EDou5mNWAGm2ISrFQpht78pqWc9SFmcqOsr6UFqXuKDPnDzLu2QZTpXaaFeE5bsTBkDMsfUz/Q9qGR2mbvBRbRQK+2KG0o7/li0U0h/jI/dbckHbqgOri/Mm+dTZ37vd57lvFH4yefHUqf+9aCfbGqtlWzQOjKSknum3cBzzdZ9aKMvwIzYfYsBFDrMircaKOELE5T7BamAxVqLY8b7vrRWsRib5w8zRWmbBamiEYI66rxyeFVipFh+fLt2PPNp9ZmgTrHnvvJbZr5aMyzJsKGneWoogaShBx1eVD6mshsJJqc3vU0gkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIftfz/yDXJx7Nwb7hAAAAAElFTkSuQmCC"
+  },
+  {
+    "id": "c-atom-1",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Isoelectronic species are",
+    "options": [
+      "CO, CN⁻, NO⁺, C₂²⁻",
+      "CO⁻, CN, NO, C₂⁻",
+      "CO⁺, CN⁺, NO⁻, C₂",
+      "CO, CN, NO, C₂"
+    ],
+    "correct": 0,
+    "solution": "All four species — CO, CN⁻, NO⁺ and C₂²⁻ — contain 14 electrons each, so they are isoelectronic."
+  },
+  {
+    "id": "c-atom-2",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Atomic number and mass number of an element M are 25 and 52 respectively. The number of electrons, protons and neutrons in M²⁺ ion are respectively",
+    "options": [
+      "25, 25 and 27",
+      "25, 27 and 25",
+      "27, 25 and 27",
+      "23, 25 and 27"
+    ],
+    "correct": 3,
+    "solution": "Protons = atomic number = 25. Neutrons = mass number − atomic number = 52 − 25 = 27. The neutral atom has 25 electrons, but the 2+ ion has lost 2 electrons, leaving 23."
+  },
+  {
+    "id": "c-atom-3",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Calculate the energy in joule corresponding to light of wavelength 45 nm: (Planck's constant h = 6.63 × 10⁻³⁴ Js; speed of light c = 3 × 10⁸ ms⁻¹)",
+    "options": [
+      "6.67 × 10¹⁵",
+      "6.67 × 10¹¹",
+      "4.42 × 10⁻¹⁵",
+      "4.42 × 10⁻¹⁸"
+    ],
+    "correct": 3,
+    "solution": "E = hc/λ = (6.63×10⁻³⁴ × 3×10⁸)/(45×10⁻⁹) = 4.42×10⁻¹⁸ J."
+  },
+  {
+    "id": "c-atom-4",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "For the photoelectric effect, four graphs are drawn: (I) photoelectric current vs intensity of incident light, (II) kinetic energy of photoelectron vs frequency of incident light, (III) photoelectric current vs frequency of incident light, (IV) number of photoelectrons emitted vs intensity of incident light. Which pair of graphs is correctly drawn?",
+    "options": [
+      "I and III",
+      "II and IV",
+      "I and II",
+      "III and IV"
+    ],
+    "correct": 1,
+    "solution": "Kinetic energy varies linearly with frequency above the threshold frequency (graph II), and the number of photoelectrons emitted increases linearly with intensity (graph IV)."
+  },
+  {
+    "id": "c-atom-5",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The number of photons of light of wavelength 7000 Å equivalent to 1 J are",
+    "options": [
+      "3.52 × 10⁻¹⁸",
+      "3.52 × 10¹⁸",
+      "50,000",
+      "10,00,000"
+    ],
+    "correct": 1,
+    "solution": "Energy per photon = hc/λ = (6.6×10⁻³⁴ × 3×10⁸)/(7000×10⁻¹⁰) ≈ 2.83×10⁻¹⁹ J. Number of photons for 1 J = 1/2.83×10⁻¹⁹ ≈ 3.5×10¹⁸."
+  },
+  {
+    "id": "c-atom-6",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The threshold energy is given as E₀ and radiation of energy E falls on metal, then K.E. is given as",
+    "options": [
+      "(E + E₀)/2",
+      "E − E₀",
+      "E₀ − E",
+      "E/E₀"
+    ],
+    "correct": 1,
+    "solution": "Incident energy equals threshold energy plus kinetic energy: E = E₀ + K.E., so K.E. = E − E₀."
+  },
+  {
+    "id": "c-atom-7",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "According to Bohr's theory, angular momentum of an electron in 6th orbit is",
+    "options": [
+      "2.5 h/π",
+      "6 h/π",
+      "3 h/π",
+      "2.5h/2"
+    ],
+    "correct": 2,
+    "solution": "Angular momentum mvr = nh/2π. For n = 6, this gives 6h/2π = 3h/π."
+  },
+  {
+    "id": "c-atom-8",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The time taken by the electron in one complete revolution in the nth Bohr's orbit of the hydrogen atom is",
+    "options": [
+      "Inversely proportional to n²",
+      "Directly proportional to n³",
+      "Directly proportional to h/2π",
+      "Inversely proportional to n/h"
+    ],
+    "correct": 1,
+    "solution": "Time period = circumference/velocity = 2πr/v. Since r ∝ n² and v ∝ 1/n, the time period is proportional to n³."
+  },
+  {
+    "id": "c-atom-9",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The energy of second Bohr orbit of the hydrogen atom is −328 kJ mol⁻¹; hence the energy of fourth Bohr orbit would be",
+    "options": [
+      "−41 kJ mol⁻¹",
+      "−1312 kJ mol⁻¹",
+      "−164 kJ mol⁻¹",
+      "−82 kJ mol⁻¹"
+    ],
+    "correct": 3,
+    "solution": "Eₙ = −1312/n² kJ/mol for hydrogen. This gives E₂ = −328 kJ/mol (confirms the constant). E₄ = −1312/16 = −82 kJ/mol."
+  },
+  {
+    "id": "c-atom-10",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The Bohr orbit radius for the hydrogen atom (n = 1) is approximately 0.530 Å. The radius for the first excited state (n = 2) orbit is (in Å)",
+    "options": [
+      "4.77",
+      "1.06",
+      "0.13",
+      "2.12"
+    ],
+    "correct": 3,
+    "solution": "rₙ = r₀n²/Z. For n = 2, Z = 1: r = 0.53 × 4 = 2.12 Å."
+  },
+  {
+    "id": "c-atom-11",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Which of the following is not among shortcomings of Bohr's model?",
+    "options": [
+      "Bohr theory could not account for the fine lines in the atomic spectrum",
+      "Bohr theory was unable to account for the splitting of the spectral lines in the presence of magnetic field",
+      "Bohr theory failed for He atom",
+      "It did not give information about energy level"
+    ],
+    "correct": 3,
+    "solution": "Bohr's model does quantize and describe electron energy levels — that is one of its successes, not a shortcoming."
+  },
+  {
+    "id": "c-atom-12",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The radius of hydrogen atom in the ground state is 0.53 Å. The radius of Li²⁺ ion (atomic number = 3) in a similar state is",
+    "options": [
+      "0.53 Å",
+      "1.06 Å",
+      "0.17 Å",
+      "0.265 Å"
+    ],
+    "correct": 2,
+    "solution": "rₙ = r₀n²/Z. For Li²⁺, Z = 3, n = 1: r = 0.53/3 ≈ 0.17 Å."
+  },
+  {
+    "id": "c-atom-13",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Based on the equation E = −2.178 × 10⁻¹⁸ J (Z²/n²), certain conclusions are written. Which of them is not correct?",
+    "options": [
+      "Larger the value of n, the larger is the orbit radius",
+      "Equation can be used to calculate the change in energy when the electron changes orbit",
+      "For n = 1, the electron has a more negative energy than it does for n = 6, which means that the electron is more loosely bound in the smallest allowed orbit",
+      "The negative sign in the equation simply means that the energy of electron bound to the nucleus is lower than it would be if the electron were at infinite distance from the nucleus"
+    ],
+    "correct": 2,
+    "solution": "A more negative energy at n = 1 means the electron is more tightly bound, not more loosely bound, so this statement is incorrect."
+  },
+  {
+    "id": "c-atom-14",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "What will be the longest wavelength line in the Balmer series of spectrum of H-atom?",
+    "options": [
+      "546 nm",
+      "656 nm",
+      "566 nm",
+      "556 nm"
+    ],
+    "correct": 1,
+    "solution": "The longest wavelength Balmer line corresponds to the n = 3 → n = 2 transition, which is the Hα line at about 656 nm."
+  },
+  {
+    "id": "c-atom-15",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "What will be the ratio of the wavelength of the first line to that of the second line of Paschen series of H atom?",
+    "options": [
+      "256 : 175",
+      "175 : 256",
+      "15 : 16",
+      "24 : 27"
+    ],
+    "correct": 0,
+    "solution": "For the first Paschen line (n=4→3), 1/λ₁ = R(1/9 − 1/16); for the second (n=5→3), 1/λ₂ = R(1/9 − 1/25). Computing the ratio λ₁ : λ₂ gives 256 : 175."
+  },
+  {
+    "id": "c-atom-16",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Number of spectral lines in Balmer series when an electron returns from 7th orbit to 1st orbit of hydrogen atom are",
+    "options": [
+      "5",
+      "6",
+      "21",
+      "15"
+    ],
+    "correct": 0,
+    "solution": "Balmer series lines are only those ending at n = 2. Starting from n = 7 down to n = 2, that gives 5 possible transitions (7→2, 6→2, 5→2, 4→2, 3→2)."
+  },
+  {
+    "id": "c-atom-17",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "If the energy difference between the ground state and excited state of an atom is 4.4 × 10⁻¹⁹ J, the wavelength of photon required to produce this transition is",
+    "options": [
+      "4.5 × 10⁻⁷ m",
+      "4.5 × 10² nm",
+      "4.5 × 10⁻⁷ Å",
+      "4.5 × 10⁻⁷ cm"
+    ],
+    "correct": 0,
+    "solution": "λ = hc/ΔE = (6.6×10⁻³⁴ × 3×10⁸)/(4.4×10⁻¹⁹) = 4.5×10⁻⁷ m."
+  },
+  {
+    "id": "c-atom-18",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Total number of spectral lines in UV region, during transition from 5th excited state to 1st excited state",
+    "options": [
+      "10",
+      "3",
+      "4",
+      "Zero"
+    ],
+    "correct": 3,
+    "solution": "1st excited state is n = 2 and 5th excited state is n = 6. UV (Lyman) lines require a transition ending at n = 1, but here the lower level is n = 2, so no Lyman lines are produced — the answer is zero."
+  },
+  {
+    "id": "c-atom-19",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "For the transition from n = 2 to n = 1, which of the following will produce the shortest wavelength?",
+    "options": [
+      "H atom",
+      "D atom",
+      "He⁺ ion",
+      "Li²⁺ ion"
+    ],
+    "correct": 3,
+    "solution": "1/λ ∝ Z². Li²⁺ has the highest nuclear charge (Z = 3) among the options, so it produces the shortest wavelength."
+  },
+  {
+    "id": "c-atom-20",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The frequency of a wave is 6 × 10¹⁵ s⁻¹. Its wave number would be",
+    "options": [
+      "10⁵ cm⁻¹",
+      "2 × 10⁷ m⁻¹",
+      "2 × 10⁷ cm⁻¹",
+      "2 × 10⁵ cm⁻¹"
+    ],
+    "correct": 1,
+    "solution": "Wave number = frequency/speed of light = (6×10¹⁵)/(3×10⁸) = 2×10⁷ m⁻¹."
+  },
+  {
+    "id": "c-atom-21",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The frequency of radiation emitted when the electron falls from n = 4 to n = 1 in a hydrogen atom will be (Given ionization energy of H = 2.18 × 10⁻¹⁸ J atom⁻¹ and h = 6.625 × 10⁻³⁴ Js)",
+    "options": [
+      "1.54 × 10¹⁵ s⁻¹",
+      "1.03 × 10¹⁵ s⁻¹",
+      "3.08 × 10¹⁵ s⁻¹",
+      "2.00 × 10¹⁵ s⁻¹"
+    ],
+    "correct": 2,
+    "solution": "ΔE = 2.18×10⁻¹⁸ × (1 − 1/16) = 2.18×10⁻¹⁸ × 15/16 J. Frequency = ΔE/h ≈ 3.08×10¹⁵ s⁻¹."
+  },
+  {
+    "id": "c-atom-22",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Which transition of Li²⁺ is associated with same energy change as n = 6 to n = 4 transition in He⁺?",
+    "options": [
+      "n = 3 to n = 1",
+      "n = 8 to n = 6",
+      "n = 9 to n = 6",
+      "n = 2 to n = 1"
+    ],
+    "correct": 2,
+    "solution": "Matching the (1/n₁² − 1/n₂²)×Z² term for He⁺ (Z=2, n=6→4) with Li²⁺ (Z=3) is satisfied when the Li²⁺ transition is n = 9 to n = 6."
+  },
+  {
+    "id": "c-atom-23",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Zeeman effect refers to the",
+    "options": [
+      "Splitting of the spectral lines in a magnetic field",
+      "Splitting up of the spectral lines in an electrostatic field",
+      "Emission of electrons from metals when light falls on it",
+      "Random scattering of α-particles by gold foil"
+    ],
+    "correct": 0,
+    "solution": "The Zeeman effect is the splitting of spectral lines when the source is placed in a magnetic field."
+  },
+  {
+    "id": "c-atom-24",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The momentum of a particle which has a de-Broglie wavelength of 0.1 nm is",
+    "options": [
+      "3.2 × 10⁻²⁴ kg ms⁻¹",
+      "4.3 × 10⁻²² kg ms⁻¹",
+      "5.3 × 10⁻²² kg ms⁻¹",
+      "6.6 × 10⁻²⁴ kg ms⁻¹"
+    ],
+    "correct": 3,
+    "solution": "p = h/λ = (6.6×10⁻³⁴)/(0.1×10⁻⁹) = 6.6×10⁻²⁴ kg ms⁻¹."
+  },
+  {
+    "id": "c-atom-25",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The energies E₁ and E₂ of two radiations are 25 eV and 50 eV respectively. The relation between their wavelengths λ₁ and λ₂ will be",
+    "options": [
+      "λ₁ = (1/2)λ₂",
+      "λ₁ = λ₂",
+      "λ₁ = 2λ₂",
+      "λ₁ = 4λ₂"
+    ],
+    "correct": 2,
+    "solution": "Since λ = hc/E, λ₁/λ₂ = E₂/E₁ = 50/25 = 2, so λ₁ = 2λ₂."
+  },
+  {
+    "id": "c-atom-26",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The de-Broglie wavelength of a particle with mass 1 g and velocity 100 m/s is",
+    "options": [
+      "6.63 × 10⁻³⁵ m",
+      "6.63 × 10⁻³⁴ m",
+      "6.63 × 10⁻³³ m",
+      "6.65 × 10⁻³⁵ m"
+    ],
+    "correct": 2,
+    "solution": "λ = h/mv = (6.6×10⁻³⁴)/(0.001 × 100) = 6.6×10⁻³³ m."
+  },
+  {
+    "id": "c-atom-27",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The wavelength associated with a ball of 200 g and moving with a speed of 5 m/hour is of the order of",
+    "options": [
+      "10⁻¹⁰ m",
+      "10⁻²⁰ m",
+      "10⁻³⁰ m",
+      "10⁻⁴⁰ m"
+    ],
+    "correct": 2,
+    "solution": "Converting speed to 5/3600 m/s and using λ = h/mv gives a value on the order of 10⁻³⁰ m."
+  },
+  {
+    "id": "c-atom-28",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The uncertainty in velocity of an electron present in the nucleus of diameter 10⁻¹⁵ m hypothetically should be approximately",
+    "options": [
+      "10⁻¹¹ m/s",
+      "10⁸ m/s",
+      "10¹¹ m/s",
+      "10 Å/s"
+    ],
+    "correct": 2,
+    "solution": "Using Δx·Δv ≈ h/(4πm) with Δx = 10⁻¹⁵ m and electron mass, the calculated uncertainty in velocity comes out on the order of 10¹¹ m/s."
+  },
+  {
+    "id": "c-atom-29",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The uncertainty in momentum of an electron is 1 × 10⁻⁵ kg-m/s. The uncertainty in its position will be (h = 6.62 × 10⁻³⁴ kg-m²/s)",
+    "options": [
+      "5.27 × 10⁻³⁰ m",
+      "1.05 × 10⁻²⁶ m",
+      "1.05 × 10⁻²⁸ m",
+      "5.25 × 10⁻²⁸ m"
+    ],
+    "correct": 0,
+    "solution": "Δx = h/(4πΔp) = (6.6×10⁻³⁴)/(4π × 10⁻⁵) ≈ 5.27×10⁻³⁰ m."
+  },
+  {
+    "id": "c-atom-30",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The measurement of the electron's position is associated with an uncertainty in momentum, which is equal to 1 × 10⁻¹⁸ g cm/s. The uncertainty in electron velocity is (Mass of an electron is 9 × 10⁻²⁸ g)",
+    "options": [
+      "1 × 10¹¹ cm s⁻¹",
+      "1 × 10⁹ cm s⁻¹",
+      "1 × 10⁶ cm s⁻¹",
+      "1 × 10⁵ cm s⁻¹"
+    ],
+    "correct": 1,
+    "solution": "Δv = Δp/m = (1×10⁻¹⁸)/(9×10⁻²⁸) ≈ 1×10⁹ cm/s."
+  },
+  {
+    "id": "c-atom-31",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Uncertainty in position of an electron (mass = 9.1 × 10⁻²⁸ g) moving with a velocity of 3 × 10⁴ cm/s accurate up to 0.001% will be (use h/4π in the uncertainty expression where h = 6.626 × 10⁻²⁷ erg-s)",
+    "options": [
+      "5.76 cm",
+      "7.68 cm",
+      "1.93 cm",
+      "3.84 cm"
+    ],
+    "correct": 2,
+    "solution": "Δv = 0.001% of 3×10⁴ = 0.3 cm/s. Δx = h/(4πmΔv), which evaluates to approximately 1.93 cm."
+  },
+  {
+    "id": "c-atom-32",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "How many 3d electrons can have spin quantum number −1/2?",
+    "options": [
+      "5",
+      "7",
+      "8",
+      "10"
+    ],
+    "correct": 0,
+    "solution": "The 3d subshell can hold a maximum of 10 electrons, distributed as 5 with spin +1/2 and 5 with spin −1/2."
+  },
+  {
+    "id": "c-atom-33",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Which of the following set of quantum numbers is possible?",
+    "options": [
+      "n = 4, l = 2, m = −2, s = −2",
+      "n = 4, l = 4, m = 0, s = 1/2",
+      "n = 4, l = 3, m = −3, s = 1/2",
+      "n = 4, l = 0, m = 0, s = 0"
+    ],
+    "correct": 2,
+    "solution": "n = 4, l = 3, m = −3, s = 1/2 satisfies all quantum number rules (l < n, m between −l and +l, s = ±1/2), so it is valid."
+  },
+  {
+    "id": "c-atom-34",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Which of the following statements concerning the four quantum numbers is incorrect?",
+    "options": [
+      "n gives the size of an orbital",
+      "l gives the shape of an orbital",
+      "m gives the energy of the electron in orbital",
+      "s gives the direction of spin of electron in the orbital"
+    ],
+    "correct": 2,
+    "solution": "The magnetic quantum number m gives the orientation of an orbital, not the energy of the electron, so this statement is incorrect."
+  },
+  {
+    "id": "c-atom-35",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "For which of the following sets of four quantum numbers will an electron have the highest energy?",
+    "options": [
+      "n=3, l=2, m=1, s=+1/2",
+      "n=4, l=2, m=1, s=+1/2",
+      "n=4, l=1, m=0, s=−1/2",
+      "n=5, l=0, m=0, s=−1/2"
+    ],
+    "correct": 1,
+    "solution": "Energy depends on (n + l); higher (n + l) means higher energy. Option (b) gives n + l = 4 + 2 = 6, the highest among the four sets."
+  },
+  {
+    "id": "c-atom-36",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Which combination of quantum numbers n, l, m and s for the electron in an atom does not provide a permissible solution of the wave equation?",
+    "options": [
+      "3, 2, −2, 1/2",
+      "3, 3, 1, 1/2",
+      "3, 2, 1, 1/2",
+      "3, 1, 1, 1/2"
+    ],
+    "correct": 1,
+    "solution": "The azimuthal quantum number l can never equal n (l can range only from 0 to n−1), so l = 3 when n = 3 is not permissible."
+  },
+  {
+    "id": "c-atom-37",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "In any sub-shell, the maximum number of electrons having the same value of spin quantum number is",
+    "options": [
+      "√(l(l+1))",
+      "l + 2",
+      "2l + 1",
+      "4l + 2"
+    ],
+    "correct": 2,
+    "solution": "A subshell holds a maximum of 2(2l+1) electrons total, split equally between the two spin states, giving (2l+1) electrons of the same spin."
+  },
+  {
+    "id": "c-atom-38",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "What is the maximum number of orbitals that can be identified with the quantum numbers n = 3, l = 1, mₗ = 0?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": 0,
+    "solution": "Specifying n, l and mₗ together uniquely identifies exactly one orbital."
+  },
+  {
+    "id": "c-atom-39",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The correct set of four quantum numbers for the valence electron of rubidium atom (Z = 37) is",
+    "options": [
+      "5, 0, 0, 1/2",
+      "5, 1, 0, 1/2",
+      "5, 1, 1, 1/2",
+      "6, 0, 0, 1/2"
+    ],
+    "correct": 0,
+    "solution": "Rubidium's configuration ends in 5s¹, so the valence electron has n = 5, l = 0, m = 0, s = +1/2."
+  },
+  {
+    "id": "c-atom-40",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Assertion: The energy of an electron is largely determined by its principal quantum number. Reason: The principal quantum number is a measure of the most probable distance of finding the electron around the nucleus.",
+    "options": [
+      "If both assertion and reason are true and the reason is the correct explanation of the assertion.",
+      "If both assertion and reason are true but the reason is not the correct explanation of the assertion.",
+      "If assertion is true but reason is false.",
+      "If the assertion and reason both are false."
+    ],
+    "correct": 0,
+    "solution": "Both statements are true, and the principal quantum number determining the average distance from the nucleus correctly explains why it largely determines the electron's energy."
+  },
+  {
+    "id": "c-atom-41",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Assertion: Two electrons in an atom can have the same values of all four quantum numbers. Reason: Two electrons in an atom can be present in the same shell, sub-shell and orbital and have the same spin.",
+    "options": [
+      "If both assertion and reason are true and the reason is the correct explanation of the assertion.",
+      "If both assertion and reason are true but the reason is not the correct explanation of the assertion.",
+      "If assertion is true but reason is false.",
+      "If the assertion and reason both are false."
+    ],
+    "correct": 3,
+    "solution": "By the Pauli exclusion principle, no two electrons in an atom can have the same set of all four quantum numbers, so both the assertion and the reason are false."
+  },
+  {
+    "id": "c-atom-42",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Maximum number of electrons in a subshell of an atom is determined by which of the following?",
+    "options": [
+      "2l + 1",
+      "4l − 2",
+      "2n²",
+      "4l + 2"
+    ],
+    "correct": 3,
+    "solution": "A subshell with azimuthal quantum number l can hold a maximum of (4l + 2) electrons."
+  },
+  {
+    "id": "c-atom-43",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Which of the following orbitals has all four lobes present on the axes?",
+    "options": [
+      "d_z²",
+      "d_xy",
+      "d_yz",
+      "d_x²−y²"
+    ],
+    "correct": 3,
+    "solution": "The dx²−y² orbital has its four lobes lying directly along the x and y axes, unlike dxy or dyz whose lobes lie between the axes."
+  },
+  {
+    "id": "c-atom-44",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Assertion: Threshold frequency is a characteristic for a metal. Reason: Threshold frequency is a maximum frequency required for the ejection of electron from the metal surface.",
+    "options": [
+      "If both assertion and reason are true and the reason is the correct explanation of the assertion.",
+      "If both assertion and reason are true but the reason is not the correct explanation of the assertion.",
+      "If assertion is true but reason is false.",
+      "If the assertion and reason both are false."
+    ],
+    "correct": 2,
+    "solution": "Threshold frequency is indeed characteristic of a metal (assertion true), but it is the minimum frequency needed to eject an electron, not the maximum, so the reason is false."
+  },
+  {
+    "id": "c-atom-45",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "According to Bohr's theory, match Column I with Column II. Column I: (A) Vₙ/Kₙ = ?, (B) If radius of nth orbit ∝ Eₓₙ, x = ?, (C) Angular momentum in lowest orbital, (D) 1/rₙ ∝ Zʸ, y = ?. Column II: p. 0, q. −1, r. −2, s. 1",
+    "options": [
+      "A-r, B-q, C-p, D-s",
+      "A-q, B-s, C-r, D-p",
+      "A-p, B-q, C-s, D-r",
+      "A-s, B-p, C-q, D-r"
+    ],
+    "correct": 0,
+    "solution": "Vₙ/Kₙ = −2 (r); radius ∝ E⁻¹ so x = −1 (q); angular momentum in the lowest orbital (1s, l=0) is zero (p); and 1/rₙ ∝ Z¹ so y = 1 (s). This matches A-r, B-q, C-p, D-s."
+  },
+  {
+    "id": "c-atom-46",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Statement I: The first ionisation energy of Be is greater than that of B. Statement II: 2p-orbital is lower in energy than 2s.",
+    "options": [
+      "Both Statement I and Statement II are correct; Statement II is the correct explanation of Statement I",
+      "Both Statement I and Statement II are correct; Statement II is not the correct explanation of Statement I",
+      "Statement I is correct; Statement II is incorrect",
+      "Statement I is incorrect; Statement II is correct"
+    ],
+    "correct": 2,
+    "solution": "Be (1s²2s²) has a stable filled 2s configuration, making it harder to remove an electron than from B (2p¹), so Statement I is correct. Statement II is false since 2s is always lower in energy than 2p (Aufbau principle)."
+  },
+  {
+    "id": "c-atom-47",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "If the de-Broglie wavelength of the electron in nth Bohr orbit in a hydrogenic atom is equal to 1.5 a₀ (a₀ is Bohr radius), then the value of n/Z is",
+    "options": [
+      "1.0",
+      "0.75",
+      "0.40",
+      "1.50"
+    ],
+    "correct": 1,
+    "solution": "Setting the de-Broglie wavelength condition 2πr = nλ with r = a₀n²/Z and λ = 1.5a₀ gives n/Z = 0.75."
+  },
+  {
+    "id": "c-atom-48",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The radius of the second Bohr orbit for hydrogen atom is (Planck's constant h = 6.6262 × 10⁻³⁴ Js; mass of electron = 9.1091 × 10⁻³¹ kg; charge of electron e = 1.60210 × 10⁻¹⁹ C; permittivity of vacuum ε₀ = 8.85418 × 10⁻¹² kg⁻¹m⁻³A²s⁴)",
+    "options": [
+      "1.65 Å",
+      "4.76 Å",
+      "0.529 Å",
+      "2.12 Å"
+    ],
+    "correct": 3,
+    "solution": "Using the Bohr radius formula rₙ = n²h²ε₀/(πme²Z) with n = 2 gives a radius of 2.12 Å for hydrogen."
+  },
+  {
+    "id": "c-atom-49",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "Energy of an electron is given by E = −2.178 × 10⁻¹⁸ J (Z²/n²). What is the wavelength of light required to excite an electron in a hydrogen atom from level n = 1 to n = 2? (h = 6.62 × 10⁻³⁴ Js and c = 3.0 × 10⁸ ms⁻¹)",
+    "options": [
+      "1.214 × 10⁻⁷ m",
+      "2.816 × 10⁻⁷ m",
+      "6.500 × 10⁻⁷ m",
+      "8.500 × 10⁻⁷ m"
+    ],
+    "correct": 0,
+    "solution": "E₁ = −2.178×10⁻¹⁸ J and E₂ = −2.178×10⁻¹⁸/4 J. ΔE = 2.178×10⁻¹⁸ × (1 − 1/4) = 1.6335×10⁻¹⁸ J. λ = hc/ΔE ≈ 1.214×10⁻⁷ m."
+  },
+  {
+    "id": "c-atom-50",
+    "subject": "chem",
+    "chapter": "structure-of-atom",
+    "source": "NEET Premium by Arnab — Atomic Structure",
+    "question": "The kinetic energy of an electron in the second Bohr orbit of a hydrogen atom is [a₀ is Bohr radius]",
+    "options": [
+      "h²/(4π²ma₀²)",
+      "h²/(π²ma₀²)",
+      "h²/(32π²ma₀²)",
+      "h²/(2π²ma₀²)"
+    ],
+    "correct": 2,
+    "solution": "From mvr = nh/2π and r = n²a₀, kinetic energy KE = n²h²/(8π²r²m) = h²/(8π²n²a₀²m). Substituting n = 2 gives KE = h²/(32π²ma₀²)."
+  },
+  {
+    "id": "b-plant-1",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg29",
+    "question": "Artificial classification system is based on –",
+    "options": [
+      "Mainly on vegetative character and on the androecium structure",
+      "Ultrastructure, anatomical, embryological characters",
+      "External and internal features",
+      "Chromosome number"
+    ],
+    "correct": 0,
+    "solution": "the artificial system of classification (e.g. Linnaeus) was based mainly on vegetative characters or on the structure of the androecium."
+  },
+  {
+    "id": "b-plant-2",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg30",
+    "question": "George Bentham and Joseph Dalton Hooker gave –",
+    "options": [
+      "Artificial classification system",
+      "Phylogenetic classification",
+      "Natural classification system",
+      "A and B respectively"
+    ],
+    "correct": 2,
+    "solution": "Bentham and Hooker devised the Natural System of classification, based on natural affinities among organisms."
+  },
+  {
+    "id": "b-plant-3",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg30",
+    "question": "Choose the incorrectly matched option:",
+    "options": [
+      "Numerical taxonomy – Number and codes are assigned to characters and data processed by computers",
+      "Cytotaxonomy – Based on cytological information",
+      "Chemotaxonomy – Based on phytochemistry",
+      "Natural classification – Linnaeus"
+    ],
+    "correct": 3,
+    "solution": "Natural classification was given by Bentham and Hooker, not Linnaeus. Linnaeus is associated with the artificial system."
+  },
+  {
+    "id": "b-plant-4",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg30",
+    "question": "Phylogenetic classification –",
+    "options": [
+      "Based on evolutionary relationship",
+      "Assumes organisms of some taxa don't share a common ancestor",
+      "Gives equal weightage to vegetative & sexual characters but not evolutionary relationship",
+      "A and B both"
+    ],
+    "correct": 0,
+    "solution": "Phylogenetic classification is based on evolutionary relationships and common ancestry between organisms, unlike option B which contradicts this idea, and option C which describes natural classification."
+  },
+  {
+    "id": "b-plant-5",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg30",
+    "question": "Blue-green algae are placed in which kingdom according to R.H. Whittaker?",
+    "options": [
+      "Monera",
+      "Protista",
+      "Fungi",
+      "Plantae"
+    ],
+    "correct": 0,
+    "solution": "Blue-green algae (cyanobacteria) are prokaryotic and hence placed in kingdom Monera in Whittaker's five kingdom classification."
+  },
+  {
+    "id": "b-plant-6",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg30",
+    "question": "Choose the correct statement about algae:",
+    "options": [
+      "Algae are chlorophyllous, autotrophic members of Plantae",
+      "Some algae occur in association with fungi and on sloth bear",
+      "The plant body of algae lacks root, stem, leaf",
+      "All of these"
+    ],
+    "correct": 3,
+    "solution": "All three statements are true of algae — they are autotrophic, chlorophyllous, thalloid (lacking true root/stem/leaf), and some show symbiotic associations."
+  },
+  {
+    "id": "b-plant-7",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg30",
+    "question": "Colonial form of alga is –",
+    "options": [
+      "Ulothrix",
+      "Volvox",
+      "Kelp",
+      "Spirogyra"
+    ],
+    "correct": 1,
+    "solution": "Volvox is a well-known colonial green alga, unlike Ulothrix (filamentous) and Spirogyra (filamentous)."
+  },
+  {
+    "id": "b-plant-8",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg30",
+    "question": "Zoospore is –",
+    "options": [
+      "Sexual spore in algae",
+      "Asexual spore in algae",
+      "Develops in zoosporangium in number of four",
+      "Non-flagellated spore"
+    ],
+    "correct": 1,
+    "solution": "Zoospores are flagellated, motile asexual spores produced by algae for vegetative/asexual reproduction."
+  },
+  {
+    "id": "b-plant-9",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg30",
+    "question": "Fusion between one large static female gamete and a smaller motile male gamete is termed as ___, as seen in ___.",
+    "options": [
+      "Isogamous, Spirogyra",
+      "Oogamous, Volvox",
+      "Anisogamous, Fucus",
+      "Oogamous, Ulothrix"
+    ],
+    "correct": 1,
+    "solution": "This describes oogamous reproduction, exemplified by Volvox."
+  },
+  {
+    "id": "b-plant-10",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg30",
+    "question": "Eudorina shows –",
+    "options": [
+      "Fusion of flagellated similar-size gametes",
+      "Fusion of non-flagellated similar-size gametes",
+      "Oogamous reproduction",
+      "Anisogamous reproduction"
+    ],
+    "correct": 3,
+    "solution": "As per the standard classification of sexual reproduction types in algae, Eudorina is an example of anisogamous reproduction."
+  },
+  {
+    "id": "b-plant-11",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg31",
+    "question": "How many of the following are examples of isogamous reproduction: Ulothrix, Spirogyra, Volvox, Fucus, Polysiphonia?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": 1,
+    "solution": "Ulothrix and Spirogyra reproduce isogamously; Volvox and Fucus are oogamous, so the count is 2."
+  },
+  {
+    "id": "b-plant-12",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg32",
+    "question": "Algae are useful to man in–",
+    "options": [
+      "Fixation of almost half of total CO2 on earth",
+      "Being a primary producer",
+      "Increasing level of oxygen",
+      "All of these"
+    ],
+    "correct": 3,
+    "solution": "Algae contribute significantly to carbon fixation, act as primary producers of aquatic food chains, and release oxygen through photosynthesis."
+  },
+  {
+    "id": "b-plant-13",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg32",
+    "question": "Hydrocolloids are produced by –",
+    "options": [
+      "Brown algae (algin), carrageen (red algae), Agar (brown algae)",
+      "Brown algae (algin), Red algae (carrageenan)",
+      "Brown algae (algin, agar), Red algae (carrageenan)",
+      "None of these"
+    ],
+    "correct": 1,
+    "solution": "algin is obtained from brown algae while carrageenan (and agar) are obtained from red algae, not brown algae."
+  },
+  {
+    "id": "b-plant-14",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg32",
+    "question": "Choose the correct statement –",
+    "options": [
+      "Chlorella, a multicellular alga rich in protein",
+      "Chlorella & Spirulina are astronaut food due to high carbohydrate, vitamin, mineral content but less protein",
+      "The product obtained from Gracilaria is used to grow microbes",
+      "Laminaria, Sargassum are members of Rhodophyceae used as food"
+    ],
+    "correct": 2,
+    "solution": "Agar, obtained from red algae like Gelidium and Gracilaria, is used to grow micro-organisms. Chlorella is unicellular and protein-rich; Laminaria and Sargassum belong to Phaeophyceae, not Rhodophyceae."
+  },
+  {
+    "id": "b-plant-15",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg32",
+    "question": "Chlorophyceae are commonly called as-",
+    "options": [
+      "Green algae",
+      "Blue-green algae",
+      "Brown algae",
+      "Red algae"
+    ],
+    "correct": 0,
+    "solution": "Chlorophyceae members are commonly known as green algae due to dominant chlorophyll a and b pigments."
+  },
+  {
+    "id": "b-plant-16",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg32",
+    "question": "Major pigments of Chlamydomonas –",
+    "options": [
+      "Chlorophyll a, b",
+      "Chlorophyll a, c",
+      "Chlorophyll a, d",
+      "Fucoxanthin, phycoerythrin"
+    ],
+    "correct": 0,
+    "solution": "Chlorophyceae members like Chlamydomonas contain chlorophyll a and b as major pigments."
+  },
+  {
+    "id": "b-plant-17",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg32",
+    "question": "Choose the incorrect statement about green algae-",
+    "options": [
+      "The chlorophyll is localised in definite chloroplasts",
+      "Spirogyra has spiral chloroplast",
+      "Most members have one or more storage bodies i.e. pyrenoids localised in the chloroplast",
+      "The cell wall is made of an outer layer of cellulose and inner layer of pectose"
+    ],
+    "correct": 3,
+    "solution": "the cell wall in green algae has an inner layer of cellulose and outer layer of pectose/mannan — the order in option D is reversed, making it incorrect."
+  },
+  {
+    "id": "b-plant-18",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg32",
+    "question": "Reproduction in green algae is/are –",
+    "options": [
+      "Isogamous",
+      "Anisogamous",
+      "Oogamous",
+      "All of these"
+    ],
+    "correct": 3,
+    "solution": "Green algae show all three types of sexual reproduction: isogamous, anisogamous, and oogamous, depending on the genus."
+  },
+  {
+    "id": "b-plant-19",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg32",
+    "question": "Chara is –",
+    "options": [
+      "Common stonewort",
+      "Marine green algae",
+      "Unisexual algae",
+      "None of these"
+    ],
+    "correct": 0,
+    "solution": "Chara is commonly called stonewort, a well-known freshwater green alga."
+  },
+  {
+    "id": "b-plant-20",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg32",
+    "question": "Flagellation in green algae is –",
+    "options": [
+      "2–8, equal, apical",
+      "2, unequal, lateral",
+      "2–8, unequal, lateral",
+      "Absent"
+    ],
+    "correct": 0,
+    "solution": "Green algae typically have 2 to 8 flagella that are equal in size and apically inserted."
+  },
+  {
+    "id": "b-plant-21",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg32",
+    "question": "Phaeophyceae is commonly named as –",
+    "options": [
+      "Green alga",
+      "Brown alga",
+      "Red algae",
+      "None"
+    ],
+    "correct": 1,
+    "solution": "Phaeophyceae members are commonly called brown algae due to the dominant pigment fucoxanthin."
+  },
+  {
+    "id": "b-plant-22",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg32",
+    "question": "Choose the correct statement from the following –",
+    "options": [
+      "Ectocarpus is filamentous while kelps are profusely branched",
+      "Kelps may reach an average height of 100 cm",
+      "The plant body of brown algae is attached to substratum by a stripe",
+      "The leaf-like photosynthetic organ of brown algae is called a stripe"
+    ],
+    "correct": 0,
+    "solution": "Ectocarpus is a filamentous brown alga while kelps show profuse branching; kelps can reach up to 100 metres (not cm), attachment is via a holdfast, and the leaf-like organ is called lamina."
+  },
+  {
+    "id": "b-plant-23",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg32",
+    "question": "Major pigments found in Fucus are –",
+    "options": [
+      "Chlorophyll a, c",
+      "Chlorophyll a, d",
+      "Chlorophyll a, b",
+      "Fucoxanthin and phycoerythrin"
+    ],
+    "correct": 0,
+    "solution": "Phaeophyceae members like Fucus contain chlorophyll a and c along with fucoxanthin as accessory pigment."
+  },
+  {
+    "id": "b-plant-24",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg32",
+    "question": "The colour of brown algae depends upon –",
+    "options": [
+      "Amount of xanthophyll",
+      "Fucoxanthin present in them",
+      "Ratio of phycoerythrin and fucoxanthin",
+      "A & B both"
+    ],
+    "correct": 3,
+    "solution": "The brown colour is due to the xanthophyll pigment fucoxanthin present in varying amounts."
+  },
+  {
+    "id": "b-plant-25",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg32",
+    "question": "Choose the correct statement about the cell of brown algae –",
+    "options": [
+      "Cellulosic cell wall covered outside by a gelatinous coating of algin",
+      "Cellulosic cell wall with pectin and polysulphate esters",
+      "They have two flagella, equal-sized and laterally inserted",
+      "A and C both"
+    ],
+    "correct": 0,
+    "solution": "The cell wall of brown algae is cellulosic and covered externally by algin; flagella are unequal (not equal) in size and laterally inserted."
+  },
+  {
+    "id": "b-plant-26",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg33",
+    "question": "Dictyota is a member of –",
+    "options": [
+      "Same group as Ectocarpus, Gelidium, Fucus",
+      "Same group as those having Laminaria or mannitol as stored food",
+      "Same group as Laminaria, Porphyra, Fucus",
+      "Same group as those having phycoerythrin as accessory pigment"
+    ],
+    "correct": 1,
+    "solution": "Dictyota belongs to Phaeophyceae, which stores food as laminarin/mannitol, similar to Laminaria."
+  },
+  {
+    "id": "b-plant-27",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg33",
+    "question": "Gametes of Sargassum are-",
+    "options": [
+      "Pyriform",
+      "Cup-shaped",
+      "Ribbon-shaped",
+      "Discoid"
+    ],
+    "correct": 0,
+    "solution": "Sargassum, being oogamous, produces pyriform (pear-shaped) male gametes."
+  },
+  {
+    "id": "b-plant-28",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg33",
+    "question": "Rhodophyceae is called red algae because of –",
+    "options": [
+      "Predominance of red pigment",
+      "Abundance of r-phycoerythrin",
+      "A & B both",
+      "None of these"
+    ],
+    "correct": 2,
+    "solution": "Red algae get their colour from the predominant red pigment r-phycoerythrin."
+  },
+  {
+    "id": "b-plant-29",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg33",
+    "question": "The stored food in Polysiphonia is ___A___, which is very similar to ___B___ and ___C___ in structure.",
+    "options": [
+      "A = floridean starch, B = amylopectin, C = glycogen",
+      "A = floridean starch, B = chitin, C = glycogen",
+      "A = mannitol, B = floridean starch, C = amylopectin",
+      "None of these"
+    ],
+    "correct": 0,
+    "solution": "red algae store food as floridean starch, which is structurally similar to amylopectin and glycogen."
+  },
+  {
+    "id": "b-plant-30",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg33",
+    "question": "Members of Rhodophyceae reproduce by–",
+    "options": [
+      "Non-motile asexual spores and motile sexual gametes",
+      "Motile asexual spores and motile sexual gametes",
+      "Non-motile asexual spores and non-motile sexual gametes",
+      "Motile asexual spores and non-motile sexual gametes"
+    ],
+    "correct": 2,
+    "solution": "Red algae lack flagellated stages entirely — both their asexual spores and sexual gametes are non-motile."
+  },
+  {
+    "id": "b-plant-31",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg34",
+    "question": "Porphyra shows –",
+    "options": [
+      "Isogamous",
+      "Anisogamous",
+      "Oogamous",
+      "All of these"
+    ],
+    "correct": 2,
+    "solution": "Porphyra, a red alga, exhibits oogamous type of sexual reproduction."
+  },
+  {
+    "id": "b-plant-32",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg34",
+    "question": "Bryophyta include –",
+    "options": [
+      "Hornwort",
+      "Liverwort",
+      "Mosses",
+      "All of these"
+    ],
+    "correct": 3,
+    "solution": "Bryophyta is divided into liverworts, mosses, and hornworts."
+  },
+  {
+    "id": "b-plant-33",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg35",
+    "question": "Bryophytes are –",
+    "options": [
+      "Amphibians of the plant kingdom",
+      "Reptilians of the plant kingdom",
+      "First vascular bundle-containing plants",
+      "A & C both"
+    ],
+    "correct": 0,
+    "solution": "Bryophytes are called amphibians of the plant kingdom because they need water for fertilization though the plant body can live on land."
+  },
+  {
+    "id": "b-plant-34",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg35",
+    "question": "The body organization of bryophytes –",
+    "options": [
+      "Has unicellular or multicellular rhizoids",
+      "Shows less differentiation than algae",
+      "Has true root, stem, and leaves",
+      "A & C both"
+    ],
+    "correct": 0,
+    "solution": "Bryophytes have rhizoids (unicellular or multicellular) instead of true roots, and show more differentiation than algae but lack true vascular tissue."
+  },
+  {
+    "id": "b-plant-35",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg35",
+    "question": "The main plant body of a bryophyte is ___A___ that produces ___B___.",
+    "options": [
+      "A = diploid, B = gametes",
+      "A = haploid, B = gametes",
+      "A = haploid, B = spores",
+      "A = diploid, B = spores"
+    ],
+    "correct": 1,
+    "solution": "The dominant gametophyte generation in bryophytes is haploid and produces gametes."
+  },
+  {
+    "id": "b-plant-36",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg35",
+    "question": "Choose the correct statement:",
+    "options": [
+      "Sex organs in bryophytes are unicellular and jacketed",
+      "Male sex organ is antheridium that produces biflagellate antherozoids",
+      "Female sex organ is archegonium, flask-shaped, producing a single egg",
+      "Water is required for travel of egg from archegonium to antheridium"
+    ],
+    "correct": 2,
+    "solution": "The archegonium is the flask-shaped female sex organ that produces a single egg; sex organs are actually multicellular and jacketed, and it is the antherozoid that travels to the archegonium (not the egg)."
+  },
+  {
+    "id": "b-plant-37",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg35",
+    "question": "In bryophytes, meiosis occurs –",
+    "options": [
+      "During development of gametes",
+      "Immediately after zygote formation",
+      "After some time following zygote formation",
+      "In the gametophytic stage"
+    ],
+    "correct": 1,
+    "solution": "In bryophytes, meiosis is zygotic — it occurs immediately after zygote formation, giving rise to haploid spores."
+  },
+  {
+    "id": "b-plant-38",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg35",
+    "question": "Choose the correct statement with regard to bryophyta:",
+    "options": [
+      "Sporophyte is free-living but attached to photosynthetic gametophyte, deriving nourishment from it",
+      "Sporophyte is not free-living, attached to photosynthetic gametophyte, deriving nourishment from it",
+      "Gametophyte is not free-living, attached to photosynthetic sporophyte, deriving nourishment from it",
+      "Gametophyte is free-living but attached to photosynthetic sporophyte, deriving nourishment from it"
+    ],
+    "correct": 1,
+    "solution": "In bryophytes, the sporophyte is not free-living and remains attached to and nutritionally dependent on the photosynthetic gametophyte."
+  },
+  {
+    "id": "b-plant-39",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg35",
+    "question": "First organisms to colonize rock are –",
+    "options": [
+      "Mosses",
+      "Lichen",
+      "Liverwort",
+      "A & B both"
+    ],
+    "correct": 3,
+    "solution": "Lichens and mosses are known as pioneer species that colonize bare rock surfaces."
+  },
+  {
+    "id": "b-plant-40",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg35",
+    "question": "For trans-shipment of living material, which of the following is more suitable to use?",
+    "options": [
+      "Marchantia",
+      "Funaria",
+      "Sphagnum",
+      "Riccia"
+    ],
+    "correct": 2,
+    "solution": "Sphagnum, due to its high water-holding capacity, is commonly used as a packing material for shipping living material."
+  },
+  {
+    "id": "b-plant-41",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg35",
+    "question": "Which of the following is obtained from Sphagnum as a form of coal?",
+    "options": [
+      "Bituminous",
+      "Peat",
+      "Lignite",
+      "Anthracite"
+    ],
+    "correct": 1,
+    "solution": "Peat, used as a fuel, is obtained from Sphagnum accumulation."
+  },
+  {
+    "id": "b-plant-42",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg35",
+    "question": "Choose the correct statement:",
+    "options": [
+      "The thalloid plant body of liverwort is dorsiventrally appressed closely to the substrate",
+      "The leafy members have tiny true leaves in two rows on the stem-like structure",
+      "The leafy members have tiny leaf-like appendages in four rows on the stem-like structure",
+      "The thalloid plant body of liverwort is isobilaterally appressed closely to the substrate"
+    ],
+    "correct": 0,
+    "solution": "Liverworts show a dorsiventrally flattened, prostrate thalloid body that lies closely appressed to the substratum."
+  },
+  {
+    "id": "b-plant-43",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg35",
+    "question": "Asexual reproduction in bryophytes does not take place by –",
+    "options": [
+      "Fragmentation",
+      "Gemmae",
+      "Budding in secondary protonema",
+      "Oogamous reproduction"
+    ],
+    "correct": 3,
+    "solution": "Oogamous reproduction is a form of sexual reproduction, not asexual reproduction."
+  },
+  {
+    "id": "b-plant-44",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg35",
+    "question": "Gemmae are –",
+    "options": [
+      "Green, unicellular, asexual buds developing in small receptacles i.e. gemma cups",
+      "Green, multicellular, asexual buds developing in small receptacles i.e. gemma cups",
+      "Non-green, unicellular, asexual buds developing in small receptacles i.e. gemma cups",
+      "Green, unicellular, sexual buds developing in small receptacles i.e. gemma cups"
+    ],
+    "correct": 1,
+    "solution": "Gemmae are green, multicellular asexual buds produced in cup-shaped structures called gemma cups."
+  },
+  {
+    "id": "b-plant-45",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg35",
+    "question": "In Marchantia –",
+    "options": [
+      "Male and female sex organs are produced on the same thallus",
+      "Male and female sex organs are produced on different thalli",
+      "Gametophyte is differentiated into foot, seta and capsule",
+      "Spores germinate to form a free-living sporophyte"
+    ],
+    "correct": 1,
+    "solution": "Marchantia is dioecious — male and female sex organs are borne on separate thalli."
+  },
+  {
+    "id": "b-plant-46",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "The predominant stage of life cycle of a moss is-",
+    "options": [
+      "Gametophyte",
+      "Sporophyte",
+      "Protonema stage",
+      "Prothallus stage"
+    ],
+    "correct": 0,
+    "solution": "The gametophyte is the dominant, long-lived, and photosynthetic stage in the moss life cycle."
+  },
+  {
+    "id": "b-plant-47",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "The gametophyte of a moss is divided into-",
+    "options": [
+      "Two stages, first protonema stage that develops directly from gamete",
+      "Two stages, second leafy stage that develops from secondary protonema as a lateral bud",
+      "Two stages, first leafy stage and second protonema stage",
+      "Two stages, first protonema stage from spore, second leafy stage that develops directly as a terminal bud"
+    ],
+    "correct": 1,
+    "solution": "The moss gametophyte has a protonema stage (from spore germination) followed by a leafy stage that develops as a lateral bud on the secondary protonema."
+  },
+  {
+    "id": "b-plant-48",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "Protonema stage is –",
+    "options": [
+      "Creeping, green, unbranched and frequently filamentous stage",
+      "Prostrate, green, branched and frequently filamentous stage",
+      "Creeping, green, branched and frequently filamentous stage",
+      "Prostrate, non-green, unbranched and frequently filamentous stage"
+    ],
+    "correct": 2,
+    "solution": "The protonema is a creeping, green, branched, filamentous stage that develops directly from the spore."
+  },
+  {
+    "id": "b-plant-49",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "Choose the correct statement about the leafy stage of mosses:",
+    "options": [
+      "They consist of upright, slender axes bearing spirally arranged leaves",
+      "They are attached to soil through multicellular and branched rhizoids",
+      "This stage bears sex organs",
+      "All of these"
+    ],
+    "correct": 3,
+    "solution": "The leafy stage of mosses has upright axes with spirally arranged leaves, is anchored by branched rhizoids, and bears the sex organs."
+  },
+  {
+    "id": "b-plant-50",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "In sexual reproduction of mosses, which sequence of events occurs?",
+    "options": [
+      "Sex organs are produced at the apex of the leafy stage",
+      "After fertilization, the zygote develops into a sporophyte",
+      "Embryo development follows fertilization",
+      "All of these"
+    ],
+    "correct": 3,
+    "solution": "In moss sexual reproduction, sex organs are produced at the apex of leafy shoots, and after fertilization the zygote undergoes embryo development to form the sporophyte — all of these events occur."
+  },
+  {
+    "id": "b-plant-51",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "The sporophyte of mosses – I) Is more elaborate than that of liverworts, II) Consists of foot, seta and capsule, III) Spores present in capsule, IV) Spores produced after meiosis, V) Elaborate mechanism of spore dispersal, VI) Presence of peristomatic teeth.",
+    "options": [
+      "All are correct",
+      "I, II, III only",
+      "IV, V, VI only",
+      "I, III, V only"
+    ],
+    "correct": 0,
+    "solution": "All the listed statements correctly describe features of the moss sporophyte."
+  },
+  {
+    "id": "b-plant-52",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "Choose the incorrectly matched pair:",
+    "options": [
+      "Hornwort – Marchantia",
+      "Bryopsida – Polytrichum",
+      "Liverwort – Marchantia",
+      "Mosses – Sphagnum"
+    ],
+    "correct": 0,
+    "solution": "The correct example for hornwort is Anthoceros, not Marchantia (which is an example of liverwort); the other pairs are correctly matched."
+  },
+  {
+    "id": "b-plant-53",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "Pteridophytes include –",
+    "options": [
+      "Horsetail",
+      "Ferns",
+      "Polytrichum",
+      "A & B both"
+    ],
+    "correct": 3,
+    "solution": "Pteridophytes include horsetails (e.g. Equisetum) and ferns; Polytrichum is a moss (bryophyte)."
+  },
+  {
+    "id": "b-plant-54",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "The first terrestrial vascular plant is –",
+    "options": [
+      "Algae",
+      "Bryophyta (liverwort & hornwort)",
+      "Pteridophyta",
+      "Bryophyta (Mosses)"
+    ],
+    "correct": 2,
+    "solution": "Pteridophytes were the first plants to possess specialized vascular tissue for water and mineral conduction, making them the first terrestrial vascular plants."
+  },
+  {
+    "id": "b-plant-55",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "Choose the correct statement from the following:",
+    "options": [
+      "The plant body is differentiated into true root, only true prostrate stem as in Selaginella, and true leaf",
+      "The leaves of pteridophytes are small as in Selaginella or macrophyllous as in ferns",
+      "Pteridophytes possess xylem and phloem",
+      "All of these"
+    ],
+    "correct": 3,
+    "solution": "Pteridophytes show differentiated plant body with true root, stem, leaf, and vascular tissue (xylem, phloem); leaves may be small (microphyllous) or large (macrophyllous)."
+  },
+  {
+    "id": "b-plant-56",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "In pteridophyta –",
+    "options": [
+      "The main plant body is a sporophyte",
+      "The main plant body is a gametophyte",
+      "The main plant body is a gametophyte on which the sporophytic phase is partially dependent",
+      "A & C"
+    ],
+    "correct": 0,
+    "solution": "The dominant, differentiated, vascular plant body of pteridophytes is the sporophyte."
+  },
+  {
+    "id": "b-plant-57",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "Choose the correct statement regarding reproduction in pteridophytes:",
+    "options": [
+      "Sporophyte bears sporangia that are subtended by sporophylls",
+      "Gametophyte bears sporangia that are subtended by sporophylls",
+      "Sporophylls compact to form strobili as in ferns",
+      "Sporangia produce spores by mitosis in the spore mother cell"
+    ],
+    "correct": 0,
+    "solution": "In pteridophytes, the sporophyte bears sporangia subtended by leaf-like sporophylls; strobili formation is typical of Selaginella and Equisetum, and spores are produced by meiosis, not mitosis."
+  },
+  {
+    "id": "b-plant-58",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "Gametophyte of pteridophyte is –",
+    "options": [
+      "Small but multicellular, free-living, mostly photosynthetic, differentiated into root, stem, leaf",
+      "Small, inconspicuous but multicellular, dependent, mostly photosynthetic thalloid body",
+      "Small but multicellular, free-living, mostly photosynthetic thalloid structure",
+      "Small, inconspicuous but multicellular, free-living, mostly non-photosynthetic thalloid body"
+    ],
+    "correct": 2,
+    "solution": "The pteridophyte gametophyte (prothallus) is small, multicellular, free-living, photosynthetic, and thalloid in structure."
+  },
+  {
+    "id": "b-plant-59",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "Water is needed for fertilization in –",
+    "options": [
+      "Eucalyptus",
+      "Bryophytes",
+      "Pteridophytes",
+      "B & C both"
+    ],
+    "correct": 3,
+    "solution": "Both bryophytes and pteridophytes require water as a medium for the motile antherozoids to reach the archegonium for fertilization."
+  },
+  {
+    "id": "b-plant-60",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "Sex organs are borne on –",
+    "options": [
+      "Sporophyte",
+      "Gametophyte",
+      "Both gametophyte & sporophyte",
+      "None"
+    ],
+    "correct": 1,
+    "solution": "In pteridophytes, sex organs (antheridium and archegonium) are borne on the gametophyte generation."
+  },
+  {
+    "id": "b-plant-61",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "Heterosporous pteridophytes are-",
+    "options": [
+      "Selaginella",
+      "Salvinia",
+      "Psilotum",
+      "A & B both"
+    ],
+    "correct": 3,
+    "solution": "Selaginella and Salvinia are heterosporous pteridophytes, producing both micro- and megaspores."
+  },
+  {
+    "id": "b-plant-62",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "Pteridophytes with all similar kinds of spores are found in-",
+    "options": [
+      "Homosporous ferns",
+      "Psilotum",
+      "Selaginella",
+      "A & B both"
+    ],
+    "correct": 3,
+    "solution": "Homosporous pteridophytes such as certain ferns and Psilotum produce spores of only one kind, unlike heterosporous Selaginella."
+  },
+  {
+    "id": "b-plant-63",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "Seed habit was reported for the first time in-",
+    "options": [
+      "Blue-green algae",
+      "Pteridophyte",
+      "Angiosperm",
+      "Bryophyta"
+    ],
+    "correct": 1,
+    "solution": "Certain heterosporous pteridophytes like Selaginella show an early evolutionary trend towards seed habit."
+  },
+  {
+    "id": "b-plant-64",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "Pteridophytes are classified into –",
+    "options": [
+      "4 classes",
+      "4 orders",
+      "4 families",
+      "All of these"
+    ],
+    "correct": 0,
+    "solution": "Pteridophytes are traditionally classified into four classes: Psilopsida, Lycopsida, Sphenopsida, and Pteropsida."
+  },
+  {
+    "id": "b-plant-65",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "Adiantum is a member with –",
+    "options": [
+      "Pteris",
+      "Equisetum",
+      "Lycopodium",
+      "Selaginella"
+    ],
+    "correct": 0,
+    "solution": "Adiantum and Pteris both belong to class Pteropsida (ferns)."
+  },
+  {
+    "id": "b-plant-66",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg36",
+    "question": "Match the following: (i) Sphenopsida (ii) Lycopsida (iii) Psilopsida (iv) Pteropsida with (A) Dryopteris (B) Selaginella (C) Psilotum (D) Equisetum",
+    "options": [
+      "A–iv, B–ii, C–iii, D–i",
+      "A–iii, B–ii, C–iv, D–i",
+      "A–ii, B–iii, C–i, D–iv",
+      "A–i, B–iv, C–ii, D–iii"
+    ],
+    "correct": 0,
+    "solution": "Correct matching: Sphenopsida–Equisetum(i–D), Lycopsida–Selaginella(ii–B), Psilopsida–Psilotum(iii–C), Pteropsida–Dryopteris(iv–A), which corresponds to A–iv, B–ii, C–iii, D–i."
+  },
+  {
+    "id": "b-plant-67",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg38",
+    "question": "Gymnosperms are plants in which –",
+    "options": [
+      "Ovules are enclosed by an ovary wall both before and after fertilization",
+      "Ovules are not enclosed by any ovary wall both before and after fertilization",
+      "Ovules are enclosed by ovary wall before fertilization but not after",
+      "Ovules are not enclosed before fertilization but enclosed after"
+    ],
+    "correct": 1,
+    "solution": "In gymnosperms, ovules remain exposed (naked), not enclosed by an ovary wall, both before and after fertilization — hence 'naked-seeded' plants."
+  },
+  {
+    "id": "b-plant-68",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg38",
+    "question": "The tallest tree species belongs to –",
+    "options": [
+      "Angiosperm",
+      "Gymnosperm",
+      "Pteridophyte",
+      "Algae"
+    ],
+    "correct": 1,
+    "solution": "Sequoia, the tallest tree species, belongs to gymnosperms."
+  },
+  {
+    "id": "b-plant-69",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg38",
+    "question": "Fungi show symbiotic association with gymnosperms in the form of –",
+    "options": [
+      "Mycorrhiza in Pinus",
+      "Mycorrhiza in Cycas",
+      "Coralloid roots in Pinus",
+      "Coralloid roots in Cycas"
+    ],
+    "correct": 0,
+    "solution": "Pinus roots commonly show mycorrhizal association with fungi; the coralloid roots of Cycas, in contrast, harbour nitrogen-fixing cyanobacteria, not fungi."
+  },
+  {
+    "id": "b-plant-70",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg38",
+    "question": "The stem of –",
+    "options": [
+      "Cycas is unbranched",
+      "Pinus is branched",
+      "Cedrus is branched",
+      "All of these"
+    ],
+    "correct": 3,
+    "solution": "Cycas has an unbranched columnar stem, while Pinus and Cedrus have branched stems, accordingly."
+  },
+  {
+    "id": "b-plant-71",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg38",
+    "question": "Needle-like leaves, thick cuticle, and sunken stomata are characteristic of –",
+    "options": [
+      "Cycas",
+      "Pinus",
+      "Gnetum",
+      "Ginkgo"
+    ],
+    "correct": 1,
+    "solution": "Pinus leaves are needle-shaped with thick cuticle and sunken stomata, adaptations to reduce water loss."
+  },
+  {
+    "id": "b-plant-72",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg38",
+    "question": "Gymnosperms are –",
+    "options": [
+      "Heterosporous, with haploid microspores and haploid megaspores",
+      "Homosporous, with both spores haploid",
+      "Heterosporous, with microspores & megaspores diploid",
+      "None of these"
+    ],
+    "correct": 0,
+    "solution": "Gymnosperms are heterosporous, producing haploid microspores and haploid megaspores after meiosis."
+  },
+  {
+    "id": "b-plant-73",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg38",
+    "question": "Choose the correct statement –",
+    "options": [
+      "Male and female cones are borne on the same plant as in Cycas",
+      "Male and female cones are borne on different plants as in Cycas",
+      "Male and female cones are borne on the same plant as in Pinus",
+      "Both A & C"
+    ],
+    "correct": 1,
+    "solution": "Cycas is dioecious, bearing male and female cones on separate plants, whereas Pinus is monoecious with both cone types on the same plant."
+  },
+  {
+    "id": "b-plant-74",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg38",
+    "question": "Choose the correct statement about the female cone of gymnosperms:",
+    "options": [
+      "The nucellus is protected by a bitegmic structure",
+      "The megaspore mother cell divides mitotically to form four megaspores",
+      "One of the four megaspores enclosed within the megasporangium develops into a multicellular female gametophyte bearing archegonia",
+      "The ovule is unitegmic"
+    ],
+    "correct": 2,
+    "solution": "one of the four megaspores (formed via meiosis, not mitosis) enclosed within the megasporangium develops into the multicellular female gametophyte that bears one or more archegonia."
+  },
+  {
+    "id": "b-plant-75",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg38",
+    "question": "Statement-I: Cones/strobili bearing megasporophylls with ovules are female cones. Statement-II: Strobili bearing microsporangia are called male cones.",
+    "options": [
+      "Both statements are correct",
+      "Both statements are incorrect",
+      "Statement-I is correct, Statement-II is incorrect",
+      "Statement-I is incorrect, Statement-II is correct"
+    ],
+    "correct": 0,
+    "solution": "Both statements accurately describe female cones (bearing megasporophylls with ovules) and male cones (bearing microsporangia) in gymnosperms."
+  },
+  {
+    "id": "b-plant-76",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg39",
+    "question": "What is the difference between bryophytic and gymnospermous gametophytes?",
+    "options": [
+      "Bryophytic gametophyte is an independent, free-living structure while the gymnosperm gametophyte is dependent",
+      "Gymnosperm gametophyte remains within the sporangia retained on the sporophyte",
+      "Both A & B",
+      "None of these"
+    ],
+    "correct": 2,
+    "solution": "In bryophytes the gametophyte is free-living and dominant, while in gymnosperms the gametophyte is reduced, dependent, and retained within sporangial tissue on the sporophyte."
+  },
+  {
+    "id": "b-plant-77",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg39",
+    "question": "The thallus of Anthoceros and the coralloid roots of Cycas are similar in –",
+    "options": [
+      "Morphological structure",
+      "Performing nitrogen fixation",
+      "Presence of vascular bundles",
+      "B & C"
+    ],
+    "correct": 1,
+    "solution": "Both Anthoceros thallus and Cycas coralloid roots host nitrogen-fixing cyanobacteria (e.g. Nostoc, Anabaena), enabling nitrogen fixation."
+  },
+  {
+    "id": "b-plant-78",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg39",
+    "question": "The gametophyte is dependent on and retained within the sporophyte in –",
+    "options": [
+      "Cycadales",
+      "Coniferales",
+      "Both A & B",
+      "None of these"
+    ],
+    "correct": 2,
+    "solution": "In gymnosperms, including both Cycadales and Coniferales, the female gametophyte is retained within sporophytic tissue and is dependent on it."
+  },
+  {
+    "id": "b-plant-79",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg39",
+    "question": "The endosperm of a gymnosperm represents –",
+    "options": [
+      "Female gametophyte",
+      "Triploid structure",
+      "Diploid structure",
+      "A & C"
+    ],
+    "correct": 0,
+    "solution": "Unlike angiosperms, the gymnosperm 'endosperm' is haploid tissue representing the female gametophyte, not a triploid structure."
+  },
+  {
+    "id": "b-plant-80",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg39",
+    "question": "Read the statements and choose the incorrect response regarding gymnospermous reproduction:",
+    "options": [
+      "Pollen grains are carried by air currents",
+      "Pollen tube carries the male gametes to the archegonia",
+      "Following fertilization, the zygote develops but the embryo stage is lacking",
+      "The ovule develops into a seed"
+    ],
+    "correct": 2,
+    "solution": "This statement is incorrect — following fertilization, the zygote does develop into an embryo, which along with surrounding tissue forms the seed."
+  },
+  {
+    "id": "b-plant-81",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg39",
+    "question": "All the given structures of Pinus and Cycas are haploid, except –",
+    "options": [
+      "Pollen grain",
+      "Egg",
+      "Nucellus",
+      "Endosperm"
+    ],
+    "correct": 2,
+    "solution": "The nucellus is a diploid sporophytic tissue, whereas the pollen grain, egg, and endosperm (female gametophyte) are haploid."
+  },
+  {
+    "id": "b-plant-82",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg39",
+    "question": "Gymnosperm is an example of –",
+    "options": [
+      "Vascular, embryophyte with ovule enclosed in ovary",
+      "Vascular, non-embryophyte",
+      "Non-vascular, non-embryophyte",
+      "Vascular, embryophyte"
+    ],
+    "correct": 3,
+    "solution": "Gymnosperms are vascular embryophytes, but unlike angiosperms their ovules are not enclosed within an ovary."
+  },
+  {
+    "id": "b-plant-83",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg39",
+    "question": "Vascular archegoniates with a diplontic life cycle are –",
+    "options": [
+      "Bryophytes",
+      "Gymnosperms",
+      "Pteridophytes",
+      "B & C"
+    ],
+    "correct": 3,
+    "solution": "Both gymnosperms and pteridophytes are vascular archegoniates with a diplontic life cycle, unlike bryophytes which are haplodiplontic with dominant gametophyte."
+  },
+  {
+    "id": "b-plant-84",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg40",
+    "question": "The tallest and smallest plant species belonging to angiosperms are –",
+    "options": [
+      "Sequoia and Wolffia",
+      "Eucalyptus and Wolffia",
+      "Sequoia and duck-weed",
+      "None of these"
+    ],
+    "correct": 1,
+    "solution": "Eucalyptus is the tallest angiosperm tree, while Wolffia is the smallest angiosperm (Sequoia belongs to gymnosperms)."
+  },
+  {
+    "id": "b-plant-85",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg40",
+    "question": "Dicotyledons and monocotyledons are two ___ of angiosperm.",
+    "options": [
+      "Family",
+      "Class",
+      "Order",
+      "Division"
+    ],
+    "correct": 1,
+    "solution": "Angiospermae is divided into two classes: Dicotyledonae and Monocotyledonae."
+  },
+  {
+    "id": "b-plant-86",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg40",
+    "question": "A group of plant flowers having three members in each whorl is placed in-",
+    "options": [
+      "Monocot",
+      "Dicot",
+      "Tetramerous",
+      "Both B & C"
+    ],
+    "correct": 0,
+    "solution": "Trimerous flowers (three members per whorl) are characteristic of monocots."
+  },
+  {
+    "id": "b-plant-87",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg40",
+    "question": "Choose the correct statement:",
+    "options": [
+      "Functional megaspore is diploid, resulting from mitosis and degeneration of the megaspore mother cell",
+      "The embryo sac consists of one egg apparatus, three antipodal cells and two polar nuclei",
+      "Polar nuclei, antipodal cells, and egg are diploid structures of the embryo sac",
+      "Secondary nuclei are haploid"
+    ],
+    "correct": 1,
+    "solution": "The typical angiosperm embryo sac has one egg apparatus (egg + 2 synergids), three antipodal cells, and two polar nuclei — all haploid in nature."
+  },
+  {
+    "id": "b-plant-88",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg40",
+    "question": "Secondary nuclei result from the fusion of-",
+    "options": [
+      "Polar nuclei and the 1st male gamete",
+      "Polar nuclei and the 2nd male gamete",
+      "Both polar nuclei",
+      "Egg apparatus and polar nuclei"
+    ],
+    "correct": 2,
+    "solution": "The secondary nucleus is formed by the fusion of the two polar nuclei present in the central cell of the embryo sac."
+  },
+  {
+    "id": "b-plant-89",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg40",
+    "question": "Choose the correct sequence:",
+    "options": [
+      "Gamete formation → pollination → fertilization → embryo → new plant",
+      "Gamete formation → transfer of gamete → fertilization → pollination → embryo → new plant",
+      "Pollination → gametogenesis → fertilization → embryo → new plant",
+      "None of these"
+    ],
+    "correct": 2,
+    "solution": "The correct sequence in angiosperm reproduction is pollination, followed by gametogenesis (formation of male gametes in pollen tube), fertilization, embryo formation, and finally the new plant."
+  },
+  {
+    "id": "b-plant-90",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg40",
+    "question": "Microspore of angiosperm represents-",
+    "options": [
+      "Sporophytic phase",
+      "Gametophytic phase",
+      "Both A & B",
+      "Female gamete"
+    ],
+    "correct": 1,
+    "solution": "The microspore (pollen grain) represents the male gametophytic phase in angiosperms."
+  },
+  {
+    "id": "b-plant-91",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg40",
+    "question": "The pollen tube in angiosperms discharges-",
+    "options": [
+      "One male gamete into the embryo sac",
+      "Two male gametes into the embryo sac",
+      "Three male gametes into the embryo sac",
+      "More than one option is correct"
+    ],
+    "correct": 1,
+    "solution": "The pollen tube releases two non-motile male gametes into the cytoplasm of the embryo sac, enabling double fertilization."
+  },
+  {
+    "id": "b-plant-92",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg41",
+    "question": "Syngamy is-",
+    "options": [
+      "Fusion of egg and the 1st male gamete",
+      "Fusion of egg and the 2nd male gamete",
+      "Fusion of polar nuclei & the 1st male gamete",
+      "Both B & C"
+    ],
+    "correct": 0,
+    "solution": "Syngamy is the fusion of the egg cell with one (the first) male gamete to form the diploid zygote."
+  },
+  {
+    "id": "b-plant-93",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg41",
+    "question": "The zygote is the result of-",
+    "options": [
+      "Syngamy",
+      "Double fertilization",
+      "Triple fusion",
+      "Both A & C"
+    ],
+    "correct": 0,
+    "solution": "The zygote is formed as a direct result of syngamy — fusion of the male gamete with the egg cell."
+  },
+  {
+    "id": "b-plant-94",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg41",
+    "question": "Fusion of the 2nd male gamete with the diploid secondary nucleus results in the formation of-",
+    "options": [
+      "PEN (Primary Endosperm Nucleus)",
+      "Embryo",
+      "Both A & B",
+      "Sporophyte"
+    ],
+    "correct": 0,
+    "solution": "This fusion, known as triple fusion, forms the Primary Endosperm Nucleus (PEN), which is triploid."
+  },
+  {
+    "id": "b-plant-95",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg41",
+    "question": "Double fertilization is-",
+    "options": [
+      "Fusion of two polar nuclei",
+      "Fusion of male gamete with the egg",
+      "Fusion of male gamete with the secondary nucleus",
+      "Both B & C"
+    ],
+    "correct": 3,
+    "solution": "Double fertilization involves both syngamy (male gamete + egg) and triple fusion (male gamete + secondary nucleus), occurring together in angiosperms."
+  },
+  {
+    "id": "b-plant-96",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg41",
+    "question": "PEN (Primary Endosperm Nucleus) provides-",
+    "options": [
+      "Protection to the embryo",
+      "Nourishment to the embryo",
+      "Anchorage to the embryo",
+      "None of these"
+    ],
+    "correct": 1,
+    "solution": "PEN develops into the endosperm, which provides nourishment to the developing embryo."
+  },
+  {
+    "id": "b-plant-97",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg41",
+    "question": "Which of the following structures degenerate after fertilization?",
+    "options": [
+      "Synergids",
+      "Antipodal cells",
+      "A & B",
+      "Embryo"
+    ],
+    "correct": 2,
+    "solution": "Both synergids and antipodal cells typically degenerate after fertilization has occurred in the embryo sac."
+  },
+  {
+    "id": "b-plant-98",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg41",
+    "question": "Angiosperms differ from gymnosperms in-",
+    "options": [
+      "Presence of true root, stem & leaf",
+      "Seeds enclosed in fruit",
+      "Ovary enclosed in ovule",
+      "Both B & C"
+    ],
+    "correct": 1,
+    "solution": "A key distinguishing feature of angiosperms is that their seeds develop enclosed within a fruit, formed from the ovary after fertilization; both gymnosperms and angiosperms have true root, stem, and leaf."
+  },
+  {
+    "id": "b-plant-99",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg41",
+    "question": "Ovules develop into ___ and ovaries develop into ___ in angiosperms.",
+    "options": [
+      "Seed, fruit",
+      "Fruit, seed",
+      "Fruit, fruit",
+      "Seed, seed"
+    ],
+    "correct": 0,
+    "solution": "After fertilization, the ovule develops into the seed while the ovary develops into the fruit."
+  },
+  {
+    "id": "b-plant-100",
+    "subject": "bio",
+    "chapter": "plant-kingdom",
+    "source": "NEET PREMIUM BY ARNAB Pg41",
+    "question": "Pistil is-",
+    "options": [
+      "Female sex organ of flower",
+      "Male sex organ of flower",
+      "Non-reproductive organ of flower",
+      "Divided into two parts, anther and filament"
+    ],
+    "correct": 0,
+    "solution": "The pistil (gynoecium) is the female reproductive organ of the flower, consisting of stigma, style, and ovary."
+  },
+  {
+    "id": "b-bioclass-1",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg16",
+    "question": "Choose the correct with respect to earliest scientific basis of classification",
+    "options": [
+      "It was proposed by Aristotle",
+      "Plants were divided as trees, shrubs & herbs on the basis of morphological characters",
+      "Animals were classified into two groups — those with red blood and those without",
+      "All of these"
+    ],
+    "correct": 3,
+    "solution": "Aristotle's early scheme grouped plants by habit (trees, shrubs, herbs) and animals by presence/absence of red blood — all three statements are correct."
+  },
+  {
+    "id": "b-bioclass-2",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg16",
+    "question": "Linnaeus' system of classification did not deal with –",
+    "options": [
+      "Eukaryotes and prokaryotes",
+      "Unicellular & multicellular",
+      "Photosynthetic & non-photosynthetic",
+      "All of these"
+    ],
+    "correct": 3,
+    "solution": "Linnaeus' two-kingdom system predated knowledge of cell structure and nutrition modes, so it addressed none of these distinctions."
+  },
+  {
+    "id": "b-bioclass-3",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg16",
+    "question": "How many kingdoms according to five kingdom classification and Linnaeus system respectively are dedicated exclusively for prokaryotes?",
+    "options": [
+      "1, 0",
+      "1, 1",
+      "2, 0",
+      "3, 1"
+    ],
+    "correct": 0,
+    "solution": "Five kingdom system has Monera (1) exclusively for prokaryotes; Linnaeus' two-kingdom system had none exclusively for prokaryotes."
+  },
+  {
+    "id": "b-bioclass-4",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg17",
+    "question": "Moneran cell wall is composed by-",
+    "options": [
+      "Polysaccharide (non-cellulose) only",
+      "Polysaccharide (cellulose)",
+      "Polysaccharide (chitin)",
+      "Amino acid and non-cellulosic polysaccharide"
+    ],
+    "correct": 3,
+    "solution": "Bacterial (moneran) cell walls are made of peptidoglycan — amino acids linked with non-cellulosic polysaccharides."
+  },
+  {
+    "id": "b-bioclass-5",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg17",
+    "question": "Chemosynthetic mode of nutrition is found in –",
+    "options": [
+      "Monera",
+      "Protist",
+      "Plantae",
+      "Fungi"
+    ],
+    "correct": 0,
+    "solution": "Chemosynthetic autotrophic nutrition (oxidising inorganic substances for energy) is seen in some Monerans."
+  },
+  {
+    "id": "b-bioclass-6",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg17",
+    "question": "R.H. Whittaker's classification is/are based upon –",
+    "options": [
+      "Cell structure & body organisation",
+      "Mode of nutrition & reproduction",
+      "Phylogenetic relationship",
+      "All of these"
+    ],
+    "correct": 3,
+    "solution": "Whittaker's five kingdom classification used cell structure, body organisation, mode of nutrition/reproduction, and phylogenetic relationships as criteria."
+  },
+  {
+    "id": "b-bioclass-7",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg17",
+    "question": "Five kingdom classification was proposed in –",
+    "options": [
+      "1969",
+      "1996",
+      "1699",
+      "None of these"
+    ],
+    "correct": 0,
+    "solution": "R.H. Whittaker proposed the five kingdom classification in 1969."
+  },
+  {
+    "id": "b-bioclass-8",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg17",
+    "question": "Choose the correct about 3-domain system",
+    "options": [
+      "Two prokaryotic domains, while one domain is dedicated for eukaryotic",
+      "One prokaryotic domain, while two domains are dedicated for eukaryotic",
+      "It has seven kingdoms categorised into 3 domains",
+      "It has six kingdoms, of which one is in the first and third domain while a fifth kingdom is in the second domain"
+    ],
+    "correct": 0,
+    "solution": "The 3-domain system has Bacteria and Archaea (both prokaryotic) plus Eukarya (eukaryotic) — two prokaryotic domains and one eukaryotic domain."
+  },
+  {
+    "id": "b-bioclass-9",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg17",
+    "question": "Earlier classification systems included bacteria, BGA (blue green algae), fungi, mosses and ferns under 'Plants' on the basis of-",
+    "options": [
+      "Mode of nutrition",
+      "Body organisation & nuclear structure",
+      "Presence of cell wall",
+      "Nature of cell wall"
+    ],
+    "correct": 2,
+    "solution": "All these organisms possess a cell wall, which was the basis for grouping them with plants in earlier classifications."
+  },
+  {
+    "id": "b-bioclass-10",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg17",
+    "question": "How many of the following are prokaryotes: Bacteria, Mosses, ferns, fungi, pteridophyta, blue green algae, gymnosperms, angiosperm",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "More than 4"
+    ],
+    "correct": 1,
+    "solution": "Only Bacteria and blue green algae (cyanobacteria) are prokaryotic among the listed organisms."
+  },
+  {
+    "id": "b-bioclass-11",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg17",
+    "question": "Fungi has cell wall composed of–",
+    "options": [
+      "Cellulose",
+      "Non-cellulosic + amino acid",
+      "Chitin",
+      "Absence of cell wall"
+    ],
+    "correct": 2,
+    "solution": "Fungal cell walls are made of chitin, a tough polysaccharide."
+  },
+  {
+    "id": "b-bioclass-12",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg17",
+    "question": "How many kingdoms from R.H. Whittaker's system have exclusive autotrophic mode of nutrition?",
+    "options": [
+      "Zero",
+      "One",
+      "Two",
+      "Three"
+    ],
+    "correct": 1,
+    "solution": "Only Kingdom Plantae is exclusively autotrophic; Monera and Protista contain both autotrophic and heterotrophic members."
+  },
+  {
+    "id": "b-bioclass-13",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg17",
+    "question": "Unicellular eukaryotic organisms are categorised in-",
+    "options": [
+      "Monera",
+      "Protista",
+      "Plantae",
+      "Animalia"
+    ],
+    "correct": 1,
+    "solution": "Kingdom Protista comprises unicellular eukaryotic organisms."
+  },
+  {
+    "id": "b-bioclass-14",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg18",
+    "question": "How many of the following belong to Protista: Amoeba, Spirogyra, Chlamydomonas, Chlorella, Paramecium",
+    "options": [
+      "5",
+      "4",
+      "3",
+      "2"
+    ],
+    "correct": 3,
+    "solution": "Only Amoeba and Paramecium are Protista; Spirogyra, Chlamydomonas and Chlorella are algae placed under Kingdom Plantae in the five-kingdom scheme."
+  },
+  {
+    "id": "b-bioclass-15",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg18",
+    "question": "In five kingdom classification, multicellularity began from –",
+    "options": [
+      "Animalia",
+      "Plantae",
+      "Protista",
+      "Fungi"
+    ],
+    "correct": 3,
+    "solution": "Multicellular body designs first appeared in Kingdom Fungi among the five kingdoms."
+  },
+  {
+    "id": "b-bioclass-16",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg18",
+    "question": "Choose the correct statement:",
+    "options": [
+      "Bacteria are sole members of kingdom Monera",
+      "Bacteria are abundant macro-organisms",
+      "Bacteria occurrence is limited to some areas",
+      "Bacteria can't live in extreme habitats like deserts"
+    ],
+    "correct": 0,
+    "solution": "Bacteria (in the broad sense, including archaebacteria, eubacteria, cyanobacteria and mycoplasma) are the sole members of kingdom Monera."
+  },
+  {
+    "id": "b-bioclass-17",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg18",
+    "question": "On the basis of shape, bacteria are grouped under _____ categories",
+    "options": [
+      "Four",
+      "Five",
+      "Three",
+      "None of these"
+    ],
+    "correct": 0,
+    "solution": "Bacteria are grouped into four shape-based categories: coccus, bacillus, vibrio and spirillum."
+  },
+  {
+    "id": "b-bioclass-18",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg19",
+    "question": "Choose the correctly stated statement",
+    "options": [
+      "Bacterial structure and behaviour are complex",
+      "Bacterial structure and behaviour are simple",
+      "Bacterial structure is complex while behaviour is simple",
+      "Bacterial structure is simple while behaviour is complex"
+    ],
+    "correct": 3,
+    "solution": "Although structurally simple, bacteria show a fascinating diversity of metabolic and behavioural patterns."
+  },
+  {
+    "id": "b-bioclass-19",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg19",
+    "question": "Synthesis of own food from inorganic substrate occurs in –",
+    "options": [
+      "Autotrophic nutrition",
+      "Chemosynthetic autotroph",
+      "Photosynthetic autotroph",
+      "All of these"
+    ],
+    "correct": 3,
+    "solution": "Making one's own food from inorganic substrate is the defining feature of autotrophic nutrition, of which both photosynthetic and chemosynthetic types apply."
+  },
+  {
+    "id": "b-bioclass-20",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg19",
+    "question": "Match the column – I & column – II :  (i) Halophiles (ii) Thermoacidophiles (iii) Methanogens  with  (a) Marshy area (b) Salty area (c) Hot springs",
+    "options": [
+      "i–c, ii–b, iii–a",
+      "i–c, ii–a, iii–b",
+      "i–b, ii–c, iii–a",
+      "i–b, ii–a, iii–c"
+    ],
+    "correct": 2,
+    "solution": "Halophiles live in salty areas (b), thermoacidophiles in hot springs (c), and methanogens in marshy areas (a)."
+  },
+  {
+    "id": "b-bioclass-21",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg19",
+    "question": "Archaebacteria differ from other bacteria in having –",
+    "options": [
+      "Definite nuclear structure",
+      "Cell wall structure",
+      "Adaptability & cytoplasmic concentration",
+      "Some membranous cell organelles"
+    ],
+    "correct": 1,
+    "solution": "Archaebacteria have a distinct cell wall composition (different from peptidoglycan) that sets them apart from eubacteria."
+  },
+  {
+    "id": "b-bioclass-22",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg19",
+    "question": "Survival of archaebacteria in extreme conditions is achieved by –",
+    "options": [
+      "Cell wall structure",
+      "Some membranous cell organelles",
+      "Adaptability & cytoplasm",
+      "All of these"
+    ],
+    "correct": 0,
+    "solution": "The unique cell wall structure of archaebacteria enables their survival in extreme habitats."
+  },
+  {
+    "id": "b-bioclass-23",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg19",
+    "question": "Which of the following statements is/are false?",
+    "options": [
+      "Methanogens are present in the alimentary canal of several ruminant animals like cow & buffaloes",
+      "Methanogens are responsible for production of biogas from dung of ruminant animals",
+      "Methanogens are present in the gut of several non-ruminant animals like cow & buffaloes",
+      "A & B"
+    ],
+    "correct": 2,
+    "solution": "Cows and buffaloes are ruminant animals, not non-ruminant, so this statement is false."
+  },
+  {
+    "id": "b-bioclass-24",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg19",
+    "question": "Choose the correct about blue green algae: (i) Also known as cyanobacteria (ii) Presence of chlorophyll a, b similar to green plants (iii) Photosynthetic autotroph (iv) May be unicellular, colonial or filamentous (v) Occur in aquatic as well as terrestrial habitats",
+    "options": [
+      "i, iii, iv, v",
+      "i, ii, iii, iv, v",
+      "i, ii, iv, v",
+      "None of these"
+    ],
+    "correct": 0,
+    "solution": "Blue green algae have only chlorophyll a (not chlorophyll b), so statement (ii) is incorrect; all others are correct."
+  },
+  {
+    "id": "b-bioclass-25",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg19",
+    "question": "Nitrogen fixation is done by –",
+    "options": [
+      "Specialised vegetative cell i.e. heterocyst of Nostoc & Anabaena",
+      "Specialised reproductive cell i.e. heterocyst of Nostoc & Anabaena",
+      "Specialised vegetative as well as reproductive cell i.e. heterocyst of Nostoc & Anabaena",
+      "None"
+    ],
+    "correct": 0,
+    "solution": "Heterocysts, which are specialised vegetative cells, are the site of nitrogen fixation in Nostoc and Anabaena."
+  },
+  {
+    "id": "b-bioclass-26",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg19",
+    "question": "Choose the wrong statement for chemosynthetic autotroph bacteria",
+    "options": [
+      "They oxidise inorganic substrates such as nitrates, nitrites & ammonia and use the released energy for their ATP production",
+      "They play a great role in recycling nutrients like nitrogen, phosphorous, iron & sulphur",
+      "For their energy production they utilize solar energy",
+      "They can prepare their own food from inorganic substrate"
+    ],
+    "correct": 2,
+    "solution": "Chemosynthetic bacteria derive energy from oxidising inorganic chemicals, not from sunlight — using solar energy describes photosynthetic organisms."
+  },
+  {
+    "id": "b-bioclass-27",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Citrus canker is –",
+    "options": [
+      "A plant disease caused by bacteria",
+      "A human disease caused by bacteria",
+      "A pet disease caused by bacteria",
+      "None of these"
+    ],
+    "correct": 0,
+    "solution": "Citrus canker is a bacterial disease affecting citrus plants."
+  },
+  {
+    "id": "b-bioclass-28",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg19",
+    "question": "Which of the following is not an economic importance of heterotrophic bacteria?",
+    "options": [
+      "Making curd from milk",
+      "Antibiotic production",
+      "N2 fixing in legumes' root",
+      "N2 fixing in Anabaena"
+    ],
+    "correct": 3,
+    "solution": "Anabaena is a cyanobacterium (autotrophic), not a heterotrophic bacterium, so its nitrogen fixation isn't an example of heterotrophic bacterial importance."
+  },
+  {
+    "id": "b-bioclass-29",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg19",
+    "question": "Choose the incorrect option about bacterial reproduction –",
+    "options": [
+      "Bacteria reproduce mainly by fission",
+      "Under unfavourable conditions they produce spores",
+      "They also reproduce by (true) sexual reproduction",
+      "They show a sort of sexual reproduction (DNA transfer)"
+    ],
+    "correct": 2,
+    "solution": "Bacteria do not undergo true sexual reproduction with meiosis; they only show DNA transfer mechanisms like conjugation, which is 'a sort of' sexual reproduction."
+  },
+  {
+    "id": "b-bioclass-30",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Identify the organism on the basis of the given statements: (i) Lacks cell wall (ii) Smallest living cell known (iii) Can survive without oxygen (iv) Pathogenic in animals & plants",
+    "options": [
+      "Nostoc",
+      "Anabaena",
+      "Mycoplasma",
+      "Chlorella"
+    ],
+    "correct": 2,
+    "solution": "Mycoplasma lacks a cell wall, is the smallest known living cell, can be anaerobic, and is pathogenic."
+  },
+  {
+    "id": "b-bioclass-31",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Protista includes -",
+    "options": [
+      "Unicellular prokaryotes",
+      "Bacteriophages",
+      "Unicellular eukaryotes",
+      "B.G.A"
+    ],
+    "correct": 2,
+    "solution": "Kingdom Protista consists of unicellular eukaryotic organisms."
+  },
+  {
+    "id": "b-bioclass-32",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Which of the following kingdoms has no well defined boundaries?",
+    "options": [
+      "Monera",
+      "Protista",
+      "Fungi",
+      "Metaphyta and Metazoa"
+    ],
+    "correct": 1,
+    "solution": "Protista is often called a 'junk-yard' or link kingdom because it lacks clearly defined boundaries with the other kingdoms."
+  },
+  {
+    "id": "b-bioclass-33",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Members of Protista are primarily",
+    "options": [
+      "Parasites",
+      "Terrestrial",
+      "Aquatic",
+      "Photosynthetic"
+    ],
+    "correct": 2,
+    "solution": "Most protists are found in aquatic environments."
+  },
+  {
+    "id": "b-bioclass-34",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Nearly all protists are –",
+    "options": [
+      "Aerobic",
+      "Anaerobic",
+      "Aerobic or anaerobic",
+      "Photosynthetic"
+    ],
+    "correct": 0,
+    "solution": "Nearly all protists are aerobic, possessing mitochondria for cellular respiration."
+  },
+  {
+    "id": "b-bioclass-35",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Nutritionally, protists are-",
+    "options": [
+      "Photoautotrophs",
+      "Heterotrophs",
+      "Saprotrophs",
+      "Photoautotrophs, heterotrophs or autotrophs"
+    ],
+    "correct": 3,
+    "solution": "Protists show a wide range of nutrition — photoautotrophic, heterotrophic and other modes."
+  },
+  {
+    "id": "b-bioclass-36",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Based upon the modes of nutrition, protists are grouped into –",
+    "options": [
+      "Plant-like protists (algae) and ingestive animal-like protists (protozoa), and absorptive fungus-like protists",
+      "Chrysophytes, Dinoflagellates and Euglenoids only",
+      "Slime moulds and fungi only",
+      "Flagellated protozoans and sporozoans only"
+    ],
+    "correct": 0,
+    "solution": "Protists are broadly classified into plant-like (algae), animal-like (protozoa), and fungus-like groups based on nutrition."
+  },
+  {
+    "id": "b-bioclass-37",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Which of the following are placed under Protista?",
+    "options": [
+      "Chrysophytes and Dinoflagellates",
+      "Euglenoids",
+      "Slime moulds and protozoans",
+      "All"
+    ],
+    "correct": 3,
+    "solution": "All these groups — Chrysophytes, Dinoflagellates, Euglenoids, Slime moulds and Protozoans — are placed under Kingdom Protista."
+  },
+  {
+    "id": "b-bioclass-38",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Locomotory structures in protists are –",
+    "options": [
+      "Flagella",
+      "Cilia",
+      "Pseudopodia",
+      "All"
+    ],
+    "correct": 3,
+    "solution": "Protists use flagella, cilia, or pseudopodia for locomotion depending on the group."
+  },
+  {
+    "id": "b-bioclass-39",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Protista form a link with –",
+    "options": [
+      "Plants only",
+      "Animals only",
+      "Fungi only",
+      "Plants, animals and fungi"
+    ],
+    "correct": 3,
+    "solution": "Protista is considered a link kingdom, connecting plants, animals and fungi through its diverse members."
+  },
+  {
+    "id": "b-bioclass-40",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Chrysophytes include –",
+    "options": [
+      "Diatoms and desmids (golden algae)",
+      "Euglenoids",
+      "Dinoflagellates",
+      "Slime moulds"
+    ],
+    "correct": 0,
+    "solution": "Chrysophytes include diatoms and desmids, also called golden algae."
+  },
+  {
+    "id": "b-bioclass-41",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Which of the following modes of reproduction can be found in at least some protists?",
+    "options": [
+      "Binary fission",
+      "Sexual reproduction",
+      "Spore formation",
+      "All"
+    ],
+    "correct": 3,
+    "solution": "Protists show binary fission, sexual reproduction and spore formation depending on the group."
+  },
+  {
+    "id": "b-bioclass-42",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Select the statement that does NOT apply to diatoms –",
+    "options": [
+      "Diatom cell wall may be impregnated with silicon",
+      "Cell wall is made up of 2 half-shells fit tightly together",
+      "Diatom is a chrysophyte",
+      "Diatom is multiflagellate"
+    ],
+    "correct": 3,
+    "solution": "Diatoms are largely non-motile or produce flagellated gametes only, not generally multiflagellate cells."
+  },
+  {
+    "id": "b-bioclass-43",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Silica gel (Keiselghur)/Diatomite/Diatomaceous earth is obtained by –",
+    "options": [
+      "Diatoms",
+      "Dinoflagellates",
+      "Euglenoids",
+      "Brown algae"
+    ],
+    "correct": 0,
+    "solution": "Diatomaceous earth is formed from accumulated diatom cell walls."
+  },
+  {
+    "id": "b-bioclass-44",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Diatoms do not easily decay like most other algae because -",
+    "options": [
+      "They have highly siliceous walls",
+      "They have water proof cells",
+      "Their cell walls are mucilaginous",
+      "Cell wall is virus-resistant"
+    ],
+    "correct": 0,
+    "solution": "The highly siliceous cell wall of diatoms is resistant to decay."
+  },
+  {
+    "id": "b-bioclass-45",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Diatomaceous earth is used for all except -",
+    "options": [
+      "Polishing",
+      "Filtration of oils and syrups",
+      "Sound and fire proof rooms",
+      "Biogas"
+    ],
+    "correct": 3,
+    "solution": "Diatomaceous earth is used for polishing, filtration, and insulation, but not for biogas production."
+  },
+  {
+    "id": "b-bioclass-46",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Chrysophytes are -",
+    "options": [
+      "Planktons",
+      "Nektons",
+      "Benthonic",
+      "Active swimmers"
+    ],
+    "correct": 0,
+    "solution": "Chrysophytes are microscopic organisms found floating passively in water, i.e. planktons."
+  },
+  {
+    "id": "b-bioclass-47",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Chief producers in the ocean are -",
+    "options": [
+      "Dinoflagellates",
+      "Diatoms",
+      "Euglenoids",
+      "Green algae"
+    ],
+    "correct": 1,
+    "solution": "Diatoms are considered the chief 'producers' in oceans due to their abundance and photosynthetic activity."
+  },
+  {
+    "id": "b-bioclass-48",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg20",
+    "question": "Photosynthetic protists are -",
+    "options": [
+      "Euglenoids, Diatoms and Dinoflagellates",
+      "Euglenoids and slime moulds",
+      "Diatoms and Zooflagellates",
+      "Desmids + Ciliates"
+    ],
+    "correct": 0,
+    "solution": "Euglenoids, Diatoms and Dinoflagellates are photosynthetic protist groups."
+  },
+  {
+    "id": "b-bioclass-49",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg21",
+    "question": "Dinoflagellates are mostly-",
+    "options": [
+      "Marine",
+      "Fresh water",
+      "Terrestrial",
+      "Saprophytes"
+    ],
+    "correct": 0,
+    "solution": "Most dinoflagellates are marine and photosynthetic."
+  },
+  {
+    "id": "b-bioclass-50",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg21",
+    "question": "Red tides in warm coastal waters develop due to super abundance of-",
+    "options": [
+      "Dinoflagellates",
+      "Euglenoid forms",
+      "Diatoms and desmids",
+      "Chlamydomonas nivalis"
+    ],
+    "correct": 0,
+    "solution": "Red tides result from a bloom (super abundance) of certain toxic dinoflagellates."
+  },
+  {
+    "id": "b-bioclass-51",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg21",
+    "question": "Red tide is caused by –",
+    "options": [
+      "Ceretium",
+      "Noctiluca",
+      "Gonyaulax",
+      "All of these"
+    ],
+    "correct": 3,
+    "solution": "Red tides can be caused by Ceratium, Noctiluca, Gonyaulax and other dinoflagellates."
+  },
+  {
+    "id": "b-bioclass-52",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg21",
+    "question": "Dinoflagellates have –",
+    "options": [
+      "A single flagellum in the transverse groove between the cell plates",
+      "A single flagellum in the longitudinal groove between the cell plates",
+      "Two flagella — one lies longitudinally and the other transversely in a furrow between the wall plates",
+      "No flagella"
+    ],
+    "correct": 2,
+    "solution": "Dinoflagellates possess two flagella, one longitudinal and one transverse, lying in furrows between rigid cellulose plates."
+  },
+  {
+    "id": "b-bioclass-53",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg21",
+    "question": "In which of the following does the cell wall have stiff cellulose plates on the outer surface –",
+    "options": [
+      "Dinoflagellates",
+      "Desmids",
+      "Diatoms",
+      "Euglenoids"
+    ],
+    "correct": 0,
+    "solution": "Dinoflagellates have rigid cellulose plates embedded in the outer cell wall."
+  },
+  {
+    "id": "b-bioclass-54",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg21",
+    "question": "Which of the following releases toxins that may even kill other marine animals like fishes –",
+    "options": [
+      "Gonyaulax",
+      "Paramecium",
+      "Euglenoids",
+      "Sporozoans"
+    ],
+    "correct": 0,
+    "solution": "Certain dinoflagellates like Gonyaulax release toxins that can kill marine animals such as fishes."
+  },
+  {
+    "id": "b-bioclass-55",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg21",
+    "question": "Euglenoids e.g. Euglena are found –",
+    "options": [
+      "In fresh running water",
+      "In fresh stagnant water",
+      "In marine environment",
+      "In both fresh and marine water"
+    ],
+    "correct": 1,
+    "solution": "Euglenoids are typically found in fresh, stagnant water rich in organic matter."
+  },
+  {
+    "id": "b-bioclass-56",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg21",
+    "question": "Which of the following statements about Euglena is true?",
+    "options": [
+      "Euglenoids are flagellates",
+      "Euglena in continuous darkness loses its photosynthetic activity and dies",
+      "The pigments of Euglena are quite different from those of green plants",
+      "Euglena is a marine protist"
+    ],
+    "correct": 0,
+    "solution": "Euglenoids move using flagella, making them flagellates."
+  },
+  {
+    "id": "b-bioclass-57",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg21",
+    "question": "Which of the following statements is true about Euglena?",
+    "options": [
+      "They show flagellar locomotion",
+      "They have a rigid cell wall",
+      "They have no chloroplast",
+      "They are obligate autotrophs"
+    ],
+    "correct": 0,
+    "solution": "Euglena moves by means of flagella (flagellar locomotion)."
+  },
+  {
+    "id": "b-bioclass-58",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg21",
+    "question": "The following statements are assigned to which organism: (i) Instead of a cell wall they have a protein rich pellicle making their body flexible (ii) They have 2 flagella, a short and a long one (iii) They have mixotrophic nutrition (iv) In light they are photosynthetic, but act as heterotroph when in dark (v) They are a connecting link between plants and animals",
+    "options": [
+      "Dinoflagellates",
+      "Slime mould",
+      "Desmids and Diatoms",
+      "Euglena"
+    ],
+    "correct": 3,
+    "solution": "These are all characteristic features of Euglena, which connects plant-like and animal-like traits."
+  },
+  {
+    "id": "b-bioclass-59",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg21",
+    "question": "Slime moulds –",
+    "options": [
+      "Are parasites",
+      "Do not produce fruiting bodies",
+      "Do not produce spores",
+      "Are saprophytic protists"
+    ],
+    "correct": 3,
+    "solution": "Slime moulds are saprophytic protists that engulf decaying organic matter."
+  },
+  {
+    "id": "b-bioclass-60",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg21",
+    "question": "The slimy mass of protoplasm with nuclei that forms the body of slime moulds is called –",
+    "options": [
+      "Plasmodium",
+      "Myxamoeba",
+      "Sporocytes",
+      "Periplasmodium"
+    ],
+    "correct": 0,
+    "solution": "This multinucleate mass of protoplasm is called plasmodium."
+  },
+  {
+    "id": "b-bioclass-61",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg21",
+    "question": "Which of the following is correct about the slime mould? (I) Its thalloid body, plasmodium, has pseudopodia for locomotion and engulfing organic matter (II) Under unfavourable conditions plasmodium differentiates and produces fruiting bodies, sporangium (III) Spores possess no true cell wall (IV) They are dispersed by air currents (V) Being extremely resistant, spores survive for many years (VI) Plasmodium can grow up to several feet",
+    "options": [
+      "I, II, IV, V, VI",
+      "I, II, III",
+      "I, II, III, VI",
+      "II, III, VI"
+    ],
+    "correct": 0,
+    "solution": "Slime mould spores possess a true, resistant cell wall (statement III is false); the other statements correctly describe slime moulds."
+  },
+  {
+    "id": "b-bioclass-62",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Protozoans are not included in kingdom Animalia because –",
+    "options": [
+      "Mostly asymmetrical",
+      "Unicellular eukaryotes",
+      "Heterotrophic nature",
+      "Multicellular prokaryotes"
+    ],
+    "correct": 1,
+    "solution": "Protozoans are unicellular eukaryotes, whereas Animalia consists of multicellular organisms."
+  },
+  {
+    "id": "b-bioclass-63",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "All protozoans are –",
+    "options": [
+      "Saprophytes only",
+      "Parasites only",
+      "Predators only",
+      "Heterotrophs (parasites or predators) only"
+    ],
+    "correct": 3,
+    "solution": "Protozoans are heterotrophic, existing either as parasites or as predators."
+  },
+  {
+    "id": "b-bioclass-64",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Which of the following is considered to be a primitive relative of animals -?",
+    "options": [
+      "Dinoflagellates",
+      "Slime moulds",
+      "Protozoa",
+      "Protochordata"
+    ],
+    "correct": 2,
+    "solution": "Protozoans are regarded as the primitive relatives of animals."
+  },
+  {
+    "id": "b-bioclass-65",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "How many major groups of protozoans are there?",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "8"
+    ],
+    "correct": 1,
+    "solution": "Protozoans are grouped into four major types: Amoeboid, Flagellated, Ciliated and Sporozoans."
+  },
+  {
+    "id": "b-bioclass-66",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Which of the following are protozoans?",
+    "options": [
+      "Diatoms, flagellates, ciliates",
+      "Desmids, flagellates, ciliates",
+      "Amoeboid, flagellates, ciliates, sporozoans",
+      "Amoeba, Paramecium, dinoflagellates, Plasmodium"
+    ],
+    "correct": 2,
+    "solution": "The four protozoan groups are amoeboid, flagellated, ciliated and sporozoans."
+  },
+  {
+    "id": "b-bioclass-67",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Which of the following statements is wrong about the amoeboid protozoans?",
+    "options": [
+      "They live in freshwater, sea water or moist soil",
+      "Amoeba has pseudopodia for locomotion and capturing prey",
+      "Entamoeba shows holozoic nutrition",
+      "Marine forms are shelled with silica"
+    ],
+    "correct": 2,
+    "solution": "Entamoeba is a parasitic amoeboid protozoan, not free-living/holozoic like Amoeba."
+  },
+  {
+    "id": "b-bioclass-68",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Flagellated protozoans are –",
+    "options": [
+      "Free living",
+      "Parasites",
+      "Either free living or parasites",
+      "Pseudopodia"
+    ],
+    "correct": 2,
+    "solution": "Flagellated protozoans can be free-living or parasitic (e.g. Trypanosoma)."
+  },
+  {
+    "id": "b-bioclass-69",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Which one is correct about Trypanosoma?",
+    "options": [
+      "They are flagellated protozoans",
+      "They are parasites",
+      "They cause sleeping sickness",
+      "All"
+    ],
+    "correct": 3,
+    "solution": "Trypanosoma is a flagellated, parasitic protozoan that causes African sleeping sickness."
+  },
+  {
+    "id": "b-bioclass-70",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Paramecium-",
+    "options": [
+      "Is a ciliated protozoan",
+      "Shows water current movement by cilia which helps steer food into the gullet",
+      "Has a cavity (gullet) that opens to the outside of the cell surface",
+      "All"
+    ],
+    "correct": 3,
+    "solution": "All these statements correctly describe Paramecium, a ciliated protozoan."
+  },
+  {
+    "id": "b-bioclass-71",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Plasmodium (malarial parasite)",
+    "options": [
+      "Is a ciliated protozoan",
+      "Shows water current movement by cilia which helps steer food into the gullet",
+      "Causes malaria",
+      "All"
+    ],
+    "correct": 2,
+    "solution": "Plasmodium is a sporozoan (not ciliated) that causes malaria in humans."
+  },
+  {
+    "id": "b-bioclass-72",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Which of the following always produces an infectious spore-like stage in their life cycle?",
+    "options": [
+      "Ciliated protozoans",
+      "Flagellated protozoans",
+      "Sporozoans",
+      "None"
+    ],
+    "correct": 2,
+    "solution": "Sporozoans always have an infectious spore-like stage in their life cycle."
+  },
+  {
+    "id": "b-bioclass-73",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Mode of nutrition in fungi is not –",
+    "options": [
+      "Parasitic",
+      "Saprophytic",
+      "Autotrophic",
+      "Heterotrophic"
+    ],
+    "correct": 2,
+    "solution": "Fungi are heterotrophic (parasitic or saprophytic), never autotrophic."
+  },
+  {
+    "id": "b-bioclass-74",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "All of the following are fungi except –",
+    "options": [
+      "Yeast",
+      "Penicillium",
+      "Plasmodium",
+      "Puccinia"
+    ],
+    "correct": 2,
+    "solution": "Plasmodium is a protozoan (sporozoan), not a fungus."
+  },
+  {
+    "id": "b-bioclass-75",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Which of the following is odd?",
+    "options": [
+      "Toad stool",
+      "Puccinia",
+      "Alternaria",
+      "Mushroom"
+    ],
+    "correct": 2,
+    "solution": "Toad stool, Puccinia, and Mushroom are Basidiomycetes, while Alternaria belongs to Deuteromycetes."
+  },
+  {
+    "id": "b-bioclass-76",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Cell walls of all fungi consist of the polysaccharide –",
+    "options": [
+      "Chitin",
+      "Cellulose",
+      "Silica",
+      "Pectin"
+    ],
+    "correct": 0,
+    "solution": "Fungal cell walls are composed of chitin."
+  },
+  {
+    "id": "b-bioclass-77",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "The body of a multicellular fungus is called a –",
+    "options": [
+      "Monokaryon",
+      "Hyphae",
+      "Rhizoids",
+      "Dikaryon"
+    ],
+    "correct": 1,
+    "solution": "The thread-like structures making up the fungal body are called hyphae."
+  },
+  {
+    "id": "b-bioclass-78",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "The cells of the body of a multicellular fungus are organised into rapidly growing individual filaments called –",
+    "options": [
+      "Mycelium",
+      "Rhizoids",
+      "Hyphae",
+      "Dikaryon"
+    ],
+    "correct": 2,
+    "solution": "Individual thread-like filaments of a fungal body are called hyphae; their network forms the mycelium."
+  },
+  {
+    "id": "b-bioclass-79",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Which one is a unicellular fungus?",
+    "options": [
+      "Puccinia",
+      "Toad stool",
+      "Penicillium",
+      "Yeast"
+    ],
+    "correct": 3,
+    "solution": "Yeast is a well-known unicellular fungus."
+  },
+  {
+    "id": "b-bioclass-80",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Coenocytic hypha is –",
+    "options": [
+      "Uninucleate hypha",
+      "Multicellular hypha",
+      "Multinucleate hypha without septae",
+      "Hypha in coelom"
+    ],
+    "correct": 2,
+    "solution": "A coenocytic hypha is continuous and multinucleate, lacking septa (cross-walls)."
+  },
+  {
+    "id": "b-bioclass-81",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Many fungi are in ____ association with photosynthetic organisms to form mycorrhizae or lichens –",
+    "options": [
+      "Parasitic",
+      "Symbiotic",
+      "Photosynthetic",
+      "Saprobic"
+    ],
+    "correct": 1,
+    "solution": "Fungi form symbiotic associations with plant roots (mycorrhizae) or algae (lichens)."
+  },
+  {
+    "id": "b-bioclass-82",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Fungi can be parasites on –",
+    "options": [
+      "Animals",
+      "Human beings",
+      "Plants",
+      "All"
+    ],
+    "correct": 3,
+    "solution": "Fungi can parasitise animals, humans and plants."
+  },
+  {
+    "id": "b-bioclass-83",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Fungi prefer to grow in –",
+    "options": [
+      "Cold and dry places",
+      "Hot and dry places",
+      "Sea water",
+      "Warm and humid places"
+    ],
+    "correct": 3,
+    "solution": "Fungi thrive best in warm and humid conditions."
+  },
+  {
+    "id": "b-bioclass-84",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Fungi occur-",
+    "options": [
+      "In air and soil",
+      "In water",
+      "On plants and animals",
+      "All"
+    ],
+    "correct": 3,
+    "solution": "Fungi are found in air, soil, water, and on plants and animals."
+  },
+  {
+    "id": "b-bioclass-85",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Fungi show a great diversity in –",
+    "options": [
+      "Morphology",
+      "Habitat",
+      "Both a and b",
+      "Nutrition"
+    ],
+    "correct": 2,
+    "solution": "Fungi show great diversity in both morphology and habitat."
+  },
+  {
+    "id": "b-bioclass-86",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg22",
+    "question": "Reproduction in fungi can take place by all of the following vegetative methods except-",
+    "options": [
+      "Gemmae",
+      "Fragmentation",
+      "Fission",
+      "Budding"
+    ],
+    "correct": 0,
+    "solution": "Fungal vegetative reproduction occurs by fragmentation, fission and budding; gemmae is not a fungal reproductive method."
+  },
+  {
+    "id": "b-bioclass-87",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg23",
+    "question": "Fungi show asexual reproduction by all of the following spores except-",
+    "options": [
+      "Conidia",
+      "Oospore",
+      "Sporangiospore",
+      "Zoospores"
+    ],
+    "correct": 1,
+    "solution": "Oospores are sexual spores, not asexual spores."
+  },
+  {
+    "id": "b-bioclass-88",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg23",
+    "question": "Sexual reproduction in fungi is by all of the following except-",
+    "options": [
+      "Oospores",
+      "Ascospores",
+      "Zoospores",
+      "Basidiospores"
+    ],
+    "correct": 2,
+    "solution": "Zoospores are motile asexual spores, not sexual spores."
+  },
+  {
+    "id": "b-bioclass-89",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg23",
+    "question": "Select the correct statements that apply to Kingdom Fungi-",
+    "options": [
+      "Some fungi form beneficial interrelationships with plants",
+      "Certain fungi are natural sources of antibiotics",
+      "The fungal life cycle typically includes a spore stage",
+      "All"
+    ],
+    "correct": 3,
+    "solution": "All these statements correctly apply to Kingdom Fungi."
+  },
+  {
+    "id": "b-bioclass-90",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg23",
+    "question": "Which of the following is the correct sequence of the 3 steps in the sexual cycle of fungi?",
+    "options": [
+      "Mitosis → Meiosis → Fertilization",
+      "Plasmogamy → Karyogamy → Meiosis",
+      "Meiosis → Plasmogamy → Karyogamy",
+      "Karyogamy → Plasmogamy → Meiosis"
+    ],
+    "correct": 1,
+    "solution": "The fungal sexual cycle proceeds: plasmogamy (fusion of protoplasm) → karyogamy (fusion of nuclei) → meiosis."
+  },
+  {
+    "id": "b-bioclass-91",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg23",
+    "question": "Fungi are classified on the basis of –",
+    "options": [
+      "Morphology of mycelium",
+      "Development of fruiting bodies",
+      "Mode of spore formation",
+      "All"
+    ],
+    "correct": 3,
+    "solution": "Fungal classification is based on mycelium morphology, fruiting body development, and mode of spore formation."
+  },
+  {
+    "id": "b-bioclass-92",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg23",
+    "question": "Dikaryophase / Dikaryon formation is a specific characteristic of-",
+    "options": [
+      "All fungi",
+      "Phycomycetes and Ascomycetes",
+      "Only Basidiomycetes",
+      "Ascomycetes and Basidiomycetes"
+    ],
+    "correct": 3,
+    "solution": "Dikaryon (dikaryophase) formation is a characteristic feature of Ascomycetes and Basidiomycetes."
+  },
+  {
+    "id": "b-bioclass-93",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg23",
+    "question": "Coenocytic, multinucleate and branched mycelial habit is found in-",
+    "options": [
+      "Basidiomycetes",
+      "Phycomycetes",
+      "Ascomycetes",
+      "Deuteromycetes"
+    ],
+    "correct": 1,
+    "solution": "Phycomycetes have coenocytic (aseptate), multinucleate, branched mycelium."
+  },
+  {
+    "id": "b-bioclass-94",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg23",
+    "question": "Match Column I with Column II: A. Phycomycetes  B. Ascomycetes  C. Basidiomycetes  D. Deuteromycetes  with  I. Sac fungi  II. Algal fungi  III. Fungi imperfecti  IV. Club fungi",
+    "options": [
+      "A-II, B-I, C-IV, D-III",
+      "A-II, B-IV, C-I, D-III",
+      "A-IV, B-I, C-II, D-III",
+      "A-IV, B-III, C-II, D-I"
+    ],
+    "correct": 0,
+    "solution": "Phycomycetes = Algal fungi (II), Ascomycetes = Sac fungi (I), Basidiomycetes = Club fungi (IV), Deuteromycetes = Fungi imperfecti (III)."
+  },
+  {
+    "id": "b-bioclass-95",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg23",
+    "question": "Members of phycomycetes are found-  I. In aquatic habitat  II. On decaying wood  III. On moist and damp places  IV. As obligate parasites on plants",
+    "options": [
+      "None of the above",
+      "I and IV",
+      "II and III",
+      "All of the above"
+    ],
+    "correct": 3,
+    "solution": "Phycomycetes are found in all these habitats — aquatic, decaying wood, damp places and as obligate parasites."
+  },
+  {
+    "id": "b-bioclass-96",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg23",
+    "question": "In phycomycetes, asexual reproduction occurs by-",
+    "options": [
+      "Zoospores (motile)",
+      "Aplanospores (non-motile)",
+      "Both",
+      "Aplanogamete"
+    ],
+    "correct": 2,
+    "solution": "Phycomycetes reproduce asexually by both motile zoospores and non-motile aplanospores."
+  },
+  {
+    "id": "b-bioclass-97",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg23",
+    "question": "Which of the following spores are produced endogenously?",
+    "options": [
+      "Zoospores and Conidia",
+      "Conidia and aplanospores",
+      "Aplanospores and zoospores",
+      "Aplanospore, zoospores and conidia"
+    ],
+    "correct": 2,
+    "solution": "Aplanospores and zoospores are formed endogenously inside a sporangium in phycomycetes, unlike conidia which form exogenously."
+  },
+  {
+    "id": "b-bioclass-98",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg23",
+    "question": "In Phycomycetes, sexual reproduction occurs by-",
+    "options": [
+      "Isogamy and anisogamy",
+      "Isogamy, oogamy",
+      "Isogamy, anisogamy and oogamy",
+      "Oogamy and anisogamy"
+    ],
+    "correct": 2,
+    "solution": "Phycomycetes show all three types of sexual fusion — isogamous, anisogamous and oogamous."
+  },
+  {
+    "id": "b-bioclass-99",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg23",
+    "question": "All the following belong to phycomycetes except –",
+    "options": [
+      "Penicillium",
+      "Rhizopus (bread mould)",
+      "Mucor",
+      "Albugo"
+    ],
+    "correct": 0,
+    "solution": "Penicillium is an Ascomycete, not a Phycomycete."
+  },
+  {
+    "id": "b-bioclass-100",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg23",
+    "question": "Which of the following is a parasite on mustard?",
+    "options": [
+      "Albugo",
+      "Puccinia",
+      "Yeast",
+      "Ustilago"
+    ],
+    "correct": 0,
+    "solution": "Albugo causes white rust disease on mustard plants."
+  },
+  {
+    "id": "b-bioclass-101",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg23",
+    "question": "Which of the following is false about ascomycetes?",
+    "options": [
+      "Saprophytic, decomposer, coprophilous (growing on dung) and parasitic",
+      "Includes unicellular (e.g. yeast) and multicellular forms",
+      "Mycelium is coenocytic",
+      "Aspergillus, Claviceps, Neurospora are important members of Ascomycetes"
+    ],
+    "correct": 2,
+    "solution": "Ascomycete mycelium is septate (divided into cells), not coenocytic."
+  },
+  {
+    "id": "b-bioclass-102",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg23",
+    "question": "The following characters: (I) Includes unicellular as well as multicellular fungi (II) Multicellular forms have branched and septate hyphae (III) Conidiophores produce conidia exogenously in chains (IV) Sexual spores are ascospores produced endogenously in an Ascus (V) Fruiting body is called ascocarp — are shown by-",
+    "options": [
+      "Phycomycetes",
+      "Sac fungi",
+      "Club fungi",
+      "Fungi imperfecti"
+    ],
+    "correct": 1,
+    "solution": "These are all defining features of Ascomycetes (Sac fungi)."
+  },
+  {
+    "id": "b-bioclass-103",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg24",
+    "question": "Which of the following are edible ascomycete delicacies?",
+    "options": [
+      "Morels + Mushroom",
+      "Truffles + Toadstool",
+      "Morels + Truffles",
+      "Puffball + Mushroom"
+    ],
+    "correct": 2,
+    "solution": "Morels and truffles are prized edible ascomycetes."
+  },
+  {
+    "id": "b-bioclass-104",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg24",
+    "question": "Which of the following is used extensively in biochemical and genetical work?",
+    "options": [
+      "Agaricus",
+      "Alternaria",
+      "Neurospora",
+      "Mucor"
+    ],
+    "correct": 2,
+    "solution": "Neurospora is a widely used model organism in biochemical and genetic research."
+  },
+  {
+    "id": "b-bioclass-105",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg24",
+    "question": "Which of the following ascomycetes is the source of an antibiotic?",
+    "options": [
+      "Neurospora",
+      "Penicillium",
+      "Claviceps",
+      "None"
+    ],
+    "correct": 1,
+    "solution": "Penicillium is the source of the antibiotic penicillin."
+  },
+  {
+    "id": "b-bioclass-106",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg24",
+    "question": "Basidiomycetes include -",
+    "options": [
+      "Mushroom, Toadstool, Puffball and bracket fungi",
+      "Smut fungi and rust fungi",
+      "Both a and b",
+      "Bread mould, sac fungi and algal fungi"
+    ],
+    "correct": 2,
+    "solution": "Basidiomycetes include mushrooms, toadstools, puffballs, bracket fungi, as well as smuts and rusts."
+  },
+  {
+    "id": "b-bioclass-107",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg24",
+    "question": "Which of the following are common parasitic basidiomycetes?",
+    "options": [
+      "Puccinia (rust) and Ustilago (smut)",
+      "Sac fungi",
+      "Puffballs",
+      "Agaricus (mushroom)"
+    ],
+    "correct": 0,
+    "solution": "Puccinia (rust fungus) and Ustilago (smut fungus) are common parasitic basidiomycetes."
+  },
+  {
+    "id": "b-bioclass-108",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg24",
+    "question": "Where does meiosis occur in mushroom?",
+    "options": [
+      "Basidiospore",
+      "Basidium",
+      "Basidiocarp",
+      "Ascus mother cell"
+    ],
+    "correct": 1,
+    "solution": "Karyogamy and meiosis occur within the basidium to form basidiospores."
+  },
+  {
+    "id": "b-bioclass-109",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg24",
+    "question": "The following characters: (I) Mycelium is branched and septate (II) No asexual spores are generally formed (III) Vegetative reproduction by fragmentation is common (IV) Sex organs are absent but sexual reproduction takes place by somatogamy (V) Karyogamy and meiosis occur in the basidium to form haploid exogenous basidiospores (VI) Basidia are arranged in a basidiocarp — are assigned to –",
+    "options": [
+      "Sac fungi",
+      "Club fungi",
+      "Algal fungi",
+      "Fungi imperfecti"
+    ],
+    "correct": 1,
+    "solution": "These are the defining features of Basidiomycetes (Club fungi)."
+  },
+  {
+    "id": "b-bioclass-110",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg24",
+    "question": "Plasmogamy in fungi is the fusion of-",
+    "options": [
+      "Two haploid gamete cells and their nuclei at once",
+      "Two haploid nuclei",
+      "Two haploid gamete cells",
+      "Two diploid vegetative cells with nuclei"
+    ],
+    "correct": 2,
+    "solution": "Plasmogamy is the fusion of the protoplasm (cell content) of two gamete cells, prior to nuclear fusion."
+  },
+  {
+    "id": "b-bioclass-111",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg24",
+    "question": "Karyogamy is -",
+    "options": [
+      "Fusion of two protoplasts",
+      "Fusion of two nuclei",
+      "Fusion of two plasma membranes",
+      "All of these"
+    ],
+    "correct": 1,
+    "solution": "Karyogamy refers specifically to the fusion of two nuclei following plasmogamy."
+  },
+  {
+    "id": "b-bioclass-112",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg24",
+    "question": "Which of the following is false about deuteromycetes?",
+    "options": [
+      "They reproduce only by asexual spores (conidia)",
+      "Mycelium is branched and septate",
+      "They have only parasitic forms",
+      "They have no sexual stage (perfect stage)"
+    ],
+    "correct": 2,
+    "solution": "Deuteromycetes can be both saprophytic and parasitic, not only parasitic."
+  },
+  {
+    "id": "b-bioclass-113",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg24",
+    "question": "Which of the following is correct about class Deuteromycetes?",
+    "options": [
+      "Some members are saprophytes or parasites",
+      "A large number of members are decomposers of litter and help in mineral cycling",
+      "Alternaria, Colletotrichum and Trichoderma are deuteromycetes",
+      "All"
+    ],
+    "correct": 3,
+    "solution": "All these statements correctly describe class Deuteromycetes."
+  },
+  {
+    "id": "b-bioclass-114",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg24",
+    "question": "Sexual reproduction is found in all except –",
+    "options": [
+      "Deuteromycetes",
+      "Ascomycetes",
+      "Phycomycetes",
+      "Basidiomycetes"
+    ],
+    "correct": 0,
+    "solution": "Deuteromycetes (Fungi imperfecti) lack a known sexual stage."
+  },
+  {
+    "id": "b-bioclass-115",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg24",
+    "question": "If a sexual stage is discovered in a member of deuteromycetes, it is moved to-",
+    "options": [
+      "Phycomycetes",
+      "Basidiomycetes",
+      "Ascomycetes",
+      "Both B and C"
+    ],
+    "correct": 3,
+    "solution": "Once a sexual stage is identified, such fungi are reclassified into Ascomycetes or Basidiomycetes depending on the spore type."
+  },
+  {
+    "id": "b-bioclass-116",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg25",
+    "question": "Kingdom Plantae includes-  (i) All eukaryotic chlorophyllous organisms  (ii) Some prokaryotic chlorophyllous organisms  (iii) Few eukaryotic partial heterotrophic plants  (iv) Few prokaryotic partial heterotrophic plants",
+    "options": [
+      "i, iii",
+      "ii, iv",
+      "i, ii, iii",
+      "i, iii, iv"
+    ],
+    "correct": 0,
+    "solution": "Plantae includes eukaryotic chlorophyllous organisms and a few partially heterotrophic eukaryotic plants (like insectivorous plants); prokaryotic organisms are not included in Plantae."
+  },
+  {
+    "id": "b-bioclass-117",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg25",
+    "question": "Plantae does not include how many of the following: Algae, Fungi, Bryophyte, Bladderwort, Pteridophyta, Gymnosperm, Angiosperm",
+    "options": [
+      "Zero",
+      "One",
+      "Two",
+      "Three"
+    ],
+    "correct": 1,
+    "solution": "Only Fungi is excluded from Kingdom Plantae; all the other listed groups (including Bladderwort, an insectivorous angiosperm) belong to Plantae."
+  },
+  {
+    "id": "b-bioclass-118",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg25",
+    "question": "Life cycle of angiosperm plants has-",
+    "options": [
+      "Diploid sporophyte & diploid gametophyte",
+      "Diploid gametophyte & haploid sporophyte",
+      "Diploid sporophyte & haploid gametophyte",
+      "Haploid sporophyte & haploid gametophyte"
+    ],
+    "correct": 2,
+    "solution": "Angiosperms show alternation of generation with a dominant diploid sporophyte and a reduced haploid gametophyte."
+  },
+  {
+    "id": "b-bioclass-119",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg25",
+    "question": "How many of the following are correct about Plantae-  (I) Cells have eukaryotic structure  (II) Prominent chloroplast  (III) Cellulosic cell wall  (IV) Life cycle has three distinct phases  (V) Show alternation of generation",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "correct": 3,
+    "solution": "Plantae life cycles have two distinct phases (haplophase and diplophase), not three, making statement IV incorrect; the other four statements are correct."
+  },
+  {
+    "id": "b-bioclass-120",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg25",
+    "question": "Kingdom Animalia are characterized by-",
+    "options": [
+      "Heterotrophic eukaryotic unicellular & multicellular organisms that lack cell wall",
+      "Holozoic, digest food in an internal cavity and store food as complex carbohydrates or fat",
+      "Higher as well as lower forms show elaborate sensory mechanisms",
+      "All of the above"
+    ],
+    "correct": 3,
+    "solution": "All these features characterize Kingdom Animalia."
+  },
+  {
+    "id": "b-bioclass-121",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg25",
+    "question": "How many of the following terms are correct about Animalia: Heterotroph, eukaryotic, prokaryotic, unicellular, multicellular, store food as glycogen, presence of elaborated neuromotor mechanism without any exception, embryological development",
+    "options": [
+      "6",
+      "More than 6",
+      "5",
+      "Less than 3"
+    ],
+    "correct": 2,
+    "solution": "Correct terms: Heterotroph, eukaryotic, multicellular, store food as glycogen, embryological development = 5. 'Prokaryotic', 'unicellular', and 'without any exception' for neuromotor mechanism are incorrect."
+  },
+  {
+    "id": "b-bioclass-122",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg25",
+    "question": "In R.H. Whittaker's system, viroids, prions & lichens are grouped into-",
+    "options": [
+      "Monera",
+      "Protista",
+      "Protista and fungi",
+      "None of these"
+    ],
+    "correct": 3,
+    "solution": "Viroids, prions and lichens do not fit into any of the five kingdoms of Whittaker's system."
+  },
+  {
+    "id": "b-bioclass-123",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg25",
+    "question": "Viruses did not find a place in classification due to-",
+    "options": [
+      "Lack in study of viruses",
+      "They are not considered truly 'living'",
+      "Lack of genetic material",
+      "All of these"
+    ],
+    "correct": 1,
+    "solution": "Viruses were excluded from the five-kingdom classification because they are not considered truly living outside a host cell."
+  },
+  {
+    "id": "b-bioclass-124",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg25",
+    "question": "Viruses are NOT –",
+    "options": [
+      "Non-cellular organisms",
+      "Inert crystalline structures outside the living cell",
+      "Active crystalline structures outside the living cell",
+      "Once they infect a cell, they take over the machinery of the host cell to replicate, killing the host"
+    ],
+    "correct": 2,
+    "solution": "Outside a host cell, viruses exist as inert (not active) crystalline structures."
+  },
+  {
+    "id": "b-bioclass-125",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg25",
+    "question": "The name 'viruses', meaning venom, was given by-",
+    "options": [
+      "Dmitri Ivanowsky",
+      "M.W. Beijerinck",
+      "W.M. Stanley",
+      "Pasteur"
+    ],
+    "correct": 0,
+    "solution": "Dmitri Ivanowsky is credited with recognising and naming the causative agent of tobacco mosaic disease, later called virus (meaning venom)."
+  },
+  {
+    "id": "b-bioclass-126",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg26",
+    "question": "Choose the correct statement–",
+    "options": [
+      "The genetic material of the tobacco mosaic disease causing organism is DNA",
+      "Viruses were found to be smaller than bacteria but they could be passed through bacteria-proof filters",
+      "M.W. Beijerinck (1898) demonstrated that the extract of infected plant of tobacco could cause infection in healthy plants",
+      "Viruses were found to be smaller than bacteria and they can pass through bacteria-proof filters"
+    ],
+    "correct": 3,
+    "solution": "Viruses are smaller than bacteria and can pass through bacteria-proof filters; the genetic material of TMV is RNA, not DNA."
+  },
+  {
+    "id": "b-bioclass-127",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg26",
+    "question": "'Contagium vivum fluidum' was stated by –",
+    "options": [
+      "Dmitri Ivanowsky (1892)",
+      "M.W. Beijerinck (1898)",
+      "W.M. Stanley (1935)",
+      "None of these"
+    ],
+    "correct": 1,
+    "solution": "M.W. Beijerinck (1898) coined the term 'contagium vivum fluidum' (infectious living fluid) for the tobacco mosaic virus."
+  },
+  {
+    "id": "b-bioclass-128",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg26",
+    "question": "Who showed that viruses could be crystallized & the crystals existed outside the host?",
+    "options": [
+      "W.M. Stanley (1935)",
+      "M.W. Beijerinck (1898)",
+      "Dmitri Ivanowsky (1892)",
+      "M.W. Stanley (1898)"
+    ],
+    "correct": 0,
+    "solution": "W.M. Stanley (1935) showed that viruses could be crystallized and that the crystals consisted largely of protein."
+  },
+  {
+    "id": "b-bioclass-129",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg26",
+    "question": "Which of the following is a major constituent in crystallised virus structure –",
+    "options": [
+      "Carbohydrate",
+      "Protein",
+      "Fat",
+      "Nucleic acid"
+    ],
+    "correct": 1,
+    "solution": "Crystallised virus particles consist largely of protein."
+  },
+  {
+    "id": "b-bioclass-130",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg26",
+    "question": "Viruses are",
+    "options": [
+      "Autotroph",
+      "Obligate parasite",
+      "Saprotroph",
+      "Holozoic"
+    ],
+    "correct": 1,
+    "solution": "Viruses are obligate parasites, replicating only inside a host cell."
+  },
+  {
+    "id": "b-bioclass-131",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg26",
+    "question": "Genetic material of viruses is/are –",
+    "options": [
+      "DNA",
+      "RNA",
+      "DNA and RNA both in an individual virus",
+      "DNA or RNA in an individual virus"
+    ],
+    "correct": 3,
+    "solution": "Each individual virus contains either DNA or RNA (not both), as its genetic material."
+  },
+  {
+    "id": "b-bioclass-132",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg26",
+    "question": "The infectious material of viruses is/are",
+    "options": [
+      "Protein coat",
+      "Genetic material",
+      "Nucleoprotein",
+      "All of these"
+    ],
+    "correct": 1,
+    "solution": "The genetic material (nucleic acid) of a virus is its infectious part, not the protein coat."
+  },
+  {
+    "id": "b-bioclass-133",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg26",
+    "question": "In general, viruses that infect plants generally have-",
+    "options": [
+      "ds RNA",
+      "ss RNA",
+      "ds DNA",
+      "ss DNA"
+    ],
+    "correct": 1,
+    "solution": "Most plant viruses are single-stranded RNA (ssRNA) viruses."
+  },
+  {
+    "id": "b-bioclass-134",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg26",
+    "question": "Animal-infecting viruses are not generally –",
+    "options": [
+      "ss RNA",
+      "ds RNA",
+      "ds DNA",
+      "ss DNA"
+    ],
+    "correct": 1,
+    "solution": "Animal viruses are commonly ss RNA or ds DNA; ds RNA is less common among them."
+  },
+  {
+    "id": "b-bioclass-135",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg26",
+    "question": "Genetic material of bacteriophage is –",
+    "options": [
+      "ds DNA",
+      "ss RNA",
+      "ds RNA",
+      "ss DNA"
+    ],
+    "correct": 0,
+    "solution": "Most bacteriophages have double-stranded DNA as their genetic material."
+  },
+  {
+    "id": "b-bioclass-136",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg26",
+    "question": "Bacteriophage is –",
+    "options": [
+      "Bacteria that infect viruses",
+      "Virus that infects bacteria",
+      "Bacteria that infect cellular organisms",
+      "Virus that infects organisms other than bacteria"
+    ],
+    "correct": 1,
+    "solution": "A bacteriophage is a virus that infects bacteria."
+  },
+  {
+    "id": "b-bioclass-137",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg26",
+    "question": "The protein coat called ___(A)___ made of small subunits called ____(B)____ that protect ____(C)____ of the virus",
+    "options": [
+      "A = capsomere, B = capsid, C = genetic material",
+      "A = capsid, B = capsomere, C = genetic material",
+      "A = capsid, B = capsomere, C = enzyme and mineral",
+      "A = capsomere, B = capsid, C = enzyme and mineral"
+    ],
+    "correct": 1,
+    "solution": "The protein coat (capsid) is made of small subunits called capsomeres, which enclose and protect the genetic material."
+  },
+  {
+    "id": "b-bioclass-138",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg26",
+    "question": "Head of bacteriophage is –",
+    "options": [
+      "Helical",
+      "Polyhedral",
+      "Icosahedral",
+      "A & B"
+    ],
+    "correct": 2,
+    "solution": "The head of a typical bacteriophage is icosahedral in shape."
+  },
+  {
+    "id": "b-bioclass-139",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg27",
+    "question": "Viroid was discovered by –",
+    "options": [
+      "T.O. Diener (1971)",
+      "W.M. Stanley (1935)",
+      "T.O. Diener (1935)",
+      "W.M. Stanley (1971)"
+    ],
+    "correct": 0,
+    "solution": "T.O. Diener discovered viroids in 1971."
+  },
+  {
+    "id": "b-bioclass-140",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg27",
+    "question": "Choose the correct order on basis of size:",
+    "options": [
+      "Bacteria < virus < viroid",
+      "Viroid < virus < bacteria",
+      "Viroid > bacteria < virus",
+      "Bacteria > viroid > virus"
+    ],
+    "correct": 1,
+    "solution": "Viroids are smaller than viruses, which are smaller than bacteria."
+  },
+  {
+    "id": "b-bioclass-141",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg27",
+    "question": "Given below are statements (i–vi); choose the correct set: (i) Viroid = virus − capsid (ii) Potato spindle tuber disease is caused by prions (iii) Viroids have free DNA (iv) Viroids have free RNA (v) DNA of viroid is of low molecular weight (vi) RNA of viroid is of light/low molecular weight",
+    "options": [
+      "i, iv only",
+      "i, vi, iii",
+      "i, iv, vi",
+      "i, iii, v"
+    ],
+    "correct": 2,
+    "solution": "Viroids consist of free RNA (not DNA) of low molecular weight without a protein coat; potato spindle tuber disease is caused by viroids, not prions, making (ii) false."
+  },
+  {
+    "id": "b-bioclass-142",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg27",
+    "question": "Prions cause-",
+    "options": [
+      "BSE in cattle and CJD in humans",
+      "BSE in humans and CJD in cattle",
+      "BSE and CJD both in cattle",
+      "BSE and CJD both in humans"
+    ],
+    "correct": 0,
+    "solution": "Prions cause Bovine Spongiform Encephalopathy (BSE, 'mad cow disease') in cattle and Creutzfeldt-Jakob Disease (CJD) in humans."
+  },
+  {
+    "id": "b-bioclass-143",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg27",
+    "question": "Prions are-",
+    "options": [
+      "Smaller than viruses",
+      "Larger than viruses",
+      "Smaller than viroids",
+      "Similar in size to viruses"
+    ],
+    "correct": 0,
+    "solution": "Prions are infectious protein particles smaller than viruses."
+  },
+  {
+    "id": "b-bioclass-144",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg27",
+    "question": "Choose the incorrect statement about BSE",
+    "options": [
+      "It is expanded as Bovine Spongiform Encephalopathy",
+      "Caused by prion",
+      "Its analogous variant is CJD",
+      "Its homologous variant is CJD"
+    ],
+    "correct": 3,
+    "solution": "CJD is the analogous (similar) disease occurring in humans, not homologous, so calling it a 'homologous variant' is incorrect."
+  },
+  {
+    "id": "b-bioclass-145",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg27",
+    "question": "Lichens are –",
+    "options": [
+      "Saprotroph only",
+      "Symbiotic",
+      "Parasitic only",
+      "A & C"
+    ],
+    "correct": 1,
+    "solution": "Lichens are symbiotic associations between fungi and algae/cyanobacteria."
+  },
+  {
+    "id": "b-bioclass-146",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg27",
+    "question": "Lichens are a mutual association of-",
+    "options": [
+      "Mycobiont (fungal) and phycobiont (algal)",
+      "Gymnosperm root & fungi",
+      "Algae & gymnosperm root",
+      "All of these"
+    ],
+    "correct": 0,
+    "solution": "Lichens are symbiotic associations between a fungal partner (mycobiont) and an algal partner (phycobiont)."
+  },
+  {
+    "id": "b-bioclass-147",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg27",
+    "question": "Mycobiont and phycobiont are ___ & ___ respectively",
+    "options": [
+      "Autotrophic & heterotrophic",
+      "Autotrophic & autotrophic",
+      "Heterotrophic & autotrophic",
+      "Heterotrophic & heterotrophic"
+    ],
+    "correct": 2,
+    "solution": "The mycobiont (fungal partner) is heterotrophic, while the phycobiont (algal partner) is autotrophic."
+  },
+  {
+    "id": "b-bioclass-148",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg27",
+    "question": "The function of the fungal part in a lichen is/are –",
+    "options": [
+      "Water absorption",
+      "Mineral absorption",
+      "Provide shelter",
+      "All of these"
+    ],
+    "correct": 3,
+    "solution": "The fungal partner absorbs water and minerals and provides shelter/protection to the algal partner."
+  },
+  {
+    "id": "b-bioclass-149",
+    "subject": "bio",
+    "chapter": "biological-classification",
+    "source": "NEET PREMIUM BY ARNAB Pg27",
+    "question": "Lichens cannot grow in –",
+    "options": [
+      "Polluted areas",
+      "Areas where there is no pollution",
+      "Association between fungi and algae in an unpolluted region",
+      "All of these"
+    ],
+    "correct": 0,
+    "solution": "Lichens are extremely sensitive to air pollution (especially SO2) and cannot grow in polluted areas — hence they are used as pollution indicators."
+  },
+  {
+    "id": "c-mole-1",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "The number of atoms in 0.1 mol of a tetraatomic gas is (N_A = 6.02 × 10^23 mol^-1)",
+    "options": [
+      "2.4 × 10^22",
+      "6.026 × 10^22",
+      "2.4 × 10^23",
+      "3.600 × 10^23"
+    ],
+    "correct": 2,
+    "solution": "Tetraatomic gas ke ek molecule me 4 atoms hote hain. Moles of atoms = 0.1 × 4 = 0.4 mol. Number of atoms = 0.4 × 6.02×10^23 = 2.4×10^23."
+  },
+  {
+    "id": "c-mole-2",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "An element, X has the following isotopic composition: 200X : 90%, 199X : 8%, 202X : 2.0%. The weighted average atomic mass of the naturally occurring element X is closest to",
+    "options": [
+      "201 amu",
+      "202 amu",
+      "199 amu",
+      "200 amu"
+    ],
+    "correct": 3,
+    "solution": "Weighted average = (200×0.90)+(199×0.08)+(202×0.02) = 180+15.92+4.04 = 199.96 ≈ 200 amu."
+  },
+  {
+    "id": "c-mole-3",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "The total number of electrons in 1.6 g of CH4 compared to that in 1.8 g of H2O is",
+    "options": [
+      "Double",
+      "Same",
+      "Triple",
+      "One fourth"
+    ],
+    "correct": 1,
+    "solution": "Moles CH4 = 1.6/16 = 0.1 mol; electrons per CH4 = 6+4 = 10 → total e⁻ = 1 mol. Moles H2O = 1.8/18 = 0.1 mol; electrons per H2O = 8+2 = 10 → total e⁻ = 1 mol. Dono same hain."
+  },
+  {
+    "id": "c-mole-4",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "Which has maximum molecules?",
+    "options": [
+      "7 g N2O",
+      "20 g H2",
+      "16 g NO2",
+      "16 g SO2"
+    ],
+    "correct": 1,
+    "solution": "Moles: N2O(44)=7/44=0.159; H2(2)=20/2=10; NO2(46)=16/46=0.348; SO2(64)=16/64=0.25. Maximum moles (hence molecules) H2 ke 20g me hain."
+  },
+  {
+    "id": "c-mole-5",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "The maximum number of molecules is present in",
+    "options": [
+      "15 L of H2 gas at STP",
+      "5 L of N2 gas at STP",
+      "0.5 g of H2 gas",
+      "10 g of O2 gas"
+    ],
+    "correct": 0,
+    "solution": "Moles: 15L H2 at STP=15/22.4=0.670; 5L N2=5/22.4=0.223; 0.5g H2=0.25mol; 10g O2=0.3125mol. Maximum moles 15L H2 me hain."
+  },
+  {
+    "id": "c-mole-6",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "The total number of electrons in 4.2 g of N3- ion is (N_A is Avogadro's number)",
+    "options": [
+      "2.1 N_A",
+      "4.2 N_A",
+      "3 N_A",
+      "3.2 N_A"
+    ],
+    "correct": 2,
+    "solution": "Yahan N3- se matlab nitride ion (N³⁻) hai. Molar mass ≈14 g/mol (extra electrons ka mass negligible). Moles = 4.2/14 = 0.3 mol. Electrons per ion = 7(atomic no.)+3(charge) = 10. Total electrons = 0.3×10 = 3 mol = 3N_A."
+  },
+  {
+    "id": "c-mole-7",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "Suppose that A and B form the compounds B2A3 and B2A. If 0.05 mole of B2A3 weighs 9 g and 0.1 mole of B2A weighs 10 g, the atomic weight of A and B respectively are",
+    "options": [
+      "30 and 40",
+      "40 and 30",
+      "20 and 5",
+      "15 and 20"
+    ],
+    "correct": 1,
+    "solution": "B2A3: 0.05 mol = 9g → M=180 → 2b+3a=180. B2A: 0.1 mol = 10g → M=100 → 2b+a=100. Subtracting: 2a=80 → a=40 (A). Then b=30 (B). So A=40, B=30."
+  },
+  {
+    "id": "c-mole-8",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "A certain amount of a metal whose equivalent mass is 28 displaces 0.7 L of H2 at S.T.P. from an acid, hence mass of the element is",
+    "options": [
+      "1.75 g",
+      "0.875 g",
+      "3.50 g",
+      "7.00 g"
+    ],
+    "correct": 0,
+    "solution": "Equivalents of H2 = 700mL/11200 mL per eq = 0.0625 eq. Mass of metal = equivalents × equivalent mass = 0.0625×28 = 1.75 g."
+  },
+  {
+    "id": "c-mole-9",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "The number of electrons in 1.6 g of CH4 is approximately",
+    "options": [
+      "25 × 10^24",
+      "1.5 × 10^24",
+      "6 × 10^23",
+      "3.0 × 10^24"
+    ],
+    "correct": 2,
+    "solution": "Moles CH4 = 1.6/16 = 0.1 mol. Electrons per CH4 = 10. Total electrons = 0.1×10 = 1 mol = 6×10^23 (approx)."
+  },
+  {
+    "id": "c-mole-10",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "Suppose the elements X and Y combine to form two compounds XY2 and X3Y2. When 0.1 mole of XY2 weighs 10 g and 0.05 mole of X3Y2 weighs 9 g, the atomic weights of X and Y are",
+    "options": [
+      "40, 30",
+      "60, 40",
+      "20, 30",
+      "30, 20"
+    ],
+    "correct": 0,
+    "solution": "XY2: 0.1mol=10g → M=100 → x+2y=100. X3Y2: 0.05mol=9g → M=180 → 3x+2y=180. Subtracting: 2x=80 → x=40. Then y=(100-40)/2=30. X=40, Y=30."
+  },
+  {
+    "id": "c-mole-11",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "20.0 g of a magnesium carbonate sample decomposes on heating to give carbon dioxide and 8.0 g magnesium oxide. What will be the percentage purity of magnesium carbonate in the sample? (At. wt.: Mg = 24)",
+    "options": [
+      "60",
+      "84",
+      "75",
+      "96"
+    ],
+    "correct": 1,
+    "solution": "MgCO3 → MgO + CO2. Moles MgO = 8/40 = 0.2 mol = moles MgCO3 decomposed. Mass MgCO3 = 0.2×84 = 16.8g. Purity = 16.8/20×100 = 84%."
+  },
+  {
+    "id": "c-mole-12",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "An organic compound contains carbon, hydrogen and oxygen. Its elemental analysis gave C, 38.71% and H, 9.67%. The empirical formula of the compound would be",
+    "options": [
+      "CH4O",
+      "CH3O",
+      "CH2O",
+      "CHO"
+    ],
+    "correct": 1,
+    "solution": "O% = 100-38.71-9.67 = 51.62%. Moles: C=38.71/12=3.226, H=9.67/1=9.67, O=51.62/16=3.226. Ratio C:H:O = 1:3:1 → CH3O."
+  },
+  {
+    "id": "c-mole-13",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "The amount of zinc required to produce 224 mL of H2 at STP on treatment with dilute H2SO4 will be (Zn = 65)",
+    "options": [
+      "65 g",
+      "0.065 g",
+      "0.65 g",
+      "6.5 g"
+    ],
+    "correct": 2,
+    "solution": "224mL H2 at STP = 224/22400 = 0.01 mol. Zn required = 0.01×65 = 0.65g."
+  },
+  {
+    "id": "c-mole-14",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "In the reaction, 4NH3(g) + 5O2(g) → 4NO(g) + 6H2O(g), when 1 mole of ammonia and 1 mole of O2 are made to react to completion",
+    "options": [
+      "All the oxygen will be consumed",
+      "1.0 mole of NO will be produced",
+      "1.0 mole of H2O is produced",
+      "All the ammonia will be consumed"
+    ],
+    "correct": 0,
+    "solution": "4NH3+5O2→4NO+6H2O. 1 mol NH3 needs 1.25 mol O2, but sirf 1 mol O2 hai — O2 limiting hai, isliye poora O2 consume ho jayega."
+  },
+  {
+    "id": "c-mole-15",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "How many g of dibasic acid (mol. weight 200) should be present in 100 mL of its aqueous solution to give strength of 0.1 N?",
+    "options": [
+      "10 g",
+      "2 g",
+      "1 g",
+      "20 g"
+    ],
+    "correct": 2,
+    "solution": "Dibasic acid ka equivalent weight = 200/2 = 100. 0.1N in 100mL → equivalents = 0.1×0.1 = 0.01 eq. Mass = 0.01×100 = 1g."
+  },
+  {
+    "id": "c-mole-16",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "An element, X has the following isotopic composition: 56X : 90%, 57X : 8%, 59X : 2.0%. The weighted average atomic mass of the naturally occurring element X is closest to",
+    "options": [
+      "56.14 amu",
+      "56.8 amu",
+      "60 amu",
+      "55 amu"
+    ],
+    "correct": 0,
+    "solution": "Weighted avg = (56×0.90)+(57×0.08)+(59×0.02) = 50.4+4.56+1.18 = 56.14 amu."
+  },
+  {
+    "id": "c-mole-17",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "The total number of electrons in 2.0 g of D2O compared to that in 1.8 g of H2O is",
+    "options": [
+      "Double",
+      "Same",
+      "Triple",
+      "One fourth"
+    ],
+    "correct": 1,
+    "solution": "D2O molar mass=20. 2.0g/20=0.1mol; electrons per D2O(same as H2O, D has 1 e⁻)=10; total=1mol. H2O: 1.8/18=0.1mol×10=1mol. Same."
+  },
+  {
+    "id": "c-mole-18",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "If the weight of metal oxide is x g containing y g of oxygen, the equivalent weight of metal will be",
+    "options": [
+      "E = 8x/y",
+      "E = 8(y-x)/x",
+      "E = y/8",
+      "E = 8(x-y)/y"
+    ],
+    "correct": 3,
+    "solution": "Metal mass = (x−y) g, oxygen mass = y g. Equivalent weight of oxygen=8. By law of equivalents: (x−y)/E = y/8 → E = 8(x−y)/y."
+  },
+  {
+    "id": "c-mole-19",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "A sample of ammonium phosphate (NH4)3PO4 contains 3.18 moles of hydrogen atoms. The number of moles of oxygen atoms in the sample is",
+    "options": [
+      "0.265",
+      "0.795",
+      "1.06",
+      "4.00"
+    ],
+    "correct": 2,
+    "solution": "(NH4)3PO4 me 12 H atoms per formula unit. Moles formula unit = 3.18/12 = 0.265 mol. O atoms per unit = 4. Moles O = 0.265×4 = 1.06 mol."
+  },
+  {
+    "id": "c-mole-20",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "What volume of oxygen gas (O2) measured at 0°C and 1 atm, is needed to burn completely 1 L of propane gas (C3H8) measured under the same conditions?",
+    "options": [
+      "10 L",
+      "7 L",
+      "6 L",
+      "5 L"
+    ],
+    "correct": 3,
+    "solution": "C3H8 + 5O2 → 3CO2 + 4H2O. Same conditions par volume ratio = mole ratio, isliye 1L C3H8 ko 5L O2 chahiye."
+  },
+  {
+    "id": "c-mole-21",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "Consider the reaction sequence: S8(s) + 8O2(g) → 8SO2(g); 2SO2(g) + O2(g) → 2SO3(g). How many grams of SO3 are produced from 1 mole S8?",
+    "options": [
+      "1280 g",
+      "960 g",
+      "640 g",
+      "320 g"
+    ],
+    "correct": 2,
+    "solution": "S8+8O2→8SO2; 2SO2+O2→2SO3. 1 mol S8 se 8 mol SO2, phir 8 mol SO3 (1:1). Mass SO3 = 8×80 = 640g."
+  },
+  {
+    "id": "c-mole-22",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "1 mol of KClO3 is thermally decomposed and excess of aluminium is burnt in the gaseous product. How many moles of Al2O3 are formed?",
+    "options": [
+      "1",
+      "2",
+      "1.5",
+      "3"
+    ],
+    "correct": 0,
+    "solution": "2KClO3→2KCl+3O2. 1 mol KClO3 se 1.5 mol O2. 4Al+3O2→2Al2O3. Moles Al2O3 = (2/3)×1.5 = 1 mol."
+  },
+  {
+    "id": "c-mole-23",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "Volume of CO2 obtained at STP by the complete decomposition of 9.85 g Na2CO3 is",
+    "options": [
+      "2.24 litre",
+      "Zero",
+      "0.85 litre",
+      "0.56 litre"
+    ],
+    "correct": 1,
+    "solution": "Na2CO3 thermally kaafi stable hai — normal heating conditions me decompose nahi hota (NaHCO3 ke ulat). Isliye CO2 ka volume Zero hoga."
+  },
+  {
+    "id": "c-mole-24",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "An organic compound containing C and H gave the following analysis: C = 40%, H = 6.7%. Its empirical formula would be",
+    "options": [
+      "CH4",
+      "CH2O",
+      "C2H4O2",
+      "C2H4"
+    ],
+    "correct": 1,
+    "solution": "O% = 100-40-6.7 = 53.3%. Moles: C=40/12=3.33, H=6.7/1=6.7, O=53.3/16=3.33. Ratio C:H:O = 1:2:1 → CH2O."
+  },
+  {
+    "id": "c-mole-25",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "For the formation of 3.65 g of HCl gas, what volume of hydrogen gas and chlorine gas are required at NTP conditions?",
+    "options": [
+      "1 L, 1 L",
+      "1.12 L, 2.24 L",
+      "3.65 L, 1.83 L",
+      "1.12 L, 1.12 L"
+    ],
+    "correct": 3,
+    "solution": "H2+Cl2→2HCl. 3.65g HCl = 3.65/36.5 = 0.1 mol. H2 required = 0.05mol = 1.12L; Cl2 required = 0.05mol = 1.12L."
+  },
+  {
+    "id": "c-mole-26",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "What is the mass of the precipitate formed when 50 mL of 16.9%(w/v) solution of AgNO3 is mixed with 50 mL of 5.8%(w/v) NaCl solution? (Ag=107.8, N=14, O=16, Na=23, Cl=35.5)",
+    "options": [
+      "7 g",
+      "14 g",
+      "28 g",
+      "3.5 g"
+    ],
+    "correct": 0,
+    "solution": "AgNO3: 16.9g/100mL×50mL=8.45g, moles=8.45/170=0.05mol. NaCl: 5.8g/100mL×50mL=2.9g, moles=2.9/58.5=0.05mol. 1:1 reaction, AgCl formed=0.05mol×143.5=7.175g≈7g."
+  },
+  {
+    "id": "c-mole-27",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "How many moles of lead (II) chloride will be formed from a reaction between 6.5 g of PbO and 3.2 g of HCl?",
+    "options": [
+      "0.029",
+      "0.044",
+      "0.333",
+      "0.011"
+    ],
+    "correct": 0,
+    "solution": "PbO+2HCl→PbCl2+H2O. Moles PbO=6.5/223=0.0292mol. Moles HCl=3.2/36.5=0.0877mol (excess). PbO limiting → moles PbCl2=0.0292≈0.029."
+  },
+  {
+    "id": "c-mole-28",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "In Haber process 30 litres of dihydrogen and 30 litres of dinitrogen were taken for reaction which yielded only 50% of the expected product. What will be the composition of gaseous mixture under the above said condition in the end?",
+    "options": [
+      "20 litres ammonia, 20 litres nitrogen, 20 litres hydrogen",
+      "10 litres ammonia, 25 litres nitrogen, 15 litres hydrogen",
+      "20 litres ammonia, 10 litres nitrogen, 30 litres hydrogen",
+      "20 litres ammonia, 25 litres nitrogen, 15 litres hydrogen"
+    ],
+    "correct": 1,
+    "solution": "N2+3H2→2NH3. H2(30L) limiting (ratio 1:3 needs sirf 10L N2). 100% yield par NH3=20L using 30L H2+10L N2. 50% yield par: NH3=10L, H2 consumed=15L (remaining 15L), N2 consumed=5L (remaining 25L)."
+  },
+  {
+    "id": "c-mole-29",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "How many grams of NaOH should be added to water to prepare 250 mL solution of 2 M NaOH?",
+    "options": [
+      "9.6 × 10^3",
+      "2.4 × 10^3",
+      "20",
+      "24"
+    ],
+    "correct": 2,
+    "solution": "Moles NaOH = 2×0.25 = 0.5 mol. Mass = 0.5×40 = 20g."
+  },
+  {
+    "id": "c-mole-30",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "Mole fraction of solvent in aqueous solution of NaOH having molality of 3 is",
+    "options": [
+      "0.3",
+      "0.05",
+      "0.7",
+      "0.95"
+    ],
+    "correct": 3,
+    "solution": "Molality 3 = 3 mol NaOH per 1000g water. Moles water=1000/18=55.56mol. Mole fraction solvent = 55.56/(55.56+3) = 0.95."
+  },
+  {
+    "id": "c-mole-31",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "Ammonia gas is passed into water, yielding a solution of density 0.93 g/cm3 and containing 18.6% NH3 by weight. The mass of NH3 per cc of the solution is",
+    "options": [
+      "0.17 g/cm3",
+      "0.34 g/cm3",
+      "0.51 g/cm3",
+      "0.68 g/cm3"
+    ],
+    "correct": 0,
+    "solution": "Mass NH3 per cc = density × mass fraction = 0.93×0.186 = 0.173 ≈ 0.17 g/cm³."
+  },
+  {
+    "id": "c-mole-32",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "1.0 g of magnesium is burnt with 0.56 g O2 in a closed vessel. Which reactant is left in excess and how much? (At. wt. Mg=24; O=16)",
+    "options": [
+      "Mg, 0.16 g",
+      "O2, 0.16 g",
+      "Mg, 0.44 g",
+      "O2, 0.28 g"
+    ],
+    "correct": 0,
+    "solution": "2Mg+O2→2MgO. Moles Mg=1/24=0.0417mol; moles O2=0.56/32=0.0175mol. O2 ke liye required Mg=2×0.0175=0.035mol=0.84g. Mg limiting nahi, O2 limiting hai; Mg bacha=1−0.84=0.16g."
+  },
+  {
+    "id": "c-mole-33",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "When 22.4 litres of H2(g) is mixed with 11.2 litres of Cl2(g), each at STP, the moles of HCl(g) formed is equal to",
+    "options": [
+      "1 mol of HCl(g)",
+      "2 mol of HCl(g)",
+      "0.5 mol of HCl(g)",
+      "1.5 mol of HCl(g)"
+    ],
+    "correct": 0,
+    "solution": "H2+Cl2→2HCl. 22.4L H2=1mol; 11.2L Cl2=0.5mol (limiting). HCl formed=2×0.5=1 mol."
+  },
+  {
+    "id": "c-mole-34",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "6.02 × 10^20 molecules of urea are present in 100 mL of its solution. The concentration of solution is",
+    "options": [
+      "0.01 M",
+      "0.001 M",
+      "0.1 M",
+      "0.02 M"
+    ],
+    "correct": 0,
+    "solution": "Moles = 6.02×10^20/6.02×10^23 = 0.001mol in 100mL(0.1L). Molarity = 0.001/0.1 = 0.01M."
+  },
+  {
+    "id": "c-mole-35",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "Mole fraction of the solute in a 1.00 molal aqueous solution is",
+    "options": [
+      "1.7700",
+      "0.1770",
+      "0.0177",
+      "0.0344"
+    ],
+    "correct": 2,
+    "solution": "1 molal = 1 mol solute per 1000g(55.56mol) water. Mole fraction solute = 1/(1+55.56) = 0.0177."
+  },
+  {
+    "id": "c-mole-36",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "25.3 g of sodium carbonate, Na2CO3 is dissolved in enough water to make 250 mL of solution. If sodium carbonate dissociates completely, molar concentration of sodium ion, Na+ and carbonate ion, CO3^2- are respectively (Molar mass of Na2CO3 = 106 g/mol)",
+    "options": [
+      "0.955 M and 1.910 M",
+      "1.910 M and 0.955 M",
+      "1.90 M and 1.910 M",
+      "0.477 M and 0.477 M"
+    ],
+    "correct": 1,
+    "solution": "Na2CO3 → 2Na⁺ + CO3²⁻. Molarity Na2CO3 = 25.3/106/0.25 = 0.955M. Isliye [Na⁺] = 2×0.955 = 1.910M aur [CO3²⁻] = 0.955M. (Note: iska sahi order 1.910 M and 0.955 M banta hai — original source me index galat tha, yahan chemistry ke hisaab se correct kiya gaya hai.)"
+  },
+  {
+    "id": "c-mole-37",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "Volume occupied by one molecule of water (density = 1 g cm^-3) is",
+    "options": [
+      "5.5 × 10^-23 cm3",
+      "9.0 × 10^-23 cm3",
+      "6.023 × 10^-23 cm3",
+      "3.0 × 10^-23 cm3"
+    ],
+    "correct": 3,
+    "solution": "Mass of 1 molecule = 18/(6.023×10^23) g = 2.99×10^-23 g. Density=1g/cm³, isliye Volume = mass = 3.0×10^-23 cm³."
+  },
+  {
+    "id": "c-mole-38",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "How many grams of CH3OH should be added to water to prepare 150 mL solution of 2 M CH3OH?",
+    "options": [
+      "9.6 × 10^3 g",
+      "2.4 × 10^3 g",
+      "9.6 g",
+      "2.4 g"
+    ],
+    "correct": 2,
+    "solution": "Moles CH3OH = 2×0.15 = 0.3mol. Mass = 0.3×32 = 9.6g."
+  },
+  {
+    "id": "c-mole-39",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "Change in volume when 100 mL PH3 decomposed to solid phosphorus and H2 gas.",
+    "options": [
+      "Increase in 50 mL",
+      "Decrease in 50 mL",
+      "Increase in 150 mL",
+      "Decrease in 200 mL"
+    ],
+    "correct": 0,
+    "solution": "4PH3(g)→P4(s)+6H2(g). 100mL PH3 se H2 (gas) = 100×6/4 = 150mL (P4 solid hai, volume me count nahi hota). Change = 150−100 = +50mL increase."
+  },
+  {
+    "id": "c-mole-40",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "Volume of CO2 obtained at STP by the complete decomposition of 9.85 g BaCO3 is (Mol. wt. of BaCO3 = 197)",
+    "options": [
+      "2.24 litre",
+      "1.12 litre",
+      "0.85 litre",
+      "0.56 litre"
+    ],
+    "correct": 1,
+    "solution": "BaCO3→BaO+CO2. Moles BaCO3 = 9.85/197 = 0.05mol. CO2 = 0.05×22.4 = 1.12 litre."
+  },
+  {
+    "id": "c-mole-41",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "Percentage of Se in peroxidase anhydrous enzyme is 0.5% by weight (at. wt. = 78.4) then minimum molecular weight of peroxidase anhydrous enzyme is",
+    "options": [
+      "1.568 × 10^4",
+      "1.568 × 10^3",
+      "15.68",
+      "2.136 × 10^4"
+    ],
+    "correct": 0,
+    "solution": "Minimum molecular weight ke liye assume karo 1 Se atom per molecule. MW = (100/0.5)×78.4 = 200×78.4 = 1.568×10^4."
+  },
+  {
+    "id": "c-mole-42",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "2.5 litre of 1 M NaOH solution mixed with another 3 litre of 0.5 M NaOH solution. Then find out molarity of resultant solution.",
+    "options": [
+      "0.80 M",
+      "1.0 M",
+      "0.73 M",
+      "0.50 M"
+    ],
+    "correct": 2,
+    "solution": "Total moles NaOH = (2.5×1)+(3×0.5) = 2.5+1.5 = 4mol. Total volume=5.5L. Molarity = 4/5.5 = 0.73M."
+  },
+  {
+    "id": "c-mole-43",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "Concentrated aqueous sulphuric acid is 98% H2SO4 (w/v) and has a density of 1.80 g mL^-1. Molarity of solution",
+    "options": [
+      "1 M",
+      "1.8 M",
+      "10 M",
+      "1.5 M"
+    ],
+    "correct": 2,
+    "solution": "98% w/v means 98g per 100mL, so 980g in 1000mL(1L). Moles = 980/98 = 10mol. Molarity = 10mol/1L = 10M."
+  },
+  {
+    "id": "c-mole-44",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "What is the [OH-] in the final solution prepared by mixing 20.0 mL of 0.050 M HCl with 30.0 mL of 0.10 M Ba(OH)2?",
+    "options": [
+      "0.12 M",
+      "0.10 M",
+      "0.40 M",
+      "0.0050 M"
+    ],
+    "correct": 1,
+    "solution": "Moles H⁺ (from HCl) = 20×0.050 = 1.0 mmol. Moles OH⁻ (from Ba(OH)2) = 2×30×0.10 = 6.0 mmol. Excess OH⁻ = 6.0−1.0 = 5.0mmol. Total volume=50mL. [OH⁻] = 5.0/50 = 0.10M."
+  },
+  {
+    "id": "c-mole-45",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "How many moles of electron weighs 1 kg?",
+    "options": [
+      "6.023 × 10^23",
+      "1/9.108 × 10^31",
+      "6.023/9.108 × 10^54",
+      "1/(9.108 × 6.023) × 10^8"
+    ],
+    "correct": 3,
+    "solution": "Mass of 1 mole electrons = N_A × mass of electron = 6.023×10^23 × 9.108×10^-31 kg = 5.487×10^-7 kg. Moles for 1kg = 1/5.487×10^-7 = 1/(9.108×6.023)×10^8."
+  },
+  {
+    "id": "c-mole-46",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "The minimum amount of O2(g) consumed per gram of reactant is for the reaction (Given atomic mass: Fe=56, O=16, Mg=24, P=31, C=12, H=1)",
+    "options": [
+      "C3H8(g) + 5O2(g) → 3CO2(g) + 4H2O(l)",
+      "P4(s) + 5O2(g) → P4O10(s)",
+      "4Fe(s) + 3O2(g) → 2Fe2O3(s)",
+      "2Mg(s) + O2(g) → 2MgO(s)"
+    ],
+    "correct": 2,
+    "solution": "O2 consumed per gram of reactant: C3H8→3.636 g/g; P4→1.290 g/g; Fe→0.4286 g/g; Mg→0.667 g/g. Minimum ratio Fe waali reaction me hai."
+  },
+  {
+    "id": "c-mole-47",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "For the following reaction, the mass of water produced from 445 g of C57H110O6 is: 2C57H110O6(s) + 163O2(g) → 114CO2(g) + 110H2O(l)",
+    "options": [
+      "490 g",
+      "495 g",
+      "445 g",
+      "890 g"
+    ],
+    "correct": 1,
+    "solution": "Reactant molar mass = 890 g/mol. 2mol(1780g) reactant se 110mol H2O. 445g corresponds to 0.5mol reactant → water = 110×(0.5/2) = 27.5mol = 27.5×18 = 495g."
+  },
+  {
+    "id": "c-mole-48",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "In which mode of expression, the concentration of a solution remains independent of temperature?",
+    "options": [
+      "Molarity",
+      "Normality",
+      "Formality",
+      "Molality"
+    ],
+    "correct": 3,
+    "solution": "Molality mass-based hai (temperature se independent), jabki Molarity, Normality, Formality volume-based hain jo temperature ke saath badalte hain."
+  },
+  {
+    "id": "c-mole-49",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "When 22.4 litres of H2(g) is mixed with 11.2 litres of Cl2(g), each at S.T.P., the moles of HCl(g) formed is equal to:",
+    "options": [
+      "1 mole of HCl(g)",
+      "2 moles of HCl(g)",
+      "0.5 moles of HCl(g)",
+      "1.5 moles of HCl(g)"
+    ],
+    "correct": 0,
+    "solution": "H2+Cl2→2HCl. 22.4L H2=1mol; 11.2L Cl2=0.5mol (limiting reagent). HCl formed = 2×0.5 = 1 mol."
+  },
+  {
+    "id": "c-mole-50",
+    "subject": "chem",
+    "chapter": "basic-concepts-chemistry",
+    "source": "NEET Premium by Arnab — Mole Concept",
+    "question": "The amount of sugar (C12H22O11) required to prepare 2 L of its 0.1 M aqueous solution is",
+    "options": [
+      "17.1 g",
+      "68.4 g",
+      "136.8 g",
+      "34.2 g"
+    ],
+    "correct": 1,
+    "solution": "Moles sugar = 0.1×2 = 0.2mol. Molar mass C12H22O11 = 342. Mass = 0.2×342 = 68.4g."
   }
 ]
