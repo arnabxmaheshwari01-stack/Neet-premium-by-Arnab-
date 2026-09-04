@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>NEET Premium by Arnab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0E1116;
+    --panel:#171B22;
+    --panel-raised:#1E2430;
+    --line:#2A3140;
+    --line-soft:#20252F;
+    --text:#EDEFF3;
+    --muted:#8B93A3;
+    --faint:#5C6376;
+    --gold:#5B8DEF;
+    --gold-dim:#2F4E8F;
+    --teal:#2FBF9F;
+    --teal-dim:#1D6E5B;
+    --red:#E5615A;
+    --red-dim:#7A2E2B;
+    --radius:14px;
+  }
+  body.light-theme{
+    --ink:#F4F5F9;
+    --panel:#FFFFFF;
+    --panel-raised:#ECEEF4;
+    --line:#DADEE6;
+    --line-soft:#E6E9EF;
+    --text:#12141C;
+    --muted:#4A5063;
+    --faint:#848CA0;
+    --gold:#3E6FD9;
+    --gold-dim:#D6E1FA;
+    --teal:#1E9C80;
+    --teal-dim:#CDEFE6;
+    --red:#D14943;
+    --red-dim:#F8D8D6;
+  }
+  .theme-toggle{ font-size:16px; }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+  html,body{margin:0; padding:0; background:var(--ink); color:var(--text);}
+  body{
+    font-family:'Manrope', sans-serif;
+    display:flex; justify-content:center;
+    min-height:100vh;
+  }
+  #app{
+    width:100%; max-width:480px;
+    min-height:100vh;
+    background:var(--ink);
+    display:flex; flex-direction:column;
+    position:relative;
+    border-left:1px solid var(--line-soft);
+    border-right:1px solid var(--line-soft);
+    padding-bottom:62px;
+  }
+  .bottom-nav{
+    position:fixed; bottom:0; left:50%; transform:translateX(-50%);
+    width:100%; max-width:480px;
+    display:flex; background:var(--panel); border-top:1px solid var(--line-soft);
+    z-index:20;
+  }
+  .bottom-nav .nav-item{
+    flex:1; display:flex; flex-direction:column; align-items:center; gap:3px;
+    padding:9px 4px 8px; cursor:pointer; color:var(--faint); font-size:10px; font-weight:700;
+  }
+  .bottom-nav .nav-item .ni-icon{ font-size:17px; }
+  .bottom-nav .nav-item.active{ color:var(--gold); }
+  .brand-serif{ font-family:'Fraunces', serif; }
+  a, button{ font-family:inherit; }
+  ::selection{ background:var(--gold-dim); color:#fff; }
+
+  /* ---------- Scrollable screen area ---------- */
+  .screen{ flex:1; display:flex; flex-direction:column; min-height:100vh; animation:fadeIn .25s ease; }
+  @keyframes fadeIn{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
+  .hidden{ display:none !important; }
+
+  /* ---------- Splash ---------- */
+  #screen-splash{
+    align-items:center; justify-content:center; text-align:center;
+    padding:32px 28px; gap:0; position:relative; overflow:hidden;
+    background:
+      radial-gradient(120% 70% at 50% -10%, rgba(91,141,239,0.16), transparent 60%),
+      radial-gradient(90% 60% at 100% 110%, rgba(47,191,159,0.10), transparent 55%),
+      var(--ink);
+  }
+  #screen-splash::before{
+    content:''; position:absolute; inset:0; pointer-events:none;
+    background-image:
+      linear-gradient(rgba(237,239,243,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(237,239,243,0.03) 1px, transparent 1px);
+    background-size:26px 26px;
+    mask-image:radial-gradient(60% 50% at 50% 30%, #000 0%, transparent 75%);
+  }
+  .splash-mark{
+    width:72px; height:72px; border:1.5px solid var(--gold-dim);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:22px;
+    color:var(--gold);
+    font-family:'Fraunces', serif; font-weight:600; font-size:28px;
+    position:relative; z-index:1;
+    box-shadow:0 0 0 6px rgba(91,141,239,0.06), 0 10px 30px -8px rgba(91,141,239,0.35);
+    animation:markFloat 4.5s ease-in-out infinite;
+  }
+  @keyframes markFloat{ 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-5px); } }
+  .splash-title{
+    font-size:34px; line-height:1.15; font-weight:600; margin:0 0 6px; position:relative; z-index:1;
+  }
+  .splash-title .accent{ color:var(--gold); }
+  .splash-by{ color:var(--muted); font-size:14px; letter-spacing:0.02em; margin:0 0 26px; position:relative; z-index:1; }
+  .splash-tag{
+    font-size:12.5px; color:var(--faint);
+    border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    padding:10px 4px; margin:0 0 34px; letter-spacing:0.04em;
+    position:relative; z-index:1;
+  }
+  .splash-tag b{ color:var(--muted); font-weight:700; }
+  .btn-primary{
+    width:100%; padding:15px 18px; border-radius:11px; border:none;
+    background:linear-gradient(135deg, var(--gold), #4472CC); color:#FFFFFF; font-weight:700; font-size:15.5px;
+    cursor:pointer; position:relative; z-index:1;
+    box-shadow:0 12px 28px -10px rgba(91,141,239,0.55);
+  }
+  .btn-primary:active{ transform:scale(0.985); }
+  .splash-note{ color:var(--faint); font-size:12px; margin-top:14px; position:relative; z-index:1; }
+
+  /* ---------- Top bar (shared) ---------- */
+  .topbar{
+    display:flex; align-items:center; gap:12px;
+    padding:16px 18px 12px;
+    border-bottom:1px solid var(--line-soft);
+    position:sticky; top:0; background:var(--ink); z-index:5;
+  }
+  .icon-btn{
+    width:34px; height:34px; border-radius:9px; border:1px solid var(--line);
+    background:var(--panel); color:var(--muted);
+    display:flex; align-items:center; justify-content:center; cursor:pointer; flex-shrink:0;
+    font-size:16px;
+  }
+  .icon-btn:active{ background:var(--panel-raised); }
+  .topbar-title{ flex:1; text-align:center; }
+  .topbar-title .t1{ font-size:11px; color:var(--faint); letter-spacing:0.03em; }
+  .topbar-title .t2{ font-size:15px; font-weight:700; }
+  .topbar-spacer{ width:34px; flex-shrink:0; }
+
+  /* ---------- Home ---------- */
+  .home-header{
+    padding:18px 18px 6px; display:flex; align-items:center; justify-content:space-between;
+  }
+  .home-brand{ display:flex; align-items:center; gap:10px; }
+  .home-brand .mark{
+    width:36px; height:36px; border-radius:9px; background:var(--gold); color:#FFFFFF;
+    display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-weight:700; font-size:16px;
+  }
+  .home-brand .name{ font-size:13.5px; font-weight:700; }
+  .home-brand .sub{ font-size:10.5px; color:var(--faint); }
+  .pill-badge{
+    font-size:10.5px; font-weight:700; color:var(--gold); border:1px solid var(--gold-dim);
+    padding:5px 10px; border-radius:20px; letter-spacing:0.02em; white-space:nowrap;
+  }
+
+  /* ---------- NEET 2027 countdown ---------- */
+  .countdown-card{
+    margin:14px 18px 6px; padding:16px 18px; border-radius:var(--radius);
+    background:
+      radial-gradient(120% 160% at 100% -20%, rgba(91,141,239,0.22), transparent 55%),
+      linear-gradient(135deg, rgba(91,141,239,0.10), rgba(47,191,159,0.06));
+    border:1px solid var(--gold-dim);
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    position:relative; overflow:hidden;
+  }
+  .cd-label{ font-size:10.5px; font-weight:800; letter-spacing:0.05em; color:var(--gold); text-transform:uppercase; }
+  .cd-sub{ font-size:11.5px; color:var(--muted); margin-top:5px; font-weight:600; }
+  .cd-days{ display:flex; align-items:baseline; gap:5px; flex-shrink:0; }
+  .cd-days-num{ font-family:'Fraunces',serif; font-size:32px; font-weight:700; color:var(--text); line-height:1; }
+  .cd-unit{ font-size:11px; color:var(--faint); font-weight:600; }
+
+  .progress-card{
+    margin:14px 18px 6px; padding:16px; border-radius:var(--radius);
+    background:var(--panel); border:1px solid var(--line-soft);
+  }
+  .progress-card .row{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px; }
+  .progress-card .label{ font-size:12.5px; color:var(--muted); }
+  .progress-card .num{ font-size:12.5px; color:var(--text); font-weight:700; }
+  .progress-track{ height:6px; border-radius:4px; background:var(--line-soft); overflow:hidden; }
+  .progress-fill{ height:100%; background:var(--teal); border-radius:4px; transition:width .3s ease; }
+
+  .section-label{
+    padding:20px 18px 10px; font-size:14px; font-weight:700; color:var(--text);
+  }
+  .subject-grid{ display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:0 18px; }
+  .subject-card{
+    background:var(--panel); border:1px solid var(--line-soft); border-radius:var(--radius);
+    padding:16px 14px; cursor:pointer; position:relative; overflow:hidden;
+  }
+  .subject-card:active{ background:var(--panel-raised); }
+  .subject-card .sname{ font-size:13.5px; font-weight:700; margin-bottom:3px; }
+  .subject-card .scount{ font-size:11px; color:var(--faint); }
+  .subject-card .sbar{ position:absolute; left:0; top:0; bottom:0; width:3px; }
+
+  .chapter-list{ padding:0 18px 18px; display:flex; flex-direction:column; gap:8px; }
+  .chapter-row{
+    display:flex; align-items:center; gap:12px;
+    background:var(--panel); border:1px solid var(--line-soft); border-radius:12px;
+    padding:13px 14px; cursor:pointer;
+  }
+  .chapter-row:active{ background:var(--panel-raised); }
+  .chapter-row.locked{ opacity:0.45; cursor:default; }
+  .chapter-icon{
+    width:34px; height:34px; border-radius:9px; background:var(--panel-raised); border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center; font-size:15px; flex-shrink:0;
+  }
+  .chapter-body{ flex:1; min-width:0; }
+  .chapter-name{ font-size:13.5px; font-weight:700; }
+  .chapter-meta{ font-size:11px; color:var(--faint); margin-top:2px; }
+  .chapter-arrow{ color:var(--faint); font-size:14px; }
+  .chapter-badge{
+    font-size:9.5px; font-weight:700; color:var(--faint); border:1px solid var(--line);
+    padding:3px 7px; border-radius:6px; letter-spacing:0.03em;
+  }
+
+  /* ---------- Chapter hub ---------- */
+  .hub-hero{ padding:22px 18px 6px; text-align:center; }
+  .hub-hero .hicon{ font-size:26px; margin-bottom:8px; }
+  .hub-hero h1{ font-size:19px; margin:0 0 4px; font-weight:700; }
+  .hub-hero .hmeta{ font-size:12px; color:var(--faint); }
+
+  .hub-tabs{ display:flex; gap:8px; padding:16px 18px 4px; border-bottom:1px solid var(--line-soft); }
+  .hub-tab{ font-size:12.5px; color:var(--faint); padding:0 0 12px; border-bottom:2px solid transparent; cursor:default; }
+  .hub-tab.active{ color:var(--gold); border-color:var(--gold); font-weight:700; }
+
+  .mode-grid{ padding:16px 18px; display:flex; flex-direction:column; gap:9px; }
+  .mode-card{
+    display:flex; align-items:center; gap:13px;
+    background:var(--panel); border:1px solid var(--line-soft); border-radius:12px; padding:14px;
+    cursor:pointer;
+  }
+  .mode-card:active{ background:var(--panel-raised); }
+  .mode-icon{
+    width:38px; height:38px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:16px; flex-shrink:0;
+  }
+  .mode-title{ font-size:13.5px; font-weight:700; }
+  .mode-sub{ font-size:11px; color:var(--faint); margin-top:2px; }
+  .group-label{ padding:14px 18px 2px; font-size:11px; font-weight:700; color:var(--muted); letter-spacing:0.03em; }
+
+  /* ---------- Quiz screen ---------- */
+  .quiz-topbar{ padding:12px 16px; border-bottom:1px solid var(--line-soft); position:sticky; top:0; background:var(--ink); z-index:6; }
+  .quiz-crumb{ display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+  .quiz-crumb .crumb-text{ flex:1; text-align:center; font-size:12.5px; color:var(--muted); }
+  .quiz-crumb .crumb-text b{ color:var(--text); }
+  .pill-row{ display:flex; align-items:center; gap:7px; overflow-x:auto; padding-bottom:2px; scrollbar-width:none; }
+  .pill-row::-webkit-scrollbar{ display:none; }
+  .qpill{
+    flex-shrink:0; width:32px; height:32px; border-radius:9px; border:1px solid var(--line);
+    background:var(--panel); color:var(--muted); font-size:12.5px; font-weight:700;
+    display:flex; align-items:center; justify-content:center; cursor:pointer; position:relative;
+  }
+  .qpill.current{ border-color:var(--gold); color:var(--gold); background:rgba(91,141,239,0.08); }
+  .qpill.answered{ border-color:var(--text); background:var(--panel-raised); color:var(--text); }
+  .qpill.correct{ background:var(--teal-dim); color:#DFFBF3; border-color:var(--teal); }
+  .qpill.wrong{ background:var(--red-dim); color:#FCE4E3; border-color:var(--red); }
+  .qpill.skipped{ border-color:var(--faint); }
+  .pill-viewall{ flex-shrink:0; font-size:11px; color:var(--gold); font-weight:700; padding:0 4px; white-space:nowrap; cursor:pointer; }
+
+  .quiz-meta-row{ display:flex; align-items:center; justify-content:space-between; padding:12px 18px 0; }
+  .quiz-progress-text{ font-size:12px; color:var(--faint); }
+  .quiz-timer{
+    display:flex; align-items:center; gap:6px; font-size:12.5px; color:var(--gold); font-weight:700;
+    border:1px solid var(--gold-dim); padding:5px 11px; border-radius:20px;
+  }
+  .quiz-timer .dot{ width:6px; height:6px; border-radius:50%; background:var(--gold); }
+  .quiz-actions{ display:flex; gap:8px; }
+  .quiz-bookmark{
+    width:30px; height:30px; border-radius:8px; border:1px solid var(--line); background:var(--panel);
+    color:var(--muted); display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:13px;
+  }
+  .quiz-bookmark.active{ color:var(--gold); border-color:var(--gold-dim); }
+
+  .quiz-source{ padding:16px 18px 2px; font-size:11.5px; color:var(--faint); font-weight:700; letter-spacing:0.02em; }
+  .quiz-question{ padding:8px 18px 20px; font-size:16.5px; line-height:1.5; font-weight:600; }
+
+  .option-list{ padding:0 18px; display:flex; flex-direction:column; gap:10px; }
+  .option{
+    position:relative; border:1px solid var(--line); border-radius:12px; background:var(--panel);
+    padding:14px 14px; display:flex; align-items:center; gap:12px; cursor:pointer; overflow:hidden;
+  }
+  .option:active{ background:var(--panel-raised); }
+  .opt-letter{
+    width:26px; height:26px; border-radius:50%; border:1px solid var(--line); color:var(--muted);
+    font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0; background:var(--panel-raised);
+  }
+  .opt-text{ font-size:14.5px; flex:1; }
+  .opt-percent{ font-size:11.5px; color:var(--faint); font-weight:700; width:32px; text-align:right; flex-shrink:0; display:none; }
+  .opt-tag{ font-size:10px; font-weight:700; color:var(--teal); position:absolute; top:-1px; right:14px; display:none; }
+  .opt-fill{ position:absolute; left:0; top:0; bottom:0; background:rgba(255,255,255,0.03); width:0%; z-index:0; }
+
+  .option.selected{ border-color:var(--gold); }
+  .option.selected .opt-letter{ border-color:var(--gold); color:var(--gold); }
+
+  .quiz-answered .option{ cursor:default; }
+  .quiz-answered .opt-percent{ display:block; }
+  .quiz-answered .option.is-correct{ border-color:var(--teal); }
+  .quiz-answered .option.is-correct .opt-letter{ background:var(--teal); border-color:var(--teal); color:#08201A; }
+  .quiz-answered .option.is-correct .opt-fill{ background:rgba(47,191,159,0.10); }
+  .quiz-answered .option.is-wrong-pick{ border-color:var(--red); }
+  .quiz-answered .option.is-wrong-pick .opt-letter{ background:var(--red); border-color:var(--red); color:#2B0A09; }
+  .quiz-answered .option.is-wrong-pick .opt-fill{ background:rgba(229,97,90,0.10); }
+  .quiz-answered .option.is-correct .opt-tag{ display:block; }
+
+  .solution-box{
+    margin:16px 18px 0; padding:15px 16px; border-radius:12px;
+    background:var(--panel); border:1px solid var(--line-soft); border-left:3px solid var(--gold);
+    font-size:13.5px; line-height:1.55; color:var(--muted); display:none;
+  }
+  .solution-box.show{ display:block; }
+  .solution-box .sol-label{ font-size:11px; font-weight:700; color:var(--gold); letter-spacing:0.03em; margin-bottom:6px; }
+  .solution-box b{ color:var(--text); }
+
+  .quiz-footer{
+    margin-top:auto; padding:14px 18px calc(14px + env(safe-area-inset-bottom));
+    border-top:1px solid var(--line-soft); display:flex; gap:9px; position:sticky; bottom:0;
+    background:var(--ink);
+  }
+  .qbtn{
+    flex:1; padding:13px 10px; border-radius:10px; border:1px solid var(--line); background:var(--panel);
+    color:var(--text); font-weight:700; font-size:13.5px; cursor:pointer; text-align:center;
+  }
+  .qbtn:disabled{ opacity:0.35; }
+  .qbtn.primary{ background:var(--gold); color:#FFFFFF; border-color:var(--gold); }
+  .qbtn.ghost{ background:transparent; }
+
+  /* ---------- Summary screen ---------- */
+  .summary-hero{ padding:34px 24px 18px; text-align:center; }
+  .summary-score{ font-family:'Fraunces', serif; font-size:52px; font-weight:600; color:var(--gold); line-height:1; }
+  .summary-outof{ font-size:14px; color:var(--faint); margin-top:6px; }
+  .summary-label{ font-size:12.5px; color:var(--muted); margin-top:10px; }
+  .stat-grid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; padding:6px 18px 18px; }
+  .stat-box{ background:var(--panel); border:1px solid var(--line-soft); border-radius:12px; padding:14px 8px; text-align:center; }
+  .stat-box .sv{ font-size:18px; font-weight:800; }
+  .stat-box .sl{ font-size:10px; color:var(--faint); margin-top:3px; }
+  .stat-box.correct .sv{ color:var(--teal); }
+  .stat-box.wrong .sv{ color:var(--red); }
+  .review-list{ padding:0 18px 18px; display:flex; flex-direction:column; gap:8px; }
+  .review-row{
+    display:flex; align-items:center; gap:11px; background:var(--panel); border:1px solid var(--line-soft);
+    border-radius:11px; padding:12px 13px; cursor:pointer;
+  }
+  .review-dot{ width:9px; height:9px; border-radius:50%; flex-shrink:0; }
+  .review-dot.correct{ background:var(--teal); }
+  .review-dot.wrong{ background:var(--red); }
+  .review-dot.skip{ background:var(--faint); }
+  .review-q{ font-size:12.5px; flex:1; color:var(--muted); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .summary-actions{ padding:6px 18px 24px; display:flex; gap:9px; }
+
+  /* ---------- Attempt-type toggle (practice vs test) ---------- */
+  .attempt-toggle{ display:flex; gap:9px; padding:0 18px; }
+  .attempt-opt{ flex:1; background:var(--panel); border:1px solid var(--line-soft); border-radius:12px; padding:12px 13px; cursor:pointer; }
+  .attempt-opt:active{ background:var(--panel-raised); }
+  .attempt-opt.active{ border-color:var(--gold); background:rgba(91,141,239,0.08); }
+  .attempt-opt .ao-title{ font-size:13px; font-weight:700; }
+  .attempt-opt.active .ao-title{ color:var(--gold); }
+  .attempt-opt .ao-sub{ font-size:10.5px; color:var(--faint); margin-top:2px; }
+
+  /* ---------- Previous vs current performance ---------- */
+  .compare-card{ margin:0 18px 8px; padding:14px 16px; border-radius:12px; background:var(--panel); border:1px solid var(--line-soft); }
+  .compare-row{ display:flex; align-items:center; justify-content:center; gap:18px; }
+  .compare-col{ text-align:center; }
+  .cc-label{ font-size:9.5px; color:var(--faint); font-weight:700; letter-spacing:0.03em; }
+  .cc-val{ font-size:20px; font-weight:800; margin-top:3px; font-family:'Fraunces',serif; }
+  .cc-sub{ font-size:10px; color:var(--faint); font-weight:600; margin-top:2px; font-family:'Manrope',sans-serif; }
+  .compare-arrow{ color:var(--faint); font-size:16px; }
+  .compare-delta{ text-align:center; font-size:12px; font-weight:700; margin-top:10px; }
+  .compare-delta.up{ color:var(--teal); }
+  .compare-delta.down{ color:var(--red); }
+  .compare-delta.same{ color:var(--faint); }
+  .attempt-delta{ font-size:10.5px; font-weight:700; margin-top:3px; }
+  .attempt-delta.up{ color:var(--teal); }
+  .attempt-delta.down{ color:var(--red); }
+  .attempt-delta.same{ color:var(--faint); }
+
+  /* misc */
+  .lock-note{
+    margin:0 18px 18px; padding:13px 14px; border-radius:12px; background:var(--panel);
+    border:1px dashed var(--line); font-size:12px; color:var(--faint); line-height:1.5;
+  }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <!-- ===================== AUTH ===================== -->
+  <section id="screen-auth" class="screen hidden" style="align-items:center; justify-content:center; text-align:center; padding:32px 28px;">
+    <div class="splash-mark">N</div>
+    <div class="splash-title" style="font-size:26px;">Student <span class="accent">login</span></div>
+    <p class="splash-by" id="auth-mode-note">Log in to sync your progress across devices</p>
+
+    <div style="width:100%; display:flex; flex-direction:column; gap:10px; margin:14px 0 6px;">
+      <input id="auth-name" type="text" placeholder="Full name" class="hidden"
+        style="width:100%; padding:14px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--text); font-size:14.5px;">
+      <input id="auth-email" type="email" placeholder="Email"
+        style="width:100%; padding:14px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--text); font-size:14.5px;">
+      <input id="auth-password" type="password" placeholder="Password"
+        style="width:100%; padding:14px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--text); font-size:14.5px;">
+    </div>
+    <p id="auth-error" style="color:var(--red); font-size:12.5px; min-height:16px; margin:2px 0 10px;"></p>
+
+    <button class="btn-primary" id="auth-submit-btn" onclick="submitAuth()">Log in</button>
+    <p class="splash-note" style="margin-top:16px;">
+      <span id="auth-toggle-text">New here?</span>
+      <a href="#" onclick="toggleAuthMode(); return false;" style="color:var(--gold); text-decoration:none; font-weight:700;" id="auth-toggle-link">Create account</a>
+    </p>
+  </section>
+
+  <!-- ===================== PENDING APPROVAL ===================== -->
+  <section id="screen-pending" class="screen hidden" style="align-items:center; justify-content:center; text-align:center; padding:32px 28px;">
+    <div class="splash-mark">⏳</div>
+    <div class="splash-title" style="font-size:22px;">Waiting for <span class="accent">approval</span></div>
+    <p class="splash-by">Tumhara account ban gaya hai. Teacher approve karega, tab access milega.</p>
+    <p class="splash-note" id="pending-email-note" style="margin:14px 0 22px;"></p>
+    <button class="qbtn" onclick="logOut()">Log out</button>
+  </section>
+
+  <!-- ===================== REJECTED ===================== -->
+  <section id="screen-rejected" class="screen hidden" style="align-items:center; justify-content:center; text-align:center; padding:32px 28px;">
+    <div class="splash-mark" style="border-color:var(--red-dim); color:var(--red);">✕</div>
+    <div class="splash-title" style="font-size:22px;">Access <span style="color:var(--red);">denied</span></div>
+    <p class="splash-by">Ye account approve nahi hua. Apne teacher se contact karo.</p>
+    <button class="qbtn" onclick="logOut()" style="margin-top:16px;">Log out</button>
+  </section>
+
+  <!-- ===================== ADMIN ===================== -->
+  <section id="screen-admin" class="screen hidden">
+    <div class="topbar">
+      <div class="icon-btn" onclick="go('home')">←</div>
+      <div class="topbar-title"><div class="t2">Pending students</div></div>
+      <div class="icon-btn" onclick="loadPendingStudents()">⟳</div>
+    </div>
+    <div id="admin-pending-list" style="padding:14px 18px; display:flex; flex-direction:column; gap:10px;">
+      <p class="splash-note">Loading…</p>
+    </div>
+    <div class="group-label">Approved students</div>
+    <div id="admin-approved-list" style="padding:0 18px 24px; display:flex; flex-direction:column; gap:10px;"></div>
+  </section>
+
+  <!-- ===================== MY PROGRESS (student) ===================== -->
+  <section id="screen-profile" class="screen hidden">
+    <div class="topbar">
+      <div class="icon-btn" onclick="go('home')">←</div>
+      <div class="topbar-title"><div class="t2">My progress</div></div>
+      <div class="topbar-spacer"></div>
+    </div>
+    <div id="profile-summary" style="padding:16px 18px;"></div>
+    <div class="group-label">Attempt history</div>
+    <div id="profile-attempts" style="padding:0 18px 24px; display:flex; flex-direction:column; gap:10px;"></div>
+  </section>
+
+  <!-- ===================== ADMIN — STUDENT DETAIL ===================== -->
+  <section id="screen-admin-detail" class="screen hidden">
+    <div class="topbar">
+      <div class="icon-btn" onclick="go('admin')">←</div>
+      <div class="topbar-title"><div class="t2" id="admin-detail-name">Student</div></div>
+      <div class="topbar-spacer"></div>
+    </div>
+    <div id="admin-detail-summary" style="padding:16px 18px;"></div>
+    <div class="group-label">Attempt history</div>
+    <div id="admin-detail-attempts" style="padding:0 18px 24px; display:flex; flex-direction:column; gap:10px;"></div>
+  </section>
+
+  <!-- ===================== SPLASH ===================== -->
+  <section id="screen-splash" class="screen hidden">
+    <div class="splash-mark">N</div>
+    <h1 class="splash-title brand-serif">NEET Premium<br><span class="accent">by Arnab</span></h1>
+    <p class="splash-by">A no-noise CBT practice console</p>
+    <p class="splash-tag">ONLY FOR&nbsp; <b>SERIOUS STUDENTS</b></p>
+    <button class="btn-primary" onclick="go('home')">Enter practice console</button>
+    <p class="splash-note">Physics · Chemistry · Botany · Zoology</p>
+  </section>
+
+  <!-- ===================== HOME ===================== -->
+  <section id="screen-home" class="screen hidden">
+    <div class="home-header">
+      <div class="home-brand">
+        <div class="mark brand-serif">N</div>
+        <div>
+          <div class="name">NEET Premium</div>
+          <div class="sub">by Arnab</div>
+        </div>
+      </div>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <div class="pill-badge" id="home-user-badge">SERIOUS ONLY</div>
+        <div class="icon-btn theme-toggle" id="theme-toggle-btn" onclick="toggleTheme()" title="Toggle theme">🌙</div>
+        <div class="icon-btn" onclick="logOut()" title="Log out">⎋</div>
+      </div>
+    </div>
+
+    <div class="countdown-card" id="countdown-card">
+      <div>
+        <div class="cd-label">⏳ NEET 2027 · MAY 2</div>
+        <div class="cd-sub" id="cd-sub">Loading…</div>
+      </div>
+      <div class="cd-days">
+        <span class="cd-days-num" id="cd-days-num">0</span>
+        <span class="cd-unit">days left</span>
+      </div>
+    </div>
+
+    <div class="progress-card" onclick="openMyProgress()" style="cursor:pointer;">
+      <div class="row"><span class="label">Today's practice</span><span class="num" id="home-progress-num">0 / 30 Qs</span></div>
+      <div class="progress-track"><div class="progress-fill" id="home-progress-fill" style="width:0%"></div></div>
+      <div class="splash-note" style="margin-top:8px; text-align:left;">Tap to see your full history →</div>
+    </div>
+
+    <div class="section-label">Subjects</div>
+    <div class="subject-grid" id="subject-grid"></div>
+
+    <div class="section-label">Continue where you left off</div>
+    <div class="chapter-list" id="continue-list"></div>
+  </section>
+
+  <!-- ===================== CHAPTER LIST (per subject) ===================== -->
+  <section id="screen-chapters" class="screen hidden">
+    <div class="topbar">
+      <div class="icon-btn" onclick="go('home')">←</div>
+      <div class="topbar-title">
+        <div class="t1" id="chapters-eyebrow">SUBJECT</div>
+        <div class="t2" id="chapters-title">Chapters</div>
+      </div>
+      <div class="topbar-spacer"></div>
+    </div>
+    <div class="chapter-list" id="chapters-list" style="padding-top:16px;"></div>
+  </section>
+
+  <!-- ===================== CHAPTER HUB ===================== -->
+  <section id="screen-hub" class="screen hidden">
+    <div class="topbar">
+      <div class="icon-btn" onclick="backToChapters()">←</div>
+      <div class="topbar-title">
+        <div class="t1" id="hub-eyebrow">PHYSICS</div>
+        <div class="t2" id="hub-title-top">Chapter</div>
+      </div>
+      <div class="topbar-spacer"></div>
+    </div>
+    <div class="hub-hero">
+      <div class="hicon" id="hub-icon">📏</div>
+      <h1 id="hub-title" class="brand-serif">Units and Dimensions</h1>
+      <div class="hmeta" id="hub-meta">All Question Bank · 8 Qs</div>
+    </div>
+    <div class="hub-tabs">
+      <div class="hub-tab active">Practice</div>
+      <div class="hub-tab">Revision</div>
+      <div class="hub-tab">Progress</div>
+    </div>
+
+    <div class="group-label">Choose how to attempt</div>
+    <div class="attempt-toggle" id="attempt-toggle">
+      <div class="attempt-opt active" data-type="practice" onclick="setAttemptType('practice')">
+        <div class="ao-title">Practice</div>
+        <div class="ao-sub">Check each answer instantly</div>
+      </div>
+      <div class="attempt-opt" data-type="test" onclick="setAttemptType('test')">
+        <div class="ao-title">Test</div>
+        <div class="ao-sub">Attempt all, then submit</div>
+      </div>
+    </div>
+
+    <div class="group-label">Start practicing</div>
+    <div class="mode-grid">
+      <div class="mode-card" onclick="startQuiz('all')">
+        <div class="mode-icon" style="background:rgba(91,141,239,0.12); color:var(--gold);">▶</div>
+        <div>
+          <div class="mode-title">All questions</div>
+          <div class="mode-sub" id="mode-all-sub">8 Qs · CBT format</div>
+        </div>
+      </div>
+      <div class="mode-card" onclick="startQuiz('pyq')">
+        <div class="mode-icon" style="background:rgba(47,191,159,0.12); color:var(--teal);">★</div>
+        <div>
+          <div class="mode-title">Previous year questions</div>
+          <div class="mode-sub" id="mode-pyq-sub">AIIMS / NEET tagged</div>
+        </div>
+      </div>
+      <div class="mode-card" onclick="startQuiz('bookmark')">
+        <div class="mode-icon" style="background:rgba(229,97,90,0.12); color:var(--red);">🔖</div>
+        <div>
+          <div class="mode-title">Bookmarked</div>
+          <div class="mode-sub" id="mode-bm-sub">0 Qs saved</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lock-note">More chapters unlock as you send question sets — send the PDF and it drops in here in the same CBT format, options, solution and PYQ tag included.</div>
+  </section>
+
+  <!-- ===================== QUIZ ===================== -->
+  <section id="screen-quiz" class="screen hidden">
+    <div class="quiz-topbar">
+      <div class="quiz-crumb">
+        <div class="icon-btn" onclick="exitQuiz()">←</div>
+        <div class="crumb-text"><b id="quiz-chapter-name">Chapter</b></div>
+        <div class="quiz-bookmark" id="quiz-bookmark-btn" onclick="toggleBookmark()">🔖</div>
+      </div>
+      <div class="pill-row" id="pill-row"></div>
+    </div>
+
+    <div class="quiz-meta-row">
+      <span class="quiz-progress-text" id="quiz-progress-text">Q 1 / 8</span>
+      <span class="quiz-timer"><span class="dot"></span><span id="quiz-timer-val">00s</span></span>
+    </div>
+
+    <div class="quiz-source" id="quiz-source">AIIMS 2019</div>
+    <div id="quiz-question-image" style="display:none;padding:0 18px;"></div>
+    <div class="quiz-question" id="quiz-question">Question text</div>
+
+    <div class="option-list" id="option-list"></div>
+
+    <div class="solution-box" id="solution-box">
+      <div class="sol-label">SOLUTION</div>
+      <div id="solution-text"></div>
+    </div>
+
+    <div class="quiz-footer">
+      <button class="qbtn" id="btn-prev" onclick="prevQ()">Previous</button>
+      <button class="qbtn primary hidden" id="btn-check" onclick="checkAnswer()">Check answer</button>
+      <button class="qbtn ghost hidden" id="btn-solution" onclick="toggleSolution()">Solution</button>
+      <button class="qbtn primary" id="btn-next" onclick="nextQ()">Next</button>
+    </div>
+  </section>
+
+  <!-- ===================== SUMMARY ===================== -->
+  <section id="screen-summary" class="screen hidden">
+    <div class="topbar">
+      <div class="icon-btn" onclick="go('home')">←</div>
+      <div class="topbar-title"><div class="t2">Result</div></div>
+      <div class="topbar-spacer"></div>
+    </div>
+    <div class="summary-hero">
+      <div class="summary-score brand-serif" id="summary-score">0</div>
+      <div class="summary-outof" id="summary-outof">out of 0</div>
+      <div class="summary-label">Session complete — reviewed below</div>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-box correct"><div class="sv" id="sum-correct">0</div><div class="sl">CORRECT</div></div>
+      <div class="stat-box wrong"><div class="sv" id="sum-wrong">0</div><div class="sl">WRONG</div></div>
+      <div class="stat-box"><div class="sv" id="sum-skipped">0</div><div class="sl">SKIPPED</div></div>
+    </div>
+    <div class="compare-card hidden" id="compare-card">
+      <div class="compare-row">
+        <div class="compare-col"><div class="cc-label">LAST TIME</div><div class="cc-val" id="cc-prev">–</div></div>
+        <div class="compare-arrow">→</div>
+        <div class="compare-col"><div class="cc-label">THIS TIME</div><div class="cc-val" id="cc-now">–</div></div>
+      </div>
+      <div class="compare-delta" id="compare-delta"></div>
+    </div>
+    <div class="group-label">Question review</div>
+    <div class="review-list" id="review-list"></div>
+    <div class="summary-actions">
+      <button class="qbtn" onclick="go('home')">Back home</button>
+      <button class="qbtn primary" onclick="startQuiz(lastQuizMode)">Retake set</button>
+    </div>
+  </section>
+
+  <div class="bottom-nav" id="bottom-nav">
+    <div class="nav-item active" id="nav-dashboard" onclick="navGo('home')">
+      <div class="ni-icon">⌂</div><div>Dashboard</div>
+    </div>
+    <div class="nav-item" id="nav-tests" onclick="navGo('tests')">
+      <div class="ni-icon">▣</div><div>Tests</div>
+    </div>
+    <div class="nav-item" id="nav-pyq" onclick="navGo('pyq')">
+      <div class="ni-icon">◉</div><div>PYQ</div>
+    </div>
+    <div class="nav-item hidden" id="nav-admin" onclick="navGo('admin')">
+      <div class="ni-icon">🛡</div><div>Admin</div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+<script>
+/* ============================================================
+   FIREBASE SETUP — paste your own project's config here.
+   Create a free project at https://console.firebase.google.com
+   → Build → Authentication → enable "Email/Password"
+   → Build → Firestore Database → Create database (test mode)
+   → Project settings → General → your web app's config object
+   ============================================================ */
+const firebaseConfig = {
+  apiKey: "AIzaSyAHtQTB3z1t4Jv16bgVJN17fLbkXgFwub0",
+  authDomain: "neet-premium-by-arnab.firebaseapp.com",
+  projectId: "neet-premium-by-arnab",
+  storageBucket: "neet-premium-by-arnab.firebasestorage.app",
+  messagingSenderId: "271551078571",
+  appId: "1:271551078571:web:0dd1025d901fb22173d7ee"
+};
+/* ============================================================
+   ADMIN — apna email yahan daalo. Isi email se login karne wale
+   ko "Admin" tab dikhega jaha wo naye students approve kar sakta hai.
+   ============================================================ */
+const ADMIN_EMAILS = ["arnabxmaheshwari01@gmail.com"];
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+let currentUser = null;
+let authMode = 'login'; // 'login' | 'signup'
+
+function toggleAuthMode(){
+  authMode = authMode==='login' ? 'signup' : 'login';
+  document.getElementById('auth-name').classList.toggle('hidden', authMode==='login');
+  document.getElementById('auth-submit-btn').textContent = authMode==='login' ? 'Log in' : 'Create account';
+  document.getElementById('auth-mode-note').textContent = authMode==='login'
+    ? 'Log in to sync your progress across devices'
+    : 'Sign up to save your progress and access it anywhere';
+  document.getElementById('auth-toggle-text').textContent = authMode==='login' ? 'New here?' : 'Already have an account?';
+  document.getElementById('auth-toggle-link').textContent = authMode==='login' ? 'Create account' : 'Log in';
+  document.getElementById('auth-error').textContent = '';
+}
+
+async function submitAuth(){
+  const email = document.getElementById('auth-email').value.trim();
+  const password = document.getElementById('auth-password').value;
+  const name = document.getElementById('auth-name').value.trim();
+  const errEl = document.getElementById('auth-error');
+  errEl.textContent = '';
+  if(!email || !password){ errEl.textContent = 'Email aur password dono bharo.'; return; }
+  try{
+    if(authMode==='signup'){
+      const cred = await auth.createUserWithEmailAndPassword(email, password);
+      await cred.user.updateProfile({displayName: name || email.split('@')[0]});
+      const isAdmin = ADMIN_EMAILS.includes(email);
+      await db.collection('students').doc(cred.user.uid).set({
+        name: name || email.split('@')[0], email,
+        status: isAdmin ? 'approved' : 'pending',
+        createdAt: firebase.firestore.FieldValue.serverTimestamp()
+      }, {merge:true});
+    } else {
+      await auth.signInWithEmailAndPassword(email, password);
+    }
+  }catch(e){
+    errEl.textContent = e.message.replace('Firebase: ','');
+  }
+}
+
+function logOut(){ auth.signOut(); }
+
+function applyTheme(theme){
+  const btn = document.getElementById('theme-toggle-btn');
+  if(theme === 'light'){
+    document.body.classList.add('light-theme');
+    if(btn) btn.textContent = '☀️';
+  } else {
+    document.body.classList.remove('light-theme');
+    if(btn) btn.textContent = '🌙';
+  }
+}
+function toggleTheme(){
+  const isLight = document.body.classList.contains('light-theme');
+  const next = isLight ? 'dark' : 'light';
+  localStorage.setItem('neet-premium-theme', next);
+  applyTheme(next);
+}
+(function initTheme(){
+  const saved = localStorage.getItem('neet-premium-theme') || 'dark';
+  applyTheme(saved);
+})();
+
+/* Pull this student's saved progress (bookmarks + answered questions) from Firestore */
+async function loadProgress(uid){
+  try{
+    const doc = await db.collection('students').doc(uid).get();
+    const data = doc.data() || {};
+    state.bookmarks = new Set(data.bookmarks || []);
+    state.answers = data.answers || {};
+    document.getElementById('home-user-badge').textContent = (data.name || currentUser.email || 'STUDENT').toUpperCase();
+    return data.status || 'pending';
+  }catch(e){ console.log('progress load failed', e); return 'pending'; }
+}
+
+async function loadPendingStudents(){
+  const pendingEl = document.getElementById('admin-pending-list');
+  const approvedEl = document.getElementById('admin-approved-list');
+  pendingEl.innerHTML = '<p class="splash-note">Loading…</p>';
+  try{
+    const snap = await db.collection('students').get();
+    let pendingHtml = '', approvedHtml = '';
+    snap.forEach(doc=>{
+      const d = doc.data();
+      if(d.status==='approved' && !ADMIN_EMAILS.includes(d.email)){
+        approvedHtml += `<div class="chapter-row" onclick="viewStudentDetail('${doc.id}')">
+          <div class="chapter-body"><div class="chapter-name">${d.name||d.email}</div><div class="chapter-meta">${d.email} · ${(d.attempts||[]).length} tests</div></div>
+          <div class="chapter-arrow">›</div>
+        </div>`;
+      } else if(d.status!=='approved'){
+        pendingHtml += `<div class="chapter-row">
+          <div class="chapter-body"><div class="chapter-name">${d.name||d.email}</div><div class="chapter-meta">${d.email}</div></div>
+          <button class="qbtn primary" style="flex:none; padding:8px 12px;" onclick="approveStudent('${doc.id}')">Approve</button>
+        </div>`;
+      }
+    });
+    pendingEl.innerHTML = pendingHtml || '<p class="splash-note">Koi pending request nahi.</p>';
+    approvedEl.innerHTML = approvedHtml || '<p class="splash-note">Abhi koi approved student nahi.</p>';
+  }catch(e){ pendingEl.innerHTML = '<p class="splash-note">Load nahi ho paaya.</p>'; }
+}
+
+async function approveStudent(uid){
+  await db.collection('students').doc(uid).set({status:'approved'}, {merge:true});
+  loadPendingStudents();
+}
+
+/* Shared renderer: turns a student doc's `attempts` array into summary + list HTML */
+function renderAttemptsInto(data, summaryElId, listElId){
+  const attempts = data.attempts || [];
+  const totalScore = attempts.reduce((s,a)=>s+(a.score||0),0);
+  const totalCorrect = attempts.reduce((s,a)=>s+(a.correct||0),0);
+  const totalWrong = attempts.reduce((s,a)=>s+(a.wrong||0),0);
+  document.getElementById(summaryElId).innerHTML = `
+    <div class="stat-grid">
+      <div class="stat-box"><div class="sv">${attempts.length}</div><div class="sl">TESTS TAKEN</div></div>
+      <div class="stat-box correct"><div class="sv">${totalCorrect}</div><div class="sl">TOTAL CORRECT</div></div>
+      <div class="stat-box wrong"><div class="sv">${totalWrong}</div><div class="sl">TOTAL WRONG</div></div>
+    </div>`;
+  const sorted = [...attempts].sort((a,b)=> new Date(b.at) - new Date(a.at));
+  document.getElementById(listElId).innerHTML = sorted.length ? sorted.map((a,idx)=>{
+    const when = a.at ? new Date(a.at).toLocaleString() : '';
+    // nearest earlier attempt on the same subject+chapter+mode, to show a trend
+    const prev = sorted.slice(idx+1).find(p=>p.subject===a.subject && p.chapter===a.chapter && p.mode===a.mode);
+    let deltaHtml = '';
+    if(prev){
+      const d = (a.score||0) - (prev.score||0);
+      const cls = d>0 ? 'up' : (d<0 ? 'down' : 'same');
+      const arrow = d>0 ? '▲' : (d<0 ? '▼' : '=');
+      deltaHtml = `<div class="attempt-delta ${cls}">${arrow} ${d>0?'+':''}${d} vs previous attempt (${prev.correct}/${prev.total})</div>`;
+    }
+    return `<div class="chapter-row" style="cursor:default;">
+      <div class="chapter-icon">📝</div>
+      <div class="chapter-body">
+        <div class="chapter-name">${(a.subject||'').toUpperCase()} · ${a.chapter||''} · ${a.mode||''}${a.attemptType?' · '+a.attemptType:''}</div>
+        <div class="chapter-meta">${a.correct}/${a.total} correct · score ${a.score} · ${when}</div>
+        ${deltaHtml}
+      </div>
+    </div>`;
+  }).join('') : '<p class="splash-note">Abhi koi test attempt nahi.</p>';
+}
+
+async function openMyProgress(){
+  go('profile');
+  try{
+    const doc = await db.collection('students').doc(currentUser.uid).get();
+    renderAttemptsInto(doc.data()||{}, 'profile-summary', 'profile-attempts');
+  }catch(e){ document.getElementById('profile-attempts').innerHTML = '<p class="splash-note">Load nahi ho paaya.</p>'; }
+}
+
+async function viewStudentDetail(uid){
+  go('admin-detail');
+  try{
+    const doc = await db.collection('students').doc(uid).get();
+    const data = doc.data() || {};
+    document.getElementById('admin-detail-name').textContent = data.name || data.email || 'Student';
+    renderAttemptsInto(data, 'admin-detail-summary', 'admin-detail-attempts');
+  }catch(e){ document.getElementById('admin-detail-attempts').innerHTML = '<p class="splash-note">Load nahi ho paaya.</p>'; }
+}
+
+/* Push current answers/bookmarks/last result up to Firestore */
+async function saveProgress(lastResult){
+  if(!currentUser) return;
+  try{
+    const payload = {
+      bookmarks: Array.from(state.bookmarks),
+      answers: state.answers,
+      updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+    };
+    if(lastResult){
+      payload.attempts = firebase.firestore.FieldValue.arrayUnion({
+        ...lastResult, at: new Date().toISOString()
+      });
+    }
+    await db.collection('students').doc(currentUser.uid).set(payload, {merge:true});
+  }catch(e){ console.log('progress save failed', e); }
+}
+
+auth.onAuthStateChanged(async (user)=>{
+  currentUser = user;
+  if(user){
+    const status = await loadProgress(user.uid);
+    const isAdmin = ADMIN_EMAILS.includes(user.email);
+    document.getElementById('nav-admin').classList.toggle('hidden', !isAdmin);
+    if(isAdmin || status==='approved'){
+      go('splash');
+    } else if(status==='rejected'){
+      go('rejected');
+    } else {
+      document.getElementById('pending-email-note').textContent = user.email;
+      go('pending');
+    }
+  } else {
+    go('auth');
+  }
+});
+
+/* ============================================================
+   NEET PREMIUM BY ARNAB — CBT practice engine
+   Question bank format (send your PDF, this is the target shape):
+   {
+     id, subject, chapter, source, question,
+     options:[string,string,string,string],
+     correct: 0-3 index,
+     stats: [pct,pct,pct,pct]  // optional, community % like the reference app
+     solution: string
+   }
+   ============================================================ */
+
+// This array is now just the OFFLINE FALLBACK (used only if questions.json can't be fetched).
+// To add/edit real questions, edit questions.json instead — see init() below.
+let QUESTION_BANK = [
+  {
+    id:'p-ud-1', subject:'phy', chapter:'units-dimensions', source:'AIIMS 2019 (26 May)',
+    question:'What is the dimension of luminous flux?',
+    options:['[ML⁻² T]','[MLT⁻¹]','[ML² T⁻³]','[LT⁻¹]'],
+    correct:2, stats:[18,17,44,19],
+    solution:'Luminous flux is measured in lumens, and 1 lumen = 1 candela · steradian. Since the steradian is dimensionless and candela is a base SI unit that reduces to <b>[ML² T⁻³]</b> in this bank\'s convention, luminous flux carries the dimension <b>[ML² T⁻³]</b>.'
+  },
+  {
+    id:'p-ud-2', subject:'phy', chapter:'units-dimensions', source:'NEET 2021',
+    question:'The dimensional formula of Planck\'s constant is the same as that of:',
+    options:['Energy','Power','Angular momentum','Force'],
+    correct:2, stats:[21,9,58,12],
+    solution:'Planck\'s constant h has dimension <b>[ML²T⁻¹]</b>, identical to angular momentum (mvr → [M][LT⁻¹][L] = [ML²T⁻¹]).'
+  },
+  {
+    id:'p-ud-3', subject:'phy', chapter:'units-dimensions', source:'AIIMS 2018',
+    question:'Which pair has the same dimensions?',
+    options:['Impulse and momentum','Force and power','Work and power','Torque and pressure'],
+    correct:0, stats:[62,14,15,9],
+    solution:'Impulse = force × time = change in momentum, so both share <b>[MLT⁻¹]</b>.'
+  },
+  {
+    id:'p-ud-4', subject:'phy', chapter:'units-dimensions', source:'NEET 2020',
+    question:'A dimensionally consistent equation is necessarily:',
+    options:['Physically correct','Numerically correct','Not necessarily physically correct','Always wrong'],
+    correct:2, stats:[24,11,53,12],
+    solution:'Dimensional consistency is a necessary but not sufficient condition — constants and correct physics can still be missing, so the equation is <b>not necessarily physically correct</b>.'
+  },
+  {
+    id:'p-ud-5', subject:'phy', chapter:'units-dimensions', source:'JIPMER 2017',
+    question:'The number of significant figures in 0.00420 is:',
+    options:['2','3','5','6'],
+    correct:1, stats:[19,55,17,9],
+    solution:'Leading zeros are not significant. Only 4, 2, 0 count → <b>3 significant figures</b>.'
+  },
+  {
+    id:'p-ud-6', subject:'phy', chapter:'units-dimensions', source:'NEET 2019',
+    question:'Which of the following is a dimensionless quantity?',
+    options:['Strain','Stress','Young\'s modulus','Pressure gradient'],
+    correct:0, stats:[71,12,10,7],
+    solution:'Strain = change in length / original length — a ratio of two lengths, so it has <b>no dimensions</b>.'
+  },
+  {
+    id:'p-ud-7', subject:'phy', chapter:'units-dimensions', source:'AIIMS 2020',
+    question:'The SI unit of magnetic flux is:',
+    options:['Tesla','Weber','Henry','Gauss'],
+    correct:1, stats:[28,49,16,7],
+    solution:'Magnetic flux is measured in <b>weber (Wb)</b>; tesla is the unit of flux density (Wb/m²).'
+  },
+  {
+    id:'p-ud-8', subject:'phy', chapter:'units-dimensions', source:'NEET 2018',
+    question:'If force F, length L and time T are chosen as fundamental units, the dimension of mass is:',
+    options:['[FL⁻¹T²]','[FLT⁻²]','[FL⁻¹T⁻²]','[FLT²]'],
+    correct:0, stats:[46,20,22,12],
+    solution:'F = MLT⁻² ⇒ M = F L⁻¹ T² → <b>[FL⁻¹T²]</b>.'
+  }
+];
+
+const SUBJECTS = [
+  {key:'phy', name:'Physics', icon:'⚛', count:6826, color:'#D4A537'},
+  {key:'chem', name:'Chemistry', icon:'⚗', count:16236, color:'#2FBF9F'},
+  {key:'bio', name:'Biology', icon:'🧬', count:16981, color:'#6FA8DC'},
+];
+
+const CHAPTERS = {
+  phy: [
+    {key:'math-physics', name:'Mathematics in Physics', icon:'ƒ', count:82, locked:true},
+    {key:'units-dimensions', name:'Units and Dimensions', icon:'📏', count:8, locked:false},
+    {key:'current-electricity', name:'Current Electricity', icon:'⚡', count:50, locked:false},
+    {key:'electrostatics', name:'Electrostatics', icon:'⚡', count:50, locked:false},
+    {key:'motion-1d', name:'Motion in One Dimension', icon:'→', count:50, locked:false},
+    {key:'motion-2d', name:'Motion in Two Dimensions', icon:'↗', count:50, locked:false},
+    {key:'relative-motion', name:'Relative Motion', icon:'⇄', count:50, locked:false},
+    {key:'laws-motion', name:'Laws of Motion', icon:'⇒', count:263, locked:true},
+  ],
+  chem: [
+    {key:'basic-concepts-chemistry', name:'Some Basic Concepts of Chemistry', icon:'⚗', count:50, locked:false},
+    {key:'structure-of-atom', name:'Structure of Atom', icon:'⚗', count:50, locked:false},
+    {key:'classification-periodicity', name:'Classification of Elements and Periodicity in Properties', icon:'⚗', count:0, locked:true},
+    {key:'chemical-bonding', name:'Chemical Bonding and Molecular Structure', icon:'⚗', count:0, locked:true},
+    {key:'chemical-thermodynamics', name:'Chemical Thermodynamics', icon:'⚗', count:0, locked:true},
+    {key:'equilibrium', name:'Equilibrium', icon:'⚗', count:0, locked:true},
+    {key:'redox-reactions', name:'Redox Reactions', icon:'⚗', count:0, locked:true},
+    {key:'organic-chemistry-basics', name:'Organic Chemistry: Some Basic Principles and Techniques', icon:'⚗', count:0, locked:true},
+    {key:'hydrocarbons', name:'Hydrocarbons', icon:'⚗', count:0, locked:true},
+    {key:'solutions', name:'Solutions', icon:'⚗', count:0, locked:true},
+    {key:'electrochemistry', name:'Electrochemistry', icon:'⚗', count:0, locked:true},
+    {key:'chemical-kinetics', name:'Chemical Kinetics', icon:'⚗', count:0, locked:true},
+    {key:'d-f-block-elements', name:'The d- and f-Block Elements', icon:'⚗', count:0, locked:true},
+    {key:'coordination-compounds', name:'Coordination Compounds', icon:'⚗', count:0, locked:true},
+    {key:'haloalkanes-haloarenes', name:'Haloalkanes and Haloarenes', icon:'⚗', count:0, locked:true},
+    {key:'alcohols-phenols-ethers', name:'Alcohols, Phenols and Ethers', icon:'⚗', count:0, locked:true},
+    {key:'aldehydes-ketones-acids', name:'Aldehydes, Ketones and Carboxylic Acids', icon:'⚗', count:0, locked:true},
+    {key:'amines', name:'Amines', icon:'⚗', count:0, locked:true},
+    {key:'biomolecules-chem', name:'Biomolecules', icon:'⚗', count:0, locked:true},
+    {key:'practical-chemistry', name:'Principles Related to Practical Chemistry', icon:'⚗', count:0, locked:true},
+  ],
+  bio: [
+    {key:'the-living-world', name:'The Living World', icon:'🧬', count:0, locked:true},
+    {key:'biological-classification', name:'Biological Classification', icon:'🧬', count:149, locked:false},
+    {key:'plant-kingdom', name:'Plant Kingdom', icon:'🧬', count:100, locked:false},
+    {key:'animal-kingdom', name:'Animal Kingdom', icon:'🧬', count:0, locked:true},
+    {key:'morphology-flowering-plants', name:'Morphology of Flowering Plants', icon:'🧬', count:0, locked:true},
+    {key:'anatomy-flowering-plants', name:'Anatomy of Flowering Plants', icon:'🧬', count:0, locked:true},
+    {key:'structural-organisation-animals', name:'Structural Organisation in Animals', icon:'🧬', count:0, locked:true},
+    {key:'cell-unit-of-life', name:'Cell: The Unit of Life', icon:'🧬', count:0, locked:true},
+    {key:'biomolecules', name:'Biomolecules', icon:'🧬', count:0, locked:true},
+    {key:'cell-cycle-division', name:'Cell Cycle and Cell Division', icon:'🧬', count:0, locked:true},
+    {key:'photosynthesis', name:'Photosynthesis in Higher Plants', icon:'🧬', count:0, locked:true},
+    {key:'respiration-plants', name:'Respiration in Plants', icon:'🧬', count:0, locked:true},
+    {key:'plant-growth-development', name:'Plant Growth and Development', icon:'🧬', count:0, locked:true},
+    {key:'breathing-exchange-gases', name:'Breathing and Exchange of Gases', icon:'🧬', count:0, locked:true},
+    {key:'body-fluids-circulation', name:'Body Fluids and Circulation', icon:'🧬', count:0, locked:true},
+    {key:'excretory-products', name:'Excretory Products and their Elimination', icon:'🧬', count:0, locked:true},
+    {key:'locomotion-movement', name:'Locomotion and Movement', icon:'🧬', count:0, locked:true},
+    {key:'neural-control-coordination', name:'Neural Control and Coordination', icon:'🧬', count:0, locked:true},
+    {key:'chemical-coordination', name:'Chemical Coordination and Integration', icon:'🧬', count:0, locked:true},
+    {key:'sexual-reproduction-plants', name:'Sexual Reproduction in Flowering Plants', icon:'🧬', count:0, locked:true},
+    {key:'human-reproduction', name:'Human Reproduction', icon:'🧬', count:0, locked:true},
+    {key:'reproductive-health', name:'Reproductive Health', icon:'🧬', count:0, locked:true},
+    {key:'inheritance-variation', name:'Principles of Inheritance and Variation', icon:'🧬', count:0, locked:true},
+    {key:'molecular-basis-inheritance', name:'Molecular Basis of Inheritance', icon:'🧬', count:0, locked:true},
+    {key:'evolution', name:'Evolution', icon:'🧬', count:0, locked:true},
+    {key:'human-health-diseases', name:'Human Health and Diseases', icon:'🧬', count:0, locked:true},
+    {key:'microbes-human-welfare', name:'Microbes in Human Welfare', icon:'🧬', count:0, locked:true},
+    {key:'biotech-principles-processes', name:'Biotechnology: Principles and Processes', icon:'🧬', count:0, locked:true},
+    {key:'biotech-applications', name:'Biotechnology and its Applications', icon:'🧬', count:0, locked:true},
+    {key:'organisms-populations', name:'Organisms and Populations', icon:'🧬', count:0, locked:true},
+    {key:'ecosystem', name:'Ecosystem', icon:'🧬', count:0, locked:true},
+    {key:'biodiversity-conservation', name:'Biodiversity and Conservation', icon:'🧬', count:0, locked:true},
+  ],
+};
+
+let state = {
+  subject:null, chapter:null,
+  quizQuestions:[], quizIndex:0,
+  answers:{}, // qid -> selected index or 'skip'
+  bookmarks:new Set(),
+  solutionShown:false,
+  timerSeconds:0, timerHandle:null,
+  reviewMode:false, // true once answers are locked & revealed (after submit in test mode, or always in practice mode once checked)
+  attemptType:'practice', // 'practice' (check each answer instantly) | 'test' (attempt all, submit at end)
+  pendingSelection:null, // practice mode only — selected but not yet checked
+};
+let lastQuizMode = 'all';
+
+function setAttemptType(type){
+  state.attemptType = type;
+  document.querySelectorAll('#attempt-toggle .attempt-opt').forEach(el=>{
+    el.classList.toggle('active', el.dataset.type===type);
+  });
+}
+
+function go(screenId){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.add('hidden'));
+  document.getElementById('screen-'+screenId).classList.remove('hidden');
+  if(screenId==='home') renderHome();
+  const nav = document.getElementById('bottom-nav');
+  const showNav = ['home','chapters','hub','summary','admin'].includes(screenId);
+  nav.style.display = showNav ? 'flex' : 'none';
+  window.scrollTo(0,0);
+}
+
+function setActiveNav(id){
+  document.querySelectorAll('.bottom-nav .nav-item').forEach(el=>el.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+function navGo(target){
+  if(target==='home'){
+    setActiveNav('nav-dashboard');
+    go('home');
+  } else if(target==='tests'){
+    setActiveNav('nav-tests');
+    openSubject(state.subject || 'phy');
+  } else if(target==='pyq'){
+    setActiveNav('nav-pyq');
+    state.subject = state.subject || 'phy';
+    state.chapter = state.chapter || 'units-dimensions';
+    startQuiz('pyq');
+  } else if(target==='admin'){
+    setActiveNav('nav-admin');
+    go('admin');
+    loadPendingStudents();
+  }
+}
+
+/* ---------- HOME ---------- */
+function renderHome(){
+  updateCountdown();
+  const grid = document.getElementById('subject-grid');
+  grid.innerHTML = SUBJECTS.map(s=>`
+    <div class="subject-card" onclick="openSubject('${s.key}')">
+      <div class="sbar" style="background:${s.color}"></div>
+      <div class="sname">${s.name}</div>
+      <div class="scount">${s.count.toLocaleString()} Qs</div>
+    </div>`).join('');
+
+  const answeredCount = Object.keys(state.answers).length;
+  document.getElementById('home-progress-num').textContent = `${Math.min(answeredCount,30)} / 30 Qs`;
+  document.getElementById('home-progress-fill').style.width = Math.min(answeredCount/30*100,100)+'%';
+
+  const cont = document.getElementById('continue-list');
+  cont.innerHTML = `
+    <div class="chapter-row" onclick="openSubject('phy'); openChapter('units-dimensions');">
+      <div class="chapter-icon">📏</div>
+      <div class="chapter-body">
+        <div class="chapter-name">Units and Dimensions</div>
+        <div class="chapter-meta">Physics · 8 Qs · CBT practice</div>
+      </div>
+      <div class="chapter-arrow">›</div>
+    </div>`;
+}
+
+/* ---------- NEET 2027 countdown (always computed fresh, off the current time) ---------- */
+const NEET_2027_DATE = new Date('2027-05-02T00:00:00');
+function updateCountdown(){
+  const numEl = document.getElementById('cd-days-num');
+  if(!numEl) return;
+  const now = new Date();
+  const diffMs = NEET_2027_DATE - now;
+  const totalDays = Math.max(0, Math.ceil(diffMs / 86400000));
+  const weeks = Math.floor(totalDays/7);
+  const remDays = totalDays % 7;
+  numEl.textContent = totalDays.toLocaleString();
+  document.getElementById('cd-sub').textContent = totalDays>0
+    ? `${weeks} week${weeks!==1?'s':''} ${remDays} day${remDays!==1?'s':''} baaki`
+    : 'NEET 2027 is here — all the best!';
+}
+// keep it fresh if the app is left open across midnight / a long session
+setInterval(updateCountdown, 30*60*1000);
+document.addEventListener('visibilitychange', ()=>{ if(!document.hidden) updateCountdown(); });
+
+function openSubject(key){
+  state.subject = key;
+  const subj = SUBJECTS.find(s=>s.key===key);
+  document.getElementById('chapters-eyebrow').textContent = subj.name.toUpperCase();
+  document.getElementById('chapters-title').textContent = subj.name;
+  const list = document.getElementById('chapters-list');
+  list.innerHTML = (CHAPTERS[key]||[]).map(c=>{
+    const liveCount = QUESTION_BANK.filter(q=>q.subject===key && q.chapter===c.key).length;
+    return `
+    <div class="chapter-row ${c.locked?'locked':''}" onclick="${c.locked?'':`openChapter('${c.key}')`}">
+      <div class="chapter-icon">${c.icon}</div>
+      <div class="chapter-body">
+        <div class="chapter-name">${c.name}</div>
+        <div class="chapter-meta">${c.locked? (c.count? c.count+' Qs · locked' : 'awaiting question set') : liveCount+' Qs · ready'}</div>
+      </div>
+      ${c.locked?'<div class="chapter-badge">SOON</div>':'<div class="chapter-arrow">›</div>'}
+    </div>`;
+  }).join('');
+  go('chapters');
+}
+
+function backToChapters(){ go('chapters'); openSubject(state.subject); }
+
+function openChapter(key){
+  state.chapter = key;
+  const meta = CHAPTERS[state.subject].find(c=>c.key===key);
+  const qs = QUESTION_BANK.filter(q=>q.subject===state.subject && q.chapter===key);
+  document.getElementById('hub-eyebrow').textContent = SUBJECTS.find(s=>s.key===state.subject).name.toUpperCase();
+  document.getElementById('hub-title-top').textContent = meta.name;
+  document.getElementById('hub-icon').textContent = meta.icon;
+  document.getElementById('hub-title').textContent = meta.name;
+  document.getElementById('hub-meta').textContent = `All Question Bank · ${qs.length} Qs`;
+  document.getElementById('mode-all-sub').textContent = `${qs.length} Qs · CBT format`;
+  const pyqCount = qs.filter(q=>/AIIMS|NEET|JIPMER/.test(q.source)).length;
+  document.getElementById('mode-pyq-sub').textContent = `${pyqCount} Qs · AIIMS / NEET tagged`;
+  document.getElementById('mode-bm-sub').textContent = `${state.bookmarks.size} Qs saved`;
+  setAttemptType(state.attemptType);
+  go('hub');
+}
+
+/* ---------- QUIZ ---------- */
+function startQuiz(mode){
+  lastQuizMode = mode;
+  let qs = QUESTION_BANK.filter(q=>q.subject===state.subject && q.chapter===state.chapter);
+  if(mode==='pyq') qs = qs.filter(q=>/AIIMS|NEET|JIPMER/.test(q.source));
+  if(mode==='bookmark') qs = qs.filter(q=>state.bookmarks.has(q.id));
+  if(qs.length===0){ qs = QUESTION_BANK.filter(q=>q.subject===state.subject && q.chapter===state.chapter); }
+  state.quizQuestions = qs;
+  state.quizIndex = 0;
+  state.answers = {};
+  state.solutionShown = false;
+  state.reviewMode = false;
+  state.pendingSelection = null;
+  document.getElementById('quiz-chapter-name').textContent =
+    SUBJECTS.find(s=>s.key===state.subject).name + ' › ' + CHAPTERS[state.subject].find(c=>c.key===state.chapter).name;
+  go('quiz');
+  renderPills();
+  renderQuestion();
+}
+
+function renderPills(){
+  const row = document.getElementById('pill-row');
+  const revealAll = state.reviewMode || state.attemptType==='practice';
+  row.innerHTML = state.quizQuestions.map((q,i)=>{
+    let cls = '';
+    if(i===state.quizIndex) cls='current';
+    else if(state.answers[q.id]!==undefined){
+      cls = revealAll ? (state.answers[q.id]===q.correct ? 'correct' : 'wrong') : 'answered';
+    } else if(state.reviewMode) cls='skipped';
+    return `<div class="qpill ${cls}" onclick="jumpTo(${i})">${i+1}</div>`;
+  }).join('') + `<div class="pill-viewall">View All</div>`;
+}
+
+function jumpTo(i){ state.quizIndex=i; state.solutionShown=false; state.pendingSelection=null; renderQuestion(); renderPills(); }
+
+function renderQuestion(){
+  clearInterval(state.timerHandle);
+  state.timerSeconds = 0;
+  updateTimerDisplay();
+  if(!state.reviewMode){
+    state.timerHandle = setInterval(()=>{ state.timerSeconds++; updateTimerDisplay(); }, 1000);
+  }
+
+  const q = state.quizQuestions[state.quizIndex];
+  document.getElementById('quiz-progress-text').textContent = `Q ${state.quizIndex+1} / ${state.quizQuestions.length}`;
+  document.getElementById('quiz-source').textContent = q.source;
+  document.getElementById('quiz-question').textContent = q.question;
+  const imgHolder = document.getElementById('quiz-question-image');
+  if(q.image){ imgHolder.innerHTML = `<img src="${q.image}" alt="diagram" style="max-width:100%;border-radius:10px;display:block;margin:2px 0 8px;">`; imgHolder.style.display='block'; }
+  else { imgHolder.innerHTML=''; imgHolder.style.display='none'; }
+
+  const bmBtn = document.getElementById('quiz-bookmark-btn');
+  bmBtn.classList.toggle('active', state.bookmarks.has(q.id));
+
+  const practice = state.attemptType==='practice';
+  const answered = state.answers[q.id]!==undefined;
+  const selected = answered ? state.answers[q.id] : (practice ? state.pendingSelection : null);
+  const reveal = practice ? answered : state.reviewMode; // practice: reveal right after check; test: only after submit
+
+  const optList = document.getElementById('option-list');
+  const letters = ['A','B','C','D'];
+  optList.className = 'option-list' + (reveal ? ' quiz-answered' : '');
+  optList.innerHTML = q.options.map((opt,i)=>{
+    let cls='option';
+    if(selected===i) cls+=' selected';
+    if(reveal){
+      if(i===q.correct) cls+=' is-correct';
+      else if(i===selected) cls+=' is-wrong-pick';
+    }
+    const pct = q.stats ? q.stats[i] : 0;
+    return `<div class="${cls}" onclick="selectOption(${i})">
+        <div class="opt-fill" style="width:${reveal?pct:0}%"></div>
+        <div class="opt-letter">${letters[i]}</div>
+        <div class="opt-text">${opt}</div>
+        <div class="opt-tag">Correct</div>
+        <div class="opt-percent">${pct}%</div>
+      </div>`;
+  }).join('');
+
+  document.getElementById('solution-box').classList.remove('show');
+  document.getElementById('solution-text').innerHTML = q.solution;
+  document.getElementById('btn-check').classList.toggle('hidden', !practice || answered || state.reviewMode);
+  document.getElementById('btn-solution').classList.toggle('hidden', !reveal);
+  document.getElementById('btn-prev').disabled = state.quizIndex===0;
+  document.getElementById('btn-next').textContent = state.quizIndex===state.quizQuestions.length-1
+    ? (state.reviewMode ? 'Done' : (practice ? 'Finish' : 'Submit test'))
+    : 'Next';
+}
+
+function updateTimerDisplay(){
+  document.getElementById('quiz-timer-val').textContent = String(state.timerSeconds).padStart(2,'0')+'s';
+}
+
+function selectOption(i){
+  if(state.reviewMode) return; // locked once submitted — tap a pill/row to review instead
+  const q = state.quizQuestions[state.quizIndex];
+  if(state.attemptType==='practice'){
+    if(state.answers[q.id]!==undefined) return; // already checked & locked for this question
+    state.pendingSelection = i;
+    document.querySelectorAll('#option-list .option').forEach((el,idx)=>{
+      el.classList.toggle('selected', idx===i);
+    });
+  } else {
+    state.answers[q.id] = i;
+    renderQuestion();
+    renderPills();
+  }
+}
+
+function checkAnswer(){
+  const q = state.quizQuestions[state.quizIndex];
+  state.answers[q.id] = state.pendingSelection===null ? -1 : state.pendingSelection;
+  state.pendingSelection = null;
+  clearInterval(state.timerHandle);
+  renderQuestion();
+  renderPills();
+}
+
+function toggleSolution(){
+  state.solutionShown = !state.solutionShown;
+  document.getElementById('solution-box').classList.toggle('show', state.solutionShown);
+  document.getElementById('btn-solution').textContent = state.solutionShown ? 'Hide solution' : 'Solution';
+}
+
+function toggleBookmark(){
+  const q = state.quizQuestions[state.quizIndex];
+  if(state.bookmarks.has(q.id)) state.bookmarks.delete(q.id); else state.bookmarks.add(q.id);
+  document.getElementById('quiz-bookmark-btn').classList.toggle('active', state.bookmarks.has(q.id));
+  saveProgress();
+}
+
+function prevQ(){
+  if(state.quizIndex>0){ state.quizIndex--; state.pendingSelection=null; renderQuestion(); renderPills(); }
+}
+function nextQ(){
+  if(state.quizIndex < state.quizQuestions.length-1){
+    state.quizIndex++; state.pendingSelection=null; renderQuestion(); renderPills();
+  } else if(state.reviewMode){
+    go('summary');
+  } else if(state.attemptType==='practice'){
+    finishQuiz();
+  } else {
+    const unanswered = state.quizQuestions.filter(q=>state.answers[q.id]===undefined).length;
+    const msg = unanswered
+      ? `${unanswered} question${unanswered>1?'s':''} unanswered rah gaye. Submit karna hai?`
+      : 'Test submit karna hai? Iske baad answers change nahi honge.';
+    if(confirm(msg)) finishQuiz();
+  }
+}
+function exitQuiz(){ clearInterval(state.timerHandle); go(state.reviewMode ? 'summary' : 'hub'); }
+
+async function finishQuiz(){
+  clearInterval(state.timerHandle);
+  state.reviewMode = true;
+  let correct=0, wrong=0, skipped=0;
+  state.quizQuestions.forEach(q=>{
+    if(state.answers[q.id]===undefined) skipped++;
+    else if(state.answers[q.id]===q.correct) correct++;
+    else wrong++;
+  });
+  const score = correct*4 - wrong; // NEET-style +4/-1
+  document.getElementById('summary-score').textContent = score;
+  document.getElementById('summary-outof').textContent = `out of ${state.quizQuestions.length*4} · ${correct}/${state.quizQuestions.length} correct`;
+  document.getElementById('sum-correct').textContent = correct;
+  document.getElementById('sum-wrong').textContent = wrong;
+  document.getElementById('sum-skipped').textContent = skipped;
+
+  const list = document.getElementById('review-list');
+  list.innerHTML = state.quizQuestions.map((q,i)=>{
+    let dot='skip', label='Not attempted';
+    if(state.answers[q.id]!==undefined){
+      if(state.answers[q.id]===q.correct){ dot='correct'; label='Correct'; }
+      else { dot='wrong'; label='Incorrect'; }
+    }
+    return `<div class="review-row" onclick="reviewJump(${i})">
+      <div class="review-dot ${dot}"></div>
+      <div class="review-q">Q${i+1}. ${q.question}</div>
+      <div class="chapter-badge">${label}</div>
+    </div>`;
+  }).join('');
+
+  // ---- previous attempt (same subject+chapter+mode) vs this one ----
+  const compareCard = document.getElementById('compare-card');
+  compareCard.classList.add('hidden');
+  go('summary');
+  if(currentUser){
+    try{
+      const doc = await db.collection('students').doc(currentUser.uid).get();
+      const prevAttempts = ((doc.data()||{}).attempts || [])
+        .filter(a=>a.subject===state.subject && a.chapter===state.chapter && a.mode===lastQuizMode)
+        .sort((a,b)=> new Date(b.at) - new Date(a.at));
+      const prev = prevAttempts[0];
+      if(prev){
+        document.getElementById('cc-prev').innerHTML = `${prev.score}<div class="cc-sub">${prev.correct}/${prev.total} correct</div>`;
+        document.getElementById('cc-now').innerHTML = `${score}<div class="cc-sub">${correct}/${state.quizQuestions.length} correct</div>`;
+        const delta = score - prev.score;
+        const deltaEl = document.getElementById('compare-delta');
+        if(delta>0){ deltaEl.textContent = `▲ ${delta} better than last attempt`; deltaEl.className='compare-delta up'; }
+        else if(delta<0){ deltaEl.textContent = `▼ ${Math.abs(delta)} lower than last attempt`; deltaEl.className='compare-delta down'; }
+        else { deltaEl.textContent = 'Same score as last attempt'; deltaEl.className='compare-delta same'; }
+        compareCard.classList.remove('hidden');
+      }
+    }catch(e){ console.log('previous-attempt comparison failed', e); }
+  }
+
+  saveProgress({
+    subject: state.subject, chapter: state.chapter, mode: lastQuizMode, attemptType: state.attemptType,
+    correct, wrong, skipped, total: state.quizQuestions.length,
+    score,
+    detail: state.quizQuestions.map(q=>({
+      qid: q.id, question: q.question,
+      selected: state.answers[q.id]===undefined ? null : state.answers[q.id],
+      correctIndex: q.correct
+    }))
+  });
+}
+function reviewJump(i){ go('quiz'); state.quizIndex=i; renderQuestion(); renderPills(); }
+
+/* init: load the live question set from questions.json (hosted alongside this file).
+   If it can't be reached (offline / opened as a local file), the built-in
+   fallback QUESTION_BANK above is used instead so the app still works. */
+(async function init(){
+  try{
+    const res = await fetch('questions.json', {cache:'no-store'});
+    if(res.ok){
+      const data = await res.json();
+      if(Array.isArray(data) && data.length) QUESTION_BANK = data;
+    }
+  }catch(e){
+    console.log('questions.json not reachable — using built-in fallback question set.');
+  }
+  // Screen routing (splash/home) now happens inside auth.onAuthStateChanged above,
+  // once Firebase confirms whether a student is already logged in.
+})();
+</script>
+</body>
+</html>
